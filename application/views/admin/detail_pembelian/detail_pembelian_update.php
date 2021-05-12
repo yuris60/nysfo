@@ -49,6 +49,7 @@
               <!-- Input Hidden -->
               <input type="hidden" name="id_pembelian" id="id_detailpembelian" value="<?= $detail_pembelian['id_pembelian'] ?>">
               <input type="hidden" name="qty_beli_awal" id="qty_beli_awal" value="<?= $detail_pembelian['qty_beli'] ?>">
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
               <div class="form-group">
                 <label>Jenis Produk</label>

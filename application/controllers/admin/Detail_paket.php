@@ -34,7 +34,7 @@ class Detail_paket extends CI_Controller
   public function create($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
 
     $data['title'] = "Tambah Data Detail Paket";
     $data['icon'] = "archive";
@@ -58,7 +58,7 @@ class Detail_paket extends CI_Controller
     } else {
       $this->detail_paket_model->simpan();
       $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('admin/paket');
+      redirect('admin/detail_paket/read/' . $where);
       // redirect('detail_paket/read/' . $data['paket'][$where]);
 
     }

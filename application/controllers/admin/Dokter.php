@@ -60,7 +60,7 @@ class Dokter extends CI_Controller
   public function update($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
     $data['title'] = "Perbaharui Data Dokter";
     $data['icon'] = "user-md";
     $data['menu'] = "Dokter";

@@ -78,7 +78,7 @@
                         <a href="<?= base_url() ?>admin/reseller/update/<?= $r['id_pelanggan'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a>
-                        <a href="<?= base_url() ?>admin/reseller/delete/<?= $r['id_pelanggan'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/reseller/delete/<?= $r['id_pelanggan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>

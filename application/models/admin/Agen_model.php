@@ -28,6 +28,15 @@ class Agen_model extends CI_Model
     ];
 
     $this->db->insert('pelanggan', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data",
+      'tabel' => "Agen",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function update($where = null)
@@ -43,10 +52,28 @@ class Agen_model extends CI_Model
 
     $this->db->where('id_pelanggan', $where);
     $this->db->update('pelanggan', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Memperbaharui Data",
+      'tabel' => "Agen",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function delete($where)
   {
     $this->db->delete('pelanggan', $where);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => $this->uri->segment(5),
+      'notifikasi' => "Menghapus Data",
+      'tabel' => "Agen",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 }

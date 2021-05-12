@@ -56,7 +56,7 @@ class Produk extends CI_Controller
   public function update($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
     $data['title'] = "Perbaharui Data Produk";
     $data['icon'] = "box";
     $data['menu'] = "Produk";
@@ -84,7 +84,7 @@ class Produk extends CI_Controller
 
   public function delete($where)
   {
-    $where = ['id_produk' => $this->uri->segment(3)];
+    $where = ['id_produk' => $this->uri->segment(4)];
     $this->produk_model->delete($where);
     $this->session->set_flashdata('flash', 'dihapus');
     redirect('admin/produk');

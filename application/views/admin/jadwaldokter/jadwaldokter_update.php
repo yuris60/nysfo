@@ -45,6 +45,9 @@
             </div>
             <div class="card-body">
 
+              <!-- Input Hidden -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
+
               <div class="form-group">
                 <label>Nama Dokter</label>
                 <select class="custom-select" name="id_dokter">

@@ -39,6 +39,15 @@ class Jadwaldokter_model extends CI_Model
     ];
 
     $this->db->insert('jadwal_dokter', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data",
+      'tabel' => "Jadwal Dokter",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function update($where = null)
@@ -52,10 +61,28 @@ class Jadwaldokter_model extends CI_Model
 
     $this->db->where('id_jadwaldokter', $where);
     $this->db->update('jadwal_dokter', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Memperbaharui Data",
+      'tabel' => "Jadwal Dokter",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function delete($where)
   {
     $this->db->delete('jadwal_dokter', $where);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => $this->uri->segment(5),
+      'notifikasi' => "Menghapus Data",
+      'tabel' => "Jadwal Dokter",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 }

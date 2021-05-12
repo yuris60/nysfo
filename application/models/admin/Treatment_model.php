@@ -30,6 +30,15 @@ class Treatment_model extends CI_Model
     ];
 
     $this->db->insert('treatment', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data",
+      'tabel' => "Treatment",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function update($where = null)
@@ -40,10 +49,28 @@ class Treatment_model extends CI_Model
 
     $this->db->where('id_treatment', $where);
     $this->db->update('treatment', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Memperbaharui Data",
+      'tabel' => "Treatment",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function delete($where)
   {
     $this->db->delete('treatment', $where);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => $this->uri->segment(5),
+      'notifikasi' => "Menghapus Data",
+      'tabel' => "Treatment",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 }

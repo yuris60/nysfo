@@ -1,9 +1,9 @@
         <!-- ============================================================== -->
         <!-- left sidebar -->
         <!-- ============================================================== -->
-        <div class="nav-left-sidebar sidebar-light">
+        <div class="nav-left-sidebar sidebar-primary text-white">
           <div class="menu-list">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark text-white">
               <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -11,76 +11,76 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-column">
                   <img src="<?= base_url('assets/') ?>img/sidebar3.jpg" width="100%" alt="">
-                  <li class="nav-divider">
-                    Menu
+                  <li class="nav-divider text-white">
+                    <strong>Menu</strong>
                   </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/beranda') ?>"><i class="fa fa-fw fa-home"></i>Beranda</a>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="<?= base_url('admin/beranda') ?>"><i class="fa fa-fw fa-home text-white"></i>Beranda</a>
                   </li>
-                  <li class="nav-divider">
-                    Data Master
+                  <li class="nav-divider text-white">
+                    <strong>Data Master</strong>
                   </li>
                   <?php if ($user['akses'] == "Pemilik") : ?>
                     <li class="nav-item ">
-                      <a class="nav-link" href="<?= base_url('admin/admin') ?>"><i class="fa fa-fw fa-user-circle"></i>Admin</a>
+                      <a class="nav-link text-white" href="<?= base_url('admin/admin') ?>"><i class="fa fa-fw fa-user-circle text-white"></i>Admin</a>
                     </li>
                   <?php endif; ?>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/dokter') ?>"><i class="fa fa-fw fa-user-md"></i>Dokter</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/dokter') ?>"><i class="fa fa-fw fa-user-md text-white"></i>Dokter</a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/jadwaldokter') ?>"><i class="fa fa-fw fa-clock"></i>Jadwal Dokter</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/jadwaldokter') ?>"><i class="fa fa-fw fa-clock text-white"></i>Jadwal Dokter</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2"><i class="fa fa-fw fa-user"></i> Pelanggan</a>
+                    <a class="nav-link text-white" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2"><i class="fa fa-fw fa-user text-white"></i> Pelanggan</a>
                     <div id="submenu-1-2" class="collapse submenu" style="background-color: #ececec;">
                       <ul class="nav flex-column">
                         <li class="nav-item">
-                          <a class="nav-link" href="<?= base_url('admin/agen') ?>">Agen</a>
+                          <a class="nav-link text-dark" href="<?= base_url('admin/agen') ?>">Agen</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="<?= base_url('admin/distributor') ?>">Distributor</a>
+                          <a class="nav-link text-dark" href="<?= base_url('admin/distributor') ?>">Distributor</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="<?= base_url('admin/member') ?>">Member</a>
+                          <a class="nav-link text-dark" href="<?= base_url('admin/member') ?>">Member</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="<?= base_url('admin/reseller') ?>">Reseller</a>
+                          <a class="nav-link text-dark" href="<?= base_url('admin/reseller') ?>">Reseller</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/paket') ?>"><i class="fa fa-fw fa-archive"></i>Paket</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/paket') ?>"><i class="fa fa-fw fa-archive text-white"></i>Paket</a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/produk') ?>"><i class="fa fa-fw fa-box"></i>Produk</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/produk') ?>"><i class="fa fa-fw fa-box text-white"></i>Produk</a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/treatment') ?>"><i class="fa fa-fw fa-stethoscope"></i>Treatment</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/treatment') ?>"><i class="fa fa-fw fa-stethoscope text-white"></i>Treatment</a>
                   </li>
-                  <li class="nav-divider">
-                    Transaksi
+                  <li class="nav-divider text-white">
+                    <strong>Transaksi</strong>
                   </li>
                   <?php if ($user['akses'] == "Pemilik") : ?>
                     <li class="nav-item ">
-                      <a class="nav-link" href="<?= base_url('admin/pembelian') ?>"><i class="fa fa-fw fa-dolly"></i>Pembelian</a>
+                      <a class="nav-link text-white" href="<?= base_url('admin/pembelian') ?>"><i class="fa fa-fw fa-dolly text-white"></i>Pembelian</a>
                     </li>
                   <?php endif; ?>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/penjualan') ?>"><i class="fa fa-fw fa-shopping-cart"></i>Penjualan</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/penjualan') ?>"><i class="fa fa-fw fa-shopping-cart text-white"></i>Penjualan</a>
                   </li>
-                  <li class="nav-divider">
-                    Tentang
+                  <li class="nav-divider text-white">
+                    <strong>Tentang</strong>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" href="<?= base_url('admin/tentang/pembaruanaplikasi') ?>"><i class="fa fa-fw fa-info"></i>Pembaruan Aplikasi</a>
+                    <a class="nav-link text-white" href="<?= base_url('admin/tentang/') ?>"><i class="fa fa-fw fa-info text-white"></i>Pembaruan Aplikasi</a>
                   </li>
                   <li class="nav-divider">
 
                   </li>
-                  <li class="nav-item ">
-                    <a href="<?= base_url('admin/login/logout') ?>"><button class="btn btn-block btn-danger"><i class="fas fa-sign-out"></i> Logout</button></a>
+                  <li class="nav-item text-white">
+                    <a href="<?= base_url('admin/login/logout') ?>"><button class="btn btn-block btn-danger"><i class="fas fa-sign-out text-white"></i> Logout</button></a>
                   </li>
                   <li class="nav-divider"></li>
                   <li class="nav-divider"></li>

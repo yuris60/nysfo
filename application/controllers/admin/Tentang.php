@@ -9,17 +9,17 @@ class Tentang extends CI_Controller
     $this->load->model('admin/login_model');
   }
 
-  public function pembaruanAplikasi()
+  public function index()
   {
     $data['user'] = $this->login_model->getSession();
-    $data['title'] = "Pembaruan Aplikasi";
+    $data['title'] = "Tentang Aplikasi";
     $data['icon'] = "info";
-    $data['menu'] = "Pembaruan Aplikasi";
+    $data['menu'] = "Tentang Aplikasi";
 
     $this->load->view('admin/templates/header', $data);
     $this->load->view('admin/templates/navbar');
     $this->load->view('admin/templates/sidebar');
-    $this->load->view('admin/tentang/pembaruan_aplikasi', $data);
+    $this->load->view('admin/tentang/tentang_index', $data);
     $this->load->view('admin/templates/footer');
   }
 }

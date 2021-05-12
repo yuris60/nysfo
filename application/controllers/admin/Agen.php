@@ -8,6 +8,7 @@ class Agen extends CI_Controller
     parent::__construct();
     $this->load->model('admin/agen_model');
     $this->load->model('admin/login_model');
+    $this->load->helper('waktulalu');
   }
 
   public function index()

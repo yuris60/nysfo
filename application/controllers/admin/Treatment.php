@@ -54,7 +54,7 @@ class Treatment extends CI_Controller
   public function update($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
     $data['title'] = "Perbaharui Data Treatment";
     $data['icon'] = "stethoscope";
     $data['menu'] = "Treatment";
@@ -80,7 +80,7 @@ class Treatment extends CI_Controller
 
   public function delete($where)
   {
-    $where = ['id_treatment' => $this->uri->segment(3)];
+    $where = ['id_treatment' => $this->uri->segment(4)];
     $this->treatment_model->delete($where);
     $this->session->set_flashdata('flash', 'dihapus');
     redirect('admin/treatment');

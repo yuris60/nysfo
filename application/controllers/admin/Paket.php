@@ -48,14 +48,14 @@ class Paket extends CI_Controller
     } else {
       $this->paket_model->simpan();
       $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('paket');
+      redirect('admin/paket');
     }
   }
 
   public function update($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
     $data['title'] = "Perbaharui Data Paket";
     $data['icon'] = "archive";
     $data['menu'] = "Paket";
@@ -64,7 +64,8 @@ class Paket extends CI_Controller
     $data['paket'] = $this->paket_model->getById($where);
 
     //validation
-    $this->form_validation->set_rules('jns_paket', 'Jenis paket', 'required|trim');
+    $this->form_validation->set_rules('nm_paket', 'Jenis paket', 'required|trim');
+    $this->form_validation->set_rules('harga_paket', 'Harga Paket', 'required|trim');
 
     if ($this->form_validation->run() == FALSE) {
       $this->load->view('admin/templates/header', $data);
@@ -81,7 +82,7 @@ class Paket extends CI_Controller
 
   public function delete($where)
   {
-    $where = ['id_paket' => $this->uri->segment(3)];
+    $where = ['id_paket' => $this->uri->segment(4)];
     $this->paket_model->delete($where);
     $this->session->set_flashdata('flash', 'dihapus');
     redirect('admin/paket');

@@ -170,6 +170,57 @@
         }
       })
   });
+
+  //datepicker
+  $(function() {
+    $(".datepicker").datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true,
+      todayHighlight: true,
+    });
+  });
+
+  $(function() { //custom
+    $(".datepicker-range").datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true,
+      todayHighlight: true,
+    });
+  });
+
+  $(function() { //bulanan
+    $('.datepicker-bulanan').datepicker({
+      format: "yyyy-mm",
+      todayHighlight: true,
+      minViewMode: 1,
+      maxViewMode: 2
+    });
+  });
+
+  $(function() { //tahunan
+    $(".datepicker-tahunan").datepicker({
+      format: "yyyy",
+      todayHighlight: true,
+      minViewMode: 2,
+      maxViewMode: 2
+    });
+  });
+
+  //pilihan laporan
+  $(document).ready(function() {
+    $("#pilihan").change(function() {
+      $(this).find("option:selected").each(function() {
+        var optionValue = $(this).attr("id");
+        if (optionValue) {
+          $(".pilihan").not("." + optionValue).hide();
+          $("." + optionValue).show();
+        } else {
+          $(".pilihan").hide();
+        }
+      });
+    }).change();
+  });
+  // 
 </script>
 </body>
 

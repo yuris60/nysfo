@@ -45,6 +45,9 @@
             </div>
             <div class="card-body">
 
+              <!-- Hidden Id Admin -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
+
               <div class="form-group">
                 <label>Nama Admin</label>
                 <input type="text" class="form-control <?= form_error('nm_admin') ? 'is-invalid' : '' ?>" name="nm_admin" id="nm_admin" value="<?= set_value('nm_admin') ?>">

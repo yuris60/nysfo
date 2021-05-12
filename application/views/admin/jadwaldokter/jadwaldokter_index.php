@@ -74,7 +74,7 @@
                         <a href="<?= base_url() ?>admin/jadwaldokter/update/<?= $jd['id_jadwaldokter'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a>
-                        <a href="<?= base_url() ?>admin/jadwaldokter/delete/<?= $jd['id_jadwaldokter'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/jadwaldokter/delete/<?= $jd['id_jadwaldokter'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>

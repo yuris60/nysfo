@@ -48,6 +48,7 @@
 
               <!-- Input Hidden -->
               <input type="hidden" name="id_pembelian" id="id_detailpembelian" value="<?= $pembelian['id_pembelian'] ?>">
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
               <div class="form-group">
                 <label>Jenis Produk</label>

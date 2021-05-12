@@ -72,7 +72,7 @@
                         <a href="<?= base_url() ?>admin/pembelian/update/<?= $p['id_pembelian'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a>
-                        <a href="<?= base_url() ?>admin/pembelian/delete/<?= $p['id_pembelian'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/pembelian/delete/<?= $p['id_pembelian'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>

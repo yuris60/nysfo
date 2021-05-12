@@ -48,6 +48,7 @@
 
               <!-- Input Hidden -->
               <input type="hidden" name="id_treatment" id="id_detailtreatment" value="<?= $treatment['id_treatment'] ?>">
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
               <div class="form-group">
                 <label>Nama Treatment</label>

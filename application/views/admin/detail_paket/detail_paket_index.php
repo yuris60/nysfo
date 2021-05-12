@@ -67,10 +67,7 @@
                       <td><?= $no ?></td>
                       <td><?= $dp['jns_produk'] ?></td>
                       <td>
-                        <a href="<?= base_url() ?>detail_paket/update/<?= $dp['id_paket'] ?>/<?= $dp['id_detailpaket'] ?>">
-                          <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
-                        </a>
-                        <a href="<?= base_url() ?>detail_paket/delete/<?= $dp['id_detailpaket'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/detail_paket/delete/<?= $dp['id_detailpaket'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>

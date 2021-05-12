@@ -8,7 +8,7 @@ class Detail_penjualan extends CI_Controller
     parent::__construct();
     $this->load->model('admin/detail_penjualan_model');
     $this->load->model('admin/login_model');
-    $this->load->helper('tglindo');
+    $this->load->helper('tglindo_helper');
     $this->load->helper('formatrupiah');
     $this->load->helper('terbilang');
   }
@@ -115,23 +115,21 @@ class Detail_penjualan extends CI_Controller
     $where2 = $this->uri->segment(5); //id_produk
     $where3 = ['id_detailpenjualan' => $where]; //id_detailpenjualan
     $where4 = $this->uri->segment(6); //qty_penjualan
-    $this->detail_penjualan_model->delete($where3);
+    $this->detail_penjualan_model->deleteProduk($where3);
     $this->detail_penjualan_model->tambahStokProdukDelete($where2, $where4);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_penjualan/read/' . $data['penjualan'] . "/" . $where2);
-    // redirect('admin/penjualan');
-    redirect('admin/detail_penjualan/read/' . $where);
+    redirect('admin/penjualan');
   }
 
   public function deleteTreatment($where)
   {
     $where = $this->uri->segment(4); //id_detailpenjualan
     $where3 = ['id_detailpenjualan' => $where]; //id_detailpenjualan
-    $this->detail_penjualan_model->delete($where3);
+    $this->detail_penjualan_model->deleteTreatment($where3);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_penjualan/read/' . $data['penjualan'] . "/" . $where2);
-    // redirect('admin/penjualan');
-    redirect('admin/detail_penjualan/read/' . $where);
+    redirect('admin/penjualan');
   }
 
   public function update($where, $where2)

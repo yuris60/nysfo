@@ -132,7 +132,7 @@
                         <!-- <a href="<?= base_url() ?>detail_penjualan/update/<?= $jt['id_penjualan'] ?>/<?= $jt['id_penjualan'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a> -->
-                        <a href="<?= base_url() ?>admin/detail_penjualan/deleteTreatment/<?= $jt['id_detailpenjualan'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/detail_penjualan/deleteTreatment/<?= $jt['id_detailpenjualan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>
@@ -182,7 +182,7 @@
                             <!-- <a href="<?= base_url() ?>detail_penjualan/update/<?= $jp['id_detailpenjualan'] ?>/<?= $jp['id_penjualan'] ?>">
                               <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                             </a> -->
-                            <a href="<?= base_url() ?>admin/detail_penjualan/deleteProduk/<?= $jp['id_detailpenjualan'] ?>/<?= $jp['id_produk'] ?>/<?= $jp['qty_produk'] ?>" class="tombol-hapus">
+                            <a href="<?= base_url() ?>admin/detail_penjualan/deleteProduk/<?= $jp['id_detailpenjualan'] ?>/<?= $jp['id_produk'] ?>/<?= $jp['qty_produk'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                               <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                             </a>
                           </td>

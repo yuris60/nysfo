@@ -50,6 +50,7 @@
               <input type="hidden" name="id_penjualan" id="id_detailpenjualan" value="<?= $penjualan['id_penjualan'] ?>">
               <input type="hidden" name="id_treatment" id="id_treatment" value="0">
               <input type="hidden" name="qty_treatment" id="qty_treatment" value="0">
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
               <div class="form-group">
                 <label>Jenis Produk</label>

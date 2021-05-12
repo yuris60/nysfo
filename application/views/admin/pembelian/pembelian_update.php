@@ -45,6 +45,9 @@
             </div>
             <div class="card-body">
 
+              <!-- Input Hidden -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
+
               <div class="form-group">
                 <label>Tanggal Pembelian</label>
                 <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text"><i class="fas fa-calendar-alt"></i> </span></span>

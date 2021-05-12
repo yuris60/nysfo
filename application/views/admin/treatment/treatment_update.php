@@ -45,6 +45,9 @@
             </div>
             <div class="card-body">
 
+              <!-- Input Hidden -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
+
               <div class="form-group">
                 <label>Jenis Treatment</label>
                 <input type="text" class="form-control <?= form_error('jns_treatment') ? 'is-invalid' : '' ?>" name="jns_treatment" id="jns_treatment" value="<?= $treatment['jns_treatment'] ?>">

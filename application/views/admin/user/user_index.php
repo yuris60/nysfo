@@ -69,7 +69,7 @@
                       <td><?= $u['email'] ?></td>
                       <td><?= $u['akses'] ?></td>
                       <td>
-                        <a href="<?= base_url() ?>admin/user/delete/<?= $u['id_user'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/user/delete/<?= $u['id_user'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>

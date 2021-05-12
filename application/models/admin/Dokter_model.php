@@ -26,6 +26,15 @@ class Dokter_model extends CI_Model
     ];
 
     $this->db->insert('dokter', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data",
+      'tabel' => "Dokter",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function update($where = null)
@@ -42,10 +51,28 @@ class Dokter_model extends CI_Model
 
     $this->db->where('id_dokter', $where);
     $this->db->update('dokter', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Memperbaharui Data",
+      'tabel' => "Dokter",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function delete($where)
   {
     $this->db->delete('dokter', $where);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => $this->uri->segment(5),
+      'notifikasi' => "Menghapus Data",
+      'tabel' => "Dokter",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 }

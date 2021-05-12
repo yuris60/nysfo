@@ -45,6 +45,9 @@
             </div>
             <div class="card-body">
 
+              <!-- Input Hidden -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
+
               <label>Jenis Member</label><br>
               <label class="custom-control custom-radio custom-control-inline">
                 <input type="radio" name="jns_pelanggan" class="custom-control-input" id="Member" value="L" onclick="member()"><span class="custom-control-label">Member</span>
@@ -114,6 +117,9 @@
               <h4><i class="fas fa-plus"></i> Tambah Data</h4>
             </div>
             <div class="card-body">
+
+              <!-- Input Hidden -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
               <div class="form-group">
                 <label>Tanggal Penjualan</label>

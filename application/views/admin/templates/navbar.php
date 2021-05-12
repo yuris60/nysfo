@@ -18,45 +18,44 @@
               <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
               <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
                 <li>
-                  <div class="notification-title"> Notification</div>
+                  <div class="notification-title"> Notifikasi</div>
                   <div class="notification-list">
                     <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action active">
-                        <div class="notification-info">
-                          <div class="notification-list-user-img"><img src="<?= base_url('assets/') ?>concept/assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy
-                              Rakestraw</span>accepted your invitation to join the team.
-                            <div class="notification-date">2 min ago</div>
+
+                      <?php
+                      // $this->db->query("SELECT * FROM notifikasi");
+                      $this->db->select("*");
+                      $this->db->from("notifikasi");
+                      $this->db->order_by('id_notifikasi', 'DESC');
+                      $this->db->limit(5);
+                      $notifikasi = $this->db->get()->result_array();
+                      foreach ($notifikasi as $n) :
+                        //admin
+                        if ($n['id_admin'] == $user['id_admin']) {
+                          $admin = 'Anda';
+                        } else {
+                          $admin = $user['nm_admin'];
+                        }
+
+                        //icon
+                        if ($n['notifikasi'] == "Menyimpan Data") {
+                          $icon = 'icon_simpan';
+                        } elseif ($n['notifikasi'] == "Menghapus Data") {
+                          $icon = 'icon_hapus';
+                        } else {
+                          $icon = 'icon_edit';
+                        }
+                      ?>
+
+                        <div class="notification-info list-group-item list-group-item-action">
+                          <div class="notification-list-user-img"><img src="<?= base_url('assets/img/') . $icon . '.png' ?>" alt="" class="user-avatar-md rounded-circle"></div>
+                          <div class="notification-list-user-block">
+                            <span class="notification-list-user-name"><?= $admin ?></span><?= $n['notifikasi'] . " " . $n['tabel'] ?>
+                            <div class="notification-date"><?= waktu_lalu($n['waktu_simpan']) ?></div>
                           </div>
                         </div>
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action">
-                        <div class="notification-info">
-                          <div class="notification-list-user-img"><img src="<?= base_url('assets/') ?>concept/assets/images/avatar-3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                          <div class="notification-list-user-block"><span class="notification-list-user-name">
-                              John Abraham</span>is now following you
-                            <div class="notification-date">2 days ago</div>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action">
-                        <div class="notification-info">
-                          <div class="notification-list-user-img"><img src="<?= base_url('assets/') ?>concept/assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                          <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is
-                            watching your main repository
-                            <div class="notification-date">2 min ago</div>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="list-group-item list-group-item-action">
-                        <div class="notification-info">
-                          <div class="notification-list-user-img"><img src="<?= base_url('assets/') ?>concept/assets/images/avatar-5.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica
-                              Caruso</span>accepted your invitation to join the team.
-                            <div class="notification-date">2 min ago</div>
-                          </div>
-                        </div>
-                      </a>
+
+                      <?php endforeach; ?>
                     </div>
                   </div>
                 </li>

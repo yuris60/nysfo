@@ -58,7 +58,7 @@ class Reseller extends CI_Controller
   public function update($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
     $data['title'] = "Perbaharui Data Reseller";
     $data['icon'] = "user";
     $data['menu'] = "Reseller";
@@ -89,7 +89,7 @@ class Reseller extends CI_Controller
 
   public function delete($where)
   {
-    $where = ['id_pelanggan' => $this->uri->segment(3)];
+    $where = ['id_pelanggan' => $this->uri->segment(4)];
     $this->reseller_model->delete($where);
     $this->session->set_flashdata('flash', 'dihapus');
     redirect('admin/reseller');

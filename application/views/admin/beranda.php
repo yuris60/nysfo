@@ -52,7 +52,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
             </div>
           </div>
           <div class="card-footer text-center bg-white">
-            <a href="<?= base_url('dokter') ?>" class="card-link">Lihat Selengkapnya</a>
+            <a href="<?= base_url('admin/dokter') ?>" class="card-link">Lihat Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
             </div>
           </div>
           <div class="card-footer text-center bg-white">
-            <a href="<?= base_url('member') ?>" class="card-link">Lihat Selengkapnya</a>
+            <a href="<?= base_url('admin/member') ?>" class="card-link">Lihat Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
             </div>
           </div>
           <div class="card-footer text-center bg-white">
-            <a href="<?= base_url('produk') ?>" class="card-link">Lihat Selengkapnya</a>
+            <a href="<?= base_url('admin/produk') ?>" class="card-link">Lihat Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
             </div>
           </div>
           <div class="card-footer text-center bg-white">
-            <a href="<?= base_url('treatment') ?>" class="card-link">Lihat Selengkapnya</a>
+            <a href="<?= base_url('admin/treatment') ?>" class="card-link">Lihat Selengkapnya</a>
           </div>
         </div>
       </div>

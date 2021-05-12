@@ -45,6 +45,8 @@
           <div class="card-header">
             <h4><i class="fas fa-database"></i> Data
               <a href="<?= base_url('admin/penjualan/create') ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
+              <button type="button" class="btn btn-sm btn-danger float-right mr-2" data-toggle="modal" data-target="#pilihan_laporan" title="Cetak Laporan"><i class="fas fa-file-pdf"></i> Cetak Laporan</button>
+
             </h4>
           </div>
           <div class="card-body">
@@ -78,7 +80,7 @@
                         <!-- <a href="<?= base_url() ?>penjualan/update/<?= $p['id_penjualan'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a> -->
-                        <a href="<?= base_url() ?>admin/penjualan/delete/<?= $p['id_penjualan'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/penjualan/delete/<?= $p['id_penjualan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>
@@ -90,6 +92,58 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="pilihan_laporan" tabindex="-1" role="dialog" aria-labelledby="pilihan_laporan" Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <form action="<?= base_url('admin/penjualan/pendapatanpdf') ?>" method="post" autocomplete="off" target="_blank">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"><i class="fas fa-file-pdf"></i> Cetak Laporan Berdasarkan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Pilihan</label>
+              <select name="pilihan" class="form-control" id="pilihan" onchange="laporan_danamasuk()">
+                <option value="">-== Pilih Disini ==-</option>
+                <option value="" id="bulanan">Bulanan</option>
+                <option value="" id="tahunan">Tahunan</option>
+                <option value="" id="custom">Custom</option>
+              </select>
+            </div>
+
+            <!-- Bulanan -->
+            <div class="pilihan bulanan">
+              <input type="text" class="form-control datepicker-bulanan" id="bulanan" name="bulanan" placeholder="Masukkan Bulanan">
+            </div>
+
+            <!-- Semesteran -->
+            <div class="pilihan tahunan">
+              <input type="text" class="form-control datepicker-tahunan" id="tahunan" name="tahunan" placeholder="Masukkan Tahunan">
+            </div>
+
+
+            <!-- Custom -->
+            <div class="pilihan custom">
+              <div class="input-daterange datepicker-range input-group" id="custom">
+                <input type="text" class="input-sm form-control" name="custom_start" placeholder="Masukkan Tanggal Mulai" />
+                <span class="input-group-addon">to</span>
+                <input type="text" class="input-sm form-control" name="custom_end" placeholder="Masukkan Tanggal Akhir" />
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+            <button type="submit" class="btn btn-primary">Cetak Data</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

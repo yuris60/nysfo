@@ -21,6 +21,15 @@ class Pembelian_model extends CI_Model
     ];
 
     $this->db->insert('pembelian', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data",
+      'tabel' => "Pembelian",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function update($where = null)
@@ -32,10 +41,28 @@ class Pembelian_model extends CI_Model
 
     $this->db->where('id_pembelian', $where);
     $this->db->update('pembelian', $data);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Memperbaharui Data",
+      'tabel' => "Pembelian",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 
   public function delete($where)
   {
     $this->db->delete('pembelian', $where);
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => $this->uri->segment(5),
+      'notifikasi' => "Menghapus Data",
+      'tabel' => "Pembelian",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
   }
 }

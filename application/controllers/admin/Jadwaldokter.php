@@ -58,7 +58,7 @@ class Jadwaldokter extends CI_Controller
   public function update($where)
   {
     $data['user'] = $this->login_model->getSession();
-    $where = $this->uri->segment(3);
+    $where = $this->uri->segment(4);
     $data['title'] = "Perbaharui Data Jadwal Dokter";
     $data['icon'] = "clock";
     $data['menu'] = "Jadwal Dokter";

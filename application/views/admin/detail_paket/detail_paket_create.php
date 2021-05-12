@@ -48,6 +48,7 @@
 
               <!-- Input Hidden -->
               <input type="hidden" name="id_paket" id="id_detailpaket" value="<?= $paket['id_paket'] ?>">
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
               <div class="form-group">
                 <label>Nama Produk</label>

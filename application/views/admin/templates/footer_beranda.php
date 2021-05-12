@@ -164,7 +164,7 @@ foreach ($jumlahpendapatandesember as $pendapatandesember) {
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-        Copyright © 2021 NBC System Information (Nysfo). Made With <i class="fas fa-heart"></i> by <a href="https://instagram.com/yuris60" target="_blank">Yuris Alkhalifi</a>.
+        Copyright © <?= date('Y') ?> NBC System Information (Nysfo). Made With <i class="fas fa-heart"></i> by <a href="https://instagram.com/yuris60" target="_blank">YAK</a>.
       </div>
       <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
         <div class="text-md-right footer-links d-none d-sm-block">

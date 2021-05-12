@@ -45,6 +45,9 @@
             </div>
             <div class="card-body">
 
+              <!-- Input Hidden -->
+              <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
+
               <div class="form-group">
                 <label>Jenis Produk</label>
                 <input type="text" class="form-control <?= form_error('jns_produk') ? 'is-invalid' : '' ?>" name="jns_produk" id="jns_produk">
