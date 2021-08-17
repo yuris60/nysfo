@@ -41,73 +41,55 @@
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
           <div class="card">
             <div class="card-header">
-              <h4><i class="fas fa-user"></i> Customer</h4>
+              <h4><i class="fas fa-user"></i> Pasien</h4>
             </div>
             <div class="card-body">
 
               <!-- Input Hidden -->
               <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
-              <label>Jenis Member</label><br>
-              <label class="custom-control custom-radio custom-control-inline">
-                <input type="radio" name="jns_pelanggan" class="custom-control-input" id="Member" value="L" onclick="member()"><span class="custom-control-label">Member</span>
-              </label>
-              <label class="custom-control custom-radio custom-control-inline">
-                <input type="radio" name="jns_pelanggan" checked="" class="custom-control-input" id="NonMember" value="P" onclick="member()"><span class="custom-control-label">Non Member</span>
-              </label><br><br>
+              <input type="hidden" name="id_pelanggan" id="id_pelanggan">
 
-              <div id="member" class="d-none">
-
-                <div class="form-group">
-                  <label>Pilih Member</label>
-                  <select name="id_pelanggan" id="id_pelanggan" class="custom-select" onchange="cek_data()">
-                    <option value="">-== Pilih Disini ==-</option>
-                    <?php foreach ($member as $m) : ?>
-                      <option value="<?= $m['id_pelanggan'] ?>"><?= $m['nm_pelanggan'] ?></option>
-                    <?php endforeach; ?>
-                  </select>
+              <label>Nama Pasien</label>
+              <div class="input-group mb-3">
+                <input type="text" name="nama" id="nama" class="form-control" readonly>
+                <div class="input-group-append">
+                  <a href="#" data-toggle="modal" data-target="#modal-item"><button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button></a>
                 </div>
-
-                <div class="loading"></div>
-                <div class="tampilkan_data"></div>
-
               </div>
 
-              <div id="nonmember" class="">
-
-                <div class="form-group">
-                  <label>Nama Customer</label>
+              <!-- <div class="form-group">
+                  <label>Nama Pasien</label>
                   <input type="text" class="form-control <?= form_error('nama') ? 'is-invalid' : '' ?>" name="nama" id="nama">
                   <div class="invalid-feedback">
                     <?= form_error('nama'); ?>
                   </div>
+                </div> -->
+
+              <div class="form-group">
+                <label>Jenis Kelamin Pasien</label>
+                <input type="text" id="jk" class="form-control <?= form_error('jk') ? 'is-invalid' : '' ?>" name="jk" id="jk" readonly>
+                <div class="invalid-feedback">
+                  <?= form_error('jk'); ?>
                 </div>
-
-                <label>Jenis Kelamin</label><br>
-                <label class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" name="jk" checked="" class="custom-control-input" value="L"><span class="custom-control-label">Laki-laki</span>
-                </label>
-                <label class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" name="jk" class="custom-control-input" value="P"><span class="custom-control-label">Perempuan</span>
-                </label><br>
-
-                <div class="form-group">
-                  <label>Alamat Customer</label>
-                  <textarea name="alamat" id="" class="form-control" rows="2"></textarea>
-                  <div class="invalid-feedback">
-                    <?= form_error('alamat'); ?>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>No HP Customer</label>
-                  <input type="text" class="form-control <?= form_error('no_telp') ? 'is-invalid' : '' ?>" name="no_telp" id="no_telp">
-                  <div class="invalid-feedback">
-                    <?= form_error('no_telp'); ?>
-                  </div>
-                </div>
-
               </div>
+
+              <div class="form-group">
+                <label>Alamat Pasien</label>
+                <textarea name="alamat" id="alamat" class="form-control" rows="2" id="alamat" readonly></textarea>
+                <div class="invalid-feedback">
+                  <?= form_error('alamat'); ?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>No Telp Pasien</label>
+                <input type="text" id="notelp" class="form-control <?= form_error('no_telp') ? 'is-invalid' : '' ?>" name="no_telp" id="no_telp" readonly>
+                <div class="invalid-feedback">
+                  <?= form_error('no_telp'); ?>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -164,7 +146,74 @@
     </form>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="modal-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cari Pasien</h5>
+          <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+        </div>
+        <div class="modal-body table-responsive">
+          <h2 class="text-center">Cari Pasien</h2>
+          <table class="table table-bordered table-striped first" id="#table1" width="100%">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <!-- <th>Jenis</th> -->
+                <th>Nama</th>
+                <th>JK</th>
+                <th>Alamat</th>
+                <th>No Telp</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($pelanggan as $p) : ?>
+                <tr>
+                  <td><?= $p['id_pelanggan'] ?></td>
+                  <!-- <td><?= $p['jenis_pelanggan'] ?></td> -->
+                  <td><?= $p['nm_pelanggan'] ?></td>
+                  <td><?= $p['jk_pelanggan'] ?></td>
+                  <td><?= $p['alamat_pelanggan'] ?></td>
+                  <td><?= $p['notelp_pelanggan'] ?></td>
+                  <td>
+                    <button class="btn btn-sm btn-primary" id="pilih" data-id="<?= $p['id_pelanggan'] ?>" data-jenis="<?= $p['jenis_pelanggan'] ?>" data-nama="<?= $p['nm_pelanggan'] ?>" data-jk="<?= $p['jk_pelanggan'] ?>" data-alamat="<?= $p['alamat_pelanggan'] ?>" data-notelp="<?= $p['notelp_pelanggan'] ?>"><i class="fas fa-check"></i> Pilih</button>
+                  </td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-secondary" data-dismiss="modal">Tutup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
   <script src="<?= base_url('assets/') ?>concept/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(document).on('click', '#pilih', function() {
+        var item_id = $(this).data('id');
+        var item_jenis = $(this).data('jenis');
+        var item_nama = $(this).data('nama');
+        var item_jk = $(this).data('jk');
+        var item_alamat = $(this).data('alamat');
+        var item_notelp = $(this).data('notelp');
+        $('#id_pelanggan').val(item_id);
+        $('#nama').val(item_nama);
+        $('#jk').val(item_jk);
+        $('#alamat').val(item_alamat);
+        $('#notelp').val(item_notelp);
+        $('#modal-item').modal('hide');
+      })
+    })
+  </script>
   <script type="text/javascript">
     function member() {
 

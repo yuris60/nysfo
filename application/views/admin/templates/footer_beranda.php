@@ -388,7 +388,7 @@ foreach ($jumlahpendapatandesember as $pendapatandesember) {
     data: {
       labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'June', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
       datasets: [{
-        label: 'Penjualan Barang',
+        label: 'Penjualan Produk',
         data: [<?= $penjualanbarangjanuari ?>, <?= $penjualanbarangfebruari ?>, <?= $penjualanbarangmaret ?>, <?= $penjualanbarangapril ?>, <?= $penjualanbarangmei ?>, <?= $penjualanbarangjuni ?>, <?= $penjualanbarangjuli ?>, <?= $penjualanbarangagustus ?>, <?= $penjualanbarangseptember ?>, <?= $penjualanbarangoktober ?>, <?= $penjualanbarangnovember ?>, <?= $penjualanbarangdesember ?>],
         backgroundColor: [
           'rgb(89, 105, 255)',
@@ -463,7 +463,7 @@ foreach ($jumlahpendapatandesember as $pendapatandesember) {
     data: {
       labels: ['Penjualan'],
       datasets: [{
-        label: 'Penjualan Barang',
+        label: 'Penjualan Produk',
         data: [<?= $penjualanbaranghariini ?>, 0],
         backgroundColor: [
           'rgb(89, 105, 255)',

@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="page-header">
-          <h2 class="pageheader-title"><i class="fas fa-<?= $icon ?>"></i> <?= strtoupper($submenu) ?> <small>(<?= tgl_indo($penjualan['tgl_penjualan']) . " | " . $penjualan['nm_pelanggan'] ?>)</small></h2>
+          <h2 class="pageheader-title"><i class="fas fa-<?= $icon ?>"></i> <?= strtoupper($submenu) ?> <small>(<?= $penjualan['nm_pelanggan'] ?>)</small></h2>
           <div class="page-breadcrumb">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -33,7 +33,7 @@
         <div class="alert alert-primary" role="alert">
           <h4 class="alert-primary"><i class="fas fa-info"></i> Informasi</h4>
           Berikut ini adalah data <strong><?= strtoupper($submenu) ?></strong> atas nama
-          <strong><?= $penjualan['nm_pelanggan'] ?></strong> pada tanggal <strong><?= tgl_indo($penjualan['tgl_penjualan']) ?></strong> yang sudah tersimpan dalam database.
+          <strong><?= $penjualan['nm_pelanggan'] ?></strong> yang sudah tersimpan dalam database.
         </div>
       </div>
     </div>
@@ -69,31 +69,13 @@
               <textarea name="alamat_pelanggan" id="alamat_pelanggan" class="form-control" rows="2" readonly><?= $penjualan['alamat_pelanggan'] ?></textarea>
             </div>
 
+            <div>
+              <a href="<?= base_url() . 'admin/' . strtolower($menu) ?>"><button class="btn btn-block btn-dark">Kembali</button></a>
+            </div>
+
           </div>
         </div>
         <!-- End Of Customer -->
-
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <div class="card">
-              <div class="card-header bg-success">
-                <h4 style="color: white"><i class="fas fa-dollar-sign"></i> Total Pembayaran
-                  <a href="<?= base_url('admin/detail_penjualan/cetakstruk/') . $penjualan['id_penjualan'] ?>" target="_blank"><button type="button" class="btn btn-sm btn-danger float-right mx-2" data-toggle="tooltip" data-placement="top" title="Cetak Struk"><i class="fas fa-file-pdf"></i></button></a>
-                </h4>
-              </div>
-              <div class="card-body">
-
-                <div class="form-group">
-                  <label>Total Pembayaran</label>
-                  <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text">Rp. </span></span>
-                    <input type="text" class="form-control <?= form_error('total_pembayaran') ? 'is-invalid' : '' ?>" name="total_pembayaran" id="total_pembayaran" value="<?= rupiah($sum['total_penjualan']) ?>" readonly>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
 
@@ -112,10 +94,10 @@
                 <thead>
                   <tr>
                     <th>No</th>
+                    <th>Tanggal</th>
                     <th>Nama Treatment</th>
                     <th>Qty</th>
                     <th>Harga</th>
-                    <th width="auto">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -125,17 +107,10 @@
                   ?>
                     <tr>
                       <td><?= $no ?></td>
+                      <td><?= $jt['tgl_penjualan'] ?></td>
                       <td><?= $jt['nm_treatment'] ?></td>
                       <td><?= $jt['qty_treatment'] ?></td>
                       <td><?= rupiah($jt['total_penjualan']) ?></td>
-                      <td>
-                        <!-- <a href="<?= base_url() ?>detail_penjualan/update/<?= $jt['id_penjualan'] ?>/<?= $jt['id_penjualan'] ?>">
-                          <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
-                        </a> -->
-                        <a href="<?= base_url() ?>admin/detail_penjualan/deleteTreatment/<?= $jt['id_detailpenjualan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
-                          <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
-                        </a>
-                      </td>
                     </tr>
                   <?php $no++;
                   } ?>
@@ -162,10 +137,10 @@
                     <thead>
                       <tr>
                         <th>No</th>
+                        <th>Tanggal</th>
                         <th>Nama Produk</th>
                         <th>Qty</th>
                         <th>Harga</th>
-                        <th width="auto">Aksi</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -175,17 +150,10 @@
                       ?>
                         <tr>
                           <td><?= $no ?></td>
+                          <td><?= $jp['tgl_penjualan'] ?></td>
                           <td><?= $jp['jns_produk'] ?></td>
                           <td><?= $jp['qty_produk'] ?></td>
                           <td><?= rupiah($jp['total_penjualan']) ?></td>
-                          <td>
-                            <!-- <a href="<?= base_url() ?>detail_penjualan/update/<?= $jp['id_detailpenjualan'] ?>/<?= $jp['id_penjualan'] ?>">
-                              <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
-                            </a> -->
-                            <a href="<?= base_url() ?>admin/detail_penjualan/deleteProduk/<?= $jp['id_detailpenjualan'] ?>/<?= $jp['id_produk'] ?>/<?= $jp['qty_produk'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
-                              <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
-                            </a>
-                          </td>
                         </tr>
                       <?php $no++;
                       } ?>

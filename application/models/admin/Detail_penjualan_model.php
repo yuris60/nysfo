@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') or exit('No Direct Script Access Allowed');
 
+date_default_timezone_set('Asia/Jakarta');
+
 class Detail_penjualan_model extends CI_Model
 {
   public function getAll($where)
@@ -8,6 +10,7 @@ class Detail_penjualan_model extends CI_Model
     $this->db->select('*');
     $this->db->from('detail_penjualan');
     $this->db->join('penjualan', 'penjualan.id_penjualan = detail_penjualan.id_penjualan');
+    $this->db->join('pelanggan', 'pelanggan.id_pelanggan = penjualan.id_pelanggan');
     $this->db->join('produk', 'produk.id_produk = detail_penjualan.id_produk');
     $this->db->join('detail_treatment', 'detail_penjualan.id_detailtreatment = detail_treatment.id_detailtreatment');
     $this->db->join('treatment', 'treatment.id_treatment = detail_treatment.id_treatment');
@@ -20,6 +23,7 @@ class Detail_penjualan_model extends CI_Model
     $this->db->select('*');
     $this->db->from('detail_penjualan');
     $this->db->join('penjualan', 'penjualan.id_penjualan = detail_penjualan.id_penjualan');
+    $this->db->join('pelanggan', 'pelanggan.id_pelanggan = penjualan.id_pelanggan');
     $this->db->where('detail_penjualan.id_penjualan', $where);
     return $this->db->get();
   }
@@ -84,7 +88,12 @@ class Detail_penjualan_model extends CI_Model
 
   public function getKey($where)
   {
-    return $this->db->get_where('penjualan', ["id_penjualan" => $where])->row_array();
+    $this->db->select('*');
+    $this->db->from('penjualan');
+    $this->db->join('pelanggan', 'penjualan.id_pelanggan = penjualan.id_pelanggan');
+    $this->db->where('penjualan.id_penjualan', $where);
+    return $this->db->get()->row_array();
+    // return $this->db->get_where('penjualan', ["id_penjualan" => $where])->row_array();
   }
 
   public function kurangiStokProdukCreate()

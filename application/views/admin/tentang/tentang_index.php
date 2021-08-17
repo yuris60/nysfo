@@ -46,8 +46,8 @@
           <!-- .card-body -->
           <div class="card-body text-center">
             <!-- .user-avatar -->
-            <a href="user-profile.html" class="user-avatar user-avatar-floated user-avatar-xl">
-              <img src="<?= base_url('assets/') ?>img/yuris.png" alt="User Avatar" class="rounded-circle user-avatar-xl">
+            <a href="<?= base_url('assets/') ?>img/yuris.jpg" target="_blank" class="user-avatar user-avatar-floated user-avatar-xl">
+              <img src="<?= base_url('assets/') ?>img/yuris.jpg" alt="User Avatar" class="rounded-circle user-avatar-xl">
             </a>
             <!-- /.user-avatar -->
             <h3 class="card-title mb-2">
@@ -98,7 +98,7 @@
             <div class="card bg-info mb-3">
               <div class="card-body text-center">
                 <h4 class="card-text">Versi Aplikasi Saat Ini :</h4>
-                <h1>v.1.0.3</h1>
+                <h1>v.1.0.4</h1>
               </div>
             </div>
           </div>
@@ -121,6 +121,22 @@
             img--picture = hijau
             img--location = kuning
             -->
+
+                <!-- 17 Agustus 2021 -->
+                <div class="cd-timeline__block js-cd-block">
+                  <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+                    <img src="<?= base_url('assets/svg/home.svg') ?>" alt="Picture">
+                  </div>
+                  <!-- cd-timeline__img -->
+                  <div class="cd-timeline__content js-cd-content">
+                    <h3>Penambahan Fitur</h3>
+                    <p>Penambahan fitur tabel pasien untuk membantu men-tracking riwayat penjualan pasien</p>
+                    <p>Versi : v.1.0.4</p>
+                    <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
+                    <span class="cd-timeline__date">17 Agustus 2021</span>
+                  </div>
+                  <!-- cd-timeline__content -->
+                </div>
 
                 <!-- 7 Mei 2021 -->
                 <div class="cd-timeline__block js-cd-block">

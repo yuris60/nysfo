@@ -1,13 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No Direct Script Access Allowed');
 
+date_default_timezone_set('Asia/Jakarta');
+
 class Beranda_model extends CI_Model
 {
   public function getPenjualan()
   {
     $this->db->select('*');
     $this->db->from('penjualan');
-    // $this->db->join('dokter', 'penjualan.id_dokter = dokter.id_dokter');
+    $this->db->join('pelanggan', 'penjualan.id_pelanggan = pelanggan.id_pelanggan');
     $this->db->order_by('tgl_penjualan', 'DESC');
     $this->db->order_by('id_penjualan', 'DESC');
     $this->db->limit(10);
@@ -22,7 +24,14 @@ class Beranda_model extends CI_Model
   public function jumlahMember()
   {
     $this->db->from('pelanggan');
-    $this->db->where('level_pelanggan', 'Member');
+    $this->db->where('jenis_pelanggan', 'Member');
+    return $this->db->get()->num_rows();
+  }
+
+  public function jumlahPasien()
+  {
+    $this->db->from('pelanggan');
+    $this->db->where('jenis_pelanggan', 'Pasien');
     return $this->db->get()->num_rows();
   }
 
@@ -75,8 +84,9 @@ class Beranda_model extends CI_Model
   {
     $hariini = date("Y-m-d");
     $this->db->from('penjualan');
-    $this->db->where('tgl_penjualan', $hariini);
-    $this->db->where('penjualan.jk', 'P');
+    $this->db->join('pelanggan', 'pelanggan.id_pelanggan = penjualan.id_pelanggan');
+    $this->db->where('penjualan.tgl_penjualan', $hariini);
+    $this->db->where('pelanggan.jk_pelanggan', 'P');
     return $this->db->get()->num_rows();
   }
 
@@ -84,8 +94,9 @@ class Beranda_model extends CI_Model
   {
     $hariini = date("Y-m-d");
     $this->db->from('penjualan');
-    $this->db->where('tgl_penjualan', $hariini);
-    $this->db->where('penjualan.jk', 'L');
+    $this->db->join('pelanggan', 'pelanggan.id_pelanggan = penjualan.id_pelanggan');
+    $this->db->where('penjualan.tgl_penjualan', $hariini);
+    $this->db->where('pelanggan.jk_pelanggan', 'L');
     return $this->db->get()->num_rows();
   }
 
@@ -98,14 +109,16 @@ class Beranda_model extends CI_Model
   public function jumlahPengunjungWanita()
   {
     $this->db->from('penjualan');
-    $this->db->where('penjualan.jk', 'P');
+    $this->db->join('pelanggan', 'pelanggan.id_pelanggan = penjualan.id_pelanggan');
+    $this->db->where('pelanggan.jk_pelanggan', 'P');
     return $this->db->get()->num_rows();
   }
 
   public function jumlahPengunjungPria()
   {
     $this->db->from('penjualan');
-    $this->db->where('penjualan.jk', 'L');
+    $this->db->join('pelanggan', 'pelanggan.id_pelanggan = penjualan.id_pelanggan');
+    $this->db->where('pelanggan.jk_pelanggan', 'L');
     return $this->db->get()->num_rows();
   }
 

@@ -9,16 +9,15 @@ class Penjualan_model extends CI_Model
   {
     $this->db->select('*');
     $this->db->from('penjualan');
-    // $this->db->join('dokter', 'penjualan.id_dokter = dokter.id_dokter');
+    $this->db->join('pelanggan', 'penjualan.id_pelanggan = pelanggan.id_pelanggan');
     $this->db->order_by('tgl_penjualan', 'DESC');
     $this->db->order_by('id_penjualan', 'DESC');
     return $this->db->get()->result_array();
   }
 
-  public function getMemberAll()
+  public function getPelangganAll()
   {
     $this->db->from('pelanggan');
-    $this->db->where('level_pelanggan', 'Member');
     return $this->db->get()->result_array();
   }
 
@@ -35,10 +34,7 @@ class Penjualan_model extends CI_Model
   public function simpan()
   {
     $data = [
-      'id_penjualan' => htmlspecialchars($this->input->post('id_penjualan2', true)),
-      'nama' => htmlspecialchars($this->input->post('nm_pelanggan', true)),
-      'alamat' => htmlspecialchars($this->input->post('alamat_pelanggan', true)),
-      'no_telp' => htmlspecialchars($this->input->post('notelp_pelanggan', true)),
+      'id_pelanggan' => htmlspecialchars($this->input->post('id_pelanggan', true)),
       'tgl_penjualan' => htmlspecialchars($this->input->post('tgl_penjualan', true)),
       'id_dokter' => htmlspecialchars($this->input->post('id_dokter', true)),
       'nm_beautician' => htmlspecialchars($this->input->post('nm_beautician', true)),
@@ -56,29 +52,29 @@ class Penjualan_model extends CI_Model
     $this->db->insert('notifikasi', $datanotifikasi);
   }
 
-  public function simpan2()
-  {
-    $data = [
-      'nama' => htmlspecialchars($this->input->post('nama', true)),
-      'jk' => htmlspecialchars($this->input->post('jk', true)),
-      'alamat' => htmlspecialchars($this->input->post('alamat', true)),
-      'no_telp' => htmlspecialchars($this->input->post('no_telp', true)),
-      'tgl_penjualan' => htmlspecialchars($this->input->post('tgl_penjualan', true)),
-      'id_dokter' => htmlspecialchars($this->input->post('id_dokter', true)),
-      'nm_beautician' => htmlspecialchars($this->input->post('nm_beautician', true)),
-    ];
+  // public function simpan2()
+  // {
+  //   $data = [
+  //     'nama' => htmlspecialchars($this->input->post('nama', true)),
+  //     'jk' => htmlspecialchars($this->input->post('jk', true)),
+  //     'alamat' => htmlspecialchars($this->input->post('alamat', true)),
+  //     'no_telp' => htmlspecialchars($this->input->post('no_telp', true)),
+  //     'tgl_penjualan' => htmlspecialchars($this->input->post('tgl_penjualan', true)),
+  //     'id_dokter' => htmlspecialchars($this->input->post('id_dokter', true)),
+  //     'nm_beautician' => htmlspecialchars($this->input->post('nm_beautician', true)),
+  //   ];
 
-    $this->db->insert('penjualan', $data);
+  //   $this->db->insert('penjualan', $data);
 
-    //simpan notifikasi
-    $datanotifikasi = [
-      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
-      'notifikasi' => "Menyimpan Data",
-      'tabel' => "Penjualan",
-      'waktu_simpan' => date('Y-m-d H:i:s')
-    ];
-    $this->db->insert('notifikasi', $datanotifikasi);
-  }
+  //   //simpan notifikasi
+  //   $datanotifikasi = [
+  //     'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+  //     'notifikasi' => "Menyimpan Data",
+  //     'tabel' => "Penjualan",
+  //     'waktu_simpan' => date('Y-m-d H:i:s')
+  //   ];
+  //   $this->db->insert('notifikasi', $datanotifikasi);
+  // }
 
   public function update($where = null)
   {

@@ -45,6 +45,9 @@
                           <a class="nav-link text-dark" href="<?= base_url('admin/member') ?>">Member</a>
                         </li>
                         <li class="nav-item">
+                          <a class="nav-link text-dark" href="<?= base_url('admin/pasien') ?>">Pasien</a>
+                        </li>
+                        <li class="nav-item">
                           <a class="nav-link text-dark" href="<?= base_url('admin/reseller') ?>">Reseller</a>
                         </li>
                       </ul>

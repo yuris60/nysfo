@@ -43,7 +43,7 @@
           <div class="card-header">
             <h4><i class="fas fa-database"></i> Data
               <a href="<?= base_url('admin/' . strtolower($menu) . '/laporanpdfall') ?>" target="_blank"><button type="button" class="btn btn-sm btn-danger float-right mx-2" data-toggle="tooltip" data-placement="top" title="Export PDF"><i class="fas fa-file-pdf"></i></button></a>
-              <a href="<?= base_url('admin/member/create') ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
+              <a href="<?= base_url('admin/' . strtolower($menu) . '/create') ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
             </h4>
           </div>
           <div class="card-body">
@@ -52,33 +52,32 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Nama Member</th>
+                    <th>Nama Pasien</th>
                     <th>Alamat</th>
                     <th>No Telp</th>
                     <th>JK</th>
-                    <th>Umur</th>
-                    <th>Email</th>
                     <th width="auto">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <?php
                   $no = 1;
-                  foreach ($member as $m) {
+                  foreach ($pasien as $p) {
                   ?>
                     <tr>
                       <td><?= $no ?></td>
-                      <td><?= $m['nm_pelanggan'] ?></td>
-                      <td><?= $m['alamat_pelanggan'] ?></td>
-                      <td><?= $m['notelp_pelanggan'] ?></td>
-                      <td><?= $m['jk_pelanggan'] ?></td>
-                      <td><?= $m['umur_pelanggan'] ?></td>
-                      <td><?= $m['email_pelanggan'] ?></td>
+                      <td><?= $p['nm_pelanggan'] ?></td>
+                      <td><?= $p['alamat_pelanggan'] ?></td>
+                      <td><?= $p['notelp_pelanggan'] ?></td>
+                      <td><?= $p['jk_pelanggan'] ?></td>
                       <td>
-                        <a href="<?= base_url() ?>admin/member/update/<?= $m['id_pelanggan'] ?>">
+                        <a href="<?= base_url() ?>admin/pasien/history/<?= $p['id_pelanggan'] ?>">
+                          <button type="button" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top" title="Riwayat Penjualan"><i class="fas fa-history"></i></button>
+                        </a>
+                        <a href="<?= base_url() ?>admin/pasien/update/<?= $p['id_pelanggan'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a>
-                        <a href="<?= base_url() ?>admin/member/delete/<?= $m['id_pelanggan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
+                        <a href="<?= base_url() ?>admin/pasien/delete/<?= $p['id_pelanggan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>
                       </td>

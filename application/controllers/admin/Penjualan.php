@@ -35,7 +35,7 @@ class Penjualan extends CI_Controller
     $data['menu'] = "Penjualan";
     $data['submenu'] = "Tambah Data";
 
-    $data['member'] = $this->penjualan_model->getMemberAll();
+    $data['pelanggan'] = $this->penjualan_model->getPelangganAll();
     $data['dokter'] = $this->penjualan_model->getDokterAll();
 
     //validation
@@ -48,11 +48,7 @@ class Penjualan extends CI_Controller
       $this->load->view('admin/penjualan/penjualan_create', $data);
       $this->load->view('admin/templates/footer');
     } else {
-      if ($this->input->post('id_pelanggan2') != "") { //jika memilih member
-        $this->penjualan_model->simpan();
-      } elseif ($this->input->post('nama') != "") { //jika memilih non member
-        $this->penjualan_model->simpan2();
-      }
+      $this->penjualan_model->simpan();
       $this->session->set_flashdata('flash', 'ditambahkan');
       redirect('admin/penjualan');
     }

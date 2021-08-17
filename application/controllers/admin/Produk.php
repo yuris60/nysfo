@@ -77,8 +77,8 @@ class Produk extends CI_Controller
       $this->load->view('admin/templates/footer');
     } else {
       $this->produk_model->update($where);
-      $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('produk');
+      $this->session->set_flashdata('flash', 'diperbaharui');
+      redirect('admin/produk');
     }
   }
 

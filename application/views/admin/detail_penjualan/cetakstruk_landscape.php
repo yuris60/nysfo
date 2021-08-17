@@ -56,7 +56,7 @@ $tahun = date('Y');
           <i>Received From</i>
         </td>
         <td valign="top">:</td>
-        <td valign="top"><?= $penjualanallbyid['nama']; ?></td>
+        <td valign="top"><?= $penjualanallbyid['nm_pelanggan']; ?></td>
       </tr>
       <tr>
         <td>

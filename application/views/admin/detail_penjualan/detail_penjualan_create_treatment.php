@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="page-header">
-          <h2 class="pageheader-title"><i class="fas fa-<?= $icon ?>"></i> <?= strtoupper($submenu) ?> <small>(<?= tgl_indo($penjualan['tgl_penjualan']) . " | " . $penjualan['nama'] ?>)</small></h2>
+          <h2 class="pageheader-title"><i class="fas fa-<?= $icon ?>"></i> <?= strtoupper($submenu) ?> <small>(<?= tgl_indo($penjualan['tgl_penjualan']) . " | " . $penjualan['nm_pelanggan'] ?>)</small></h2>
           <div class="page-breadcrumb">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -67,7 +67,7 @@
 
               <div class="form-group">
                 <label>Qty</label>
-                <input type="number" min=1 class="form-control <?= form_error('qty_treatment') ? 'is-invalid' : '' ?>" name="qty_treatment" id="qty_treatment">
+                <input type="number" min=1 value=1 class="form-control <?= form_error('qty_treatment') ? 'is-invalid' : '' ?>" name="qty_treatment" id="qty_treatment">
                 <div class="invalid-feedback">
                   <?= form_error('qty_treatment'); ?>
                 </div>

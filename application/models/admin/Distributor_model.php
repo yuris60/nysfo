@@ -1,12 +1,14 @@
 <?php
 defined('BASEPATH') or exit('No Direct Script Access Allowed');
 
+date_default_timezone_set('Asia/Jakarta');
+
 class Distributor_model extends CI_Model
 {
   public function getAll()
   {
     $this->db->from('pelanggan');
-    $this->db->where('level_pelanggan', 'Distributor');
+    $this->db->where('jenis_pelanggan', 'Distributor');
     return $this->db->get()->result_array();
   }
 
@@ -24,7 +26,7 @@ class Distributor_model extends CI_Model
       'alamat_pelanggan' => htmlspecialchars($this->input->post('alamat_pelanggan', true)),
       'notelp_pelanggan' => htmlspecialchars($this->input->post('notelp_pelanggan', true)),
       'email_pelanggan' => htmlspecialchars($this->input->post('email_pelanggan', true)),
-      'level_pelanggan' => "Distributor",
+      'jenis_pelanggan' => "Distributor",
     ];
 
     $this->db->insert('pelanggan', $data);

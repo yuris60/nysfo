@@ -1,12 +1,14 @@
 <?php
 defined('BASEPATH') or exit('No Direct Script Access Allowed');
 
+date_default_timezone_set('Asia/Jakarta');
+
 class Member_model extends CI_Model
 {
   public function getAll()
   {
     $this->db->from('pelanggan');
-    $this->db->where('level_pelanggan', 'Member');
+    $this->db->where('jenis_pelanggan', 'Member');
     return $this->db->get()->result_array();
   }
 
@@ -24,7 +26,7 @@ class Member_model extends CI_Model
       'alamat_pelanggan' => htmlspecialchars($this->input->post('alamat_pelanggan', true)),
       'notelp_pelanggan' => htmlspecialchars($this->input->post('notelp_pelanggan', true)),
       'email_pelanggan' => htmlspecialchars($this->input->post('email_pelanggan', true)),
-      'level_pelanggan' => "Member",
+      'jenis_pelanggan' => "Member",
     ];
 
     $this->db->insert('pelanggan', $data);

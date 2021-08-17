@@ -64,8 +64,8 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
           <div class="card-body mb-0">
             <div class="row no-gutters align-items-center">
               <div class="col mr-2">
-                <div class="text-xs font-weight-bold text-white text-uppercase mb-0">Jumlah Member</div>
-                <div class="h1 mb-0 font-weight-bold text-gray-800"><?= $jumlahmember ?></div>
+                <div class="text-xs font-weight-bold text-white text-uppercase mb-0">Jumlah Pasien</div>
+                <div class="h1 mb-0 font-weight-bold text-gray-800"><?= $jumlahpasien ?></div>
               </div>
               <div class="col-auto mb-0">
                 <i class="fas fa-user fa-5x text-gray-300"></i>
@@ -73,7 +73,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
             </div>
           </div>
           <div class="card-footer text-center bg-white">
-            <a href="<?= base_url('admin/member') ?>" class="card-link">Lihat Selengkapnya</a>
+            <a href="<?= base_url('admin/pasien') ?>" class="card-link">Lihat Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -219,8 +219,8 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
                 ?>
                   <tr>
                     <td><?= $no ?></td>
-                    <td><?= $p['nama'] ?></td>
-                    <td><?= $p['alamat'] ?></td>
+                    <td><?= $p['nm_pelanggan'] ?></td>
+                    <td><?= $p['alamat_pelanggan'] ?></td>
                   </tr>
                 <?php
                   $no++;

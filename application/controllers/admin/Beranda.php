@@ -19,6 +19,7 @@ class Beranda extends CI_Controller
     $data['penjualan'] = $this->beranda_model->getPenjualan();
     $data['jumlahdokter'] = $this->beranda_model->jumlahDokter();
     $data['jumlahmember'] = $this->beranda_model->jumlahMember();
+    $data['jumlahpasien'] = $this->beranda_model->jumlahPasien();
     $data['jumlahproduk'] = $this->beranda_model->jumlahProduk();
     $data['jumlahtreatment'] = $this->beranda_model->jumlahTreatment();
 
