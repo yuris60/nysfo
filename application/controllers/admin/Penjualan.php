@@ -39,7 +39,7 @@ class Penjualan extends CI_Controller
     $data['dokter'] = $this->penjualan_model->getDokterAll();
 
     //validation
-    $this->form_validation->set_rules('tgl_penjualan', 'Tanggal Pembelian', 'required|trim');
+    $this->form_validation->set_rules('tgl_penjualan', 'Tanggal Penjualan', 'required|trim');
 
     if ($this->form_validation->run() == FALSE) {
       $this->load->view('admin/templates/header', $data);
@@ -66,7 +66,7 @@ class Penjualan extends CI_Controller
     $data['penjualan'] = $this->penjualan_model->getById($where);
 
     //validation
-    $this->form_validation->set_rules('tgl_pembelian', 'Tanggal Pembelian', 'required|trim');
+    $this->form_validation->set_rules('tgl_pembelian', 'Tanggal Penjualan', 'required|trim');
     $this->form_validation->set_rules('nm_supplier', 'Nama Supplier', 'required|trim');
 
     if ($this->form_validation->run() == FALSE) {

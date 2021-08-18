@@ -18,6 +18,7 @@ class Penjualan_model extends CI_Model
   public function getPelangganAll()
   {
     $this->db->from('pelanggan');
+    $this->db->order_by('nm_pelanggan', 'desc');
     return $this->db->get()->result_array();
   }
 

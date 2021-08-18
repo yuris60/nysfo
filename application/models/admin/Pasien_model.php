@@ -9,6 +9,7 @@ class Pasien_model extends CI_Model
   {
     $this->db->from('pelanggan');
     $this->db->where('jenis_pelanggan', 'Pasien');
+    $this->db->order_by('id_pelanggan', 'desc');
     return $this->db->get()->result_array();
   }
 

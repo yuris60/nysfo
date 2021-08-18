@@ -99,6 +99,12 @@
 
       <!-- Treatment -->
       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+
+        <div class="alert alert-warning" role="alert">
+          <h4 class="alert-warning"><i class="fas fa-exclamation"></i> Perhatian</h4>
+          Silahkan isi semua penjualan pada bagian treatment terlebih dahulu, setelah itu baru isi bagian produk. Hal ini untuk meminimalisir eror pada struk.
+        </div>
+
         <div class="card">
           <div class="card-header">
             <h4><i class="fas fa-stethoscope"></i> Treatment

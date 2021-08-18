@@ -82,7 +82,7 @@ class Pasien extends CI_Controller
     $data['menu'] = "Pasien";
     $data['submenu'] = "Perbaharui Data";
 
-    $data['Pasien'] = $this->Pasien_model->getById($where);
+    $data['pasien'] = $this->pasien_model->getById($where);
 
     //validation
     $this->form_validation->set_rules('nm_pelanggan', 'Nama Pasien', 'required|trim');

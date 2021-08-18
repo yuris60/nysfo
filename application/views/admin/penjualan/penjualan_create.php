@@ -188,7 +188,7 @@
           </table>
         </div>
         <div class="modal-footer">
-          <a href="#" class="btn btn-secondary" data-dismiss="modal">Tutup</a>
+          <a href="#" class="btn btn-dark" data-dismiss="modal">Tutup</a>
         </div>
       </div>
     </div>
