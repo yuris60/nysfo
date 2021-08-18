@@ -35,7 +35,7 @@ class Pasien extends CI_Controller
     $data['title'] = "Riwayat Penjualan Pasien";
     $data['icon'] = "user";
     $data['menu'] = "Pasien";
-    $data['submenu'] = "Riwayat Penjualan";
+    $data['submenu'] = "Riwayat Penjualan Pasien";
 
     $data['pasien'] = $this->pasien_model->getAll();
     $data['penjualan'] = $this->pasien_model->getKey($where);

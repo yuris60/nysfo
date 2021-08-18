@@ -69,6 +69,10 @@
               <textarea name="alamat_pelanggan" id="alamat_pelanggan" class="form-control" rows="2" readonly><?= $penjualan['alamat_pelanggan'] ?></textarea>
             </div>
 
+            <div>
+              <a href="<?= base_url() . 'admin/' . strtolower($menu) ?>"><button class="btn btn-block btn-dark">Kembali</button></a>
+            </div>
+
           </div>
         </div>
         <!-- End Of Customer -->
