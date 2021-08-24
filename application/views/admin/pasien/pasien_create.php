@@ -82,10 +82,29 @@
                 <textarea class="form-control" id="alamat_pelanggan" name="alamat_pelanggan" rows="3"></textarea>
               </div>
 
-              <div class="form-group">
-                <label>Email</label>
+              <label class="mt-2">Email</label>
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                </div>
                 <input type="email" class="form-control email-inputmask <?= form_error('email_pelanggan') ? 'is-invalid' : '' ?>" name="email_pelanggan" id="email_pelanggan email-mask">
-              </div>
+              </div><br>
+
+              <label class="mt-2">Facebook</label>
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fab fa-facebook"></i></span>
+                </div>
+                <input type="text" class="form-control <?= form_error('fb_pelanggan') ? 'is-invalid' : '' ?>" name="fb_pelanggan" id="fb_pelanggan">
+              </div><br>
+
+              <label class="mt-2">Instagram</label>
+              <div class="input-group">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fab fa-instagram"></i></span>
+                </div>
+                <input type="text" class="form-control <?= form_error('ig_pelanggan') ? 'is-invalid' : '' ?>" name="ig_pelanggan" id="ig_pelanggan">
+              </div><br>
 
             </div>
             <div class="card-footer">

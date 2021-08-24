@@ -66,6 +66,9 @@ class Pasien_model extends CI_Model
       'alamat_pelanggan' => htmlspecialchars($this->input->post('alamat_pelanggan', true)),
       'notelp_pelanggan' => htmlspecialchars($this->input->post('notelp_pelanggan', true)),
       'email_pelanggan' => htmlspecialchars($this->input->post('email_pelanggan', true)),
+      'email_pelanggan' => htmlspecialchars($this->input->post('email_pelanggan', true)),
+      'fb_pelanggan' => htmlspecialchars($this->input->post('fb_pelanggan', true)),
+      'ig_pelanggan' => htmlspecialchars($this->input->post('ig_pelanggan', true)),
       'jenis_pelanggan' => "Pasien",
     ];
 
@@ -90,6 +93,8 @@ class Pasien_model extends CI_Model
       'alamat_pelanggan' => htmlspecialchars($this->input->post('alamat_pelanggan', true)),
       'notelp_pelanggan' => htmlspecialchars($this->input->post('notelp_pelanggan', true)),
       'email_pelanggan' => htmlspecialchars($this->input->post('email_pelanggan', true)),
+      'fb_pelanggan' => htmlspecialchars($this->input->post('fb_pelanggan', true)),
+      'ig_pelanggan' => htmlspecialchars($this->input->post('ig_pelanggan', true)),
     ];
 
     $this->db->where('id_pelanggan', $where);

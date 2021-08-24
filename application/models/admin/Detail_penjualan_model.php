@@ -90,7 +90,7 @@ class Detail_penjualan_model extends CI_Model
   {
     $this->db->select('*');
     $this->db->from('penjualan');
-    $this->db->join('pelanggan', 'penjualan.id_pelanggan = penjualan.id_pelanggan');
+    $this->db->join('pelanggan', 'penjualan.id_pelanggan = pelanggan.id_pelanggan');
     $this->db->where('penjualan.id_penjualan', $where);
     return $this->db->get()->row_array();
     // return $this->db->get_where('penjualan', ["id_penjualan" => $where])->row_array();
