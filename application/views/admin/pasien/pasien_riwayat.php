@@ -69,6 +69,16 @@
               <textarea name="alamat_pelanggan" id="alamat_pelanggan" class="form-control" rows="2" readonly><?= $penjualan['alamat_pelanggan'] ?></textarea>
             </div>
 
+            <div class="form-group">
+              <label>Facebook</label>
+              <input type="text" class="form-control <?= form_error('fb_pelanggan') ? 'is-invalid' : '' ?>" name="fb_pelanggan" id="fb_pelanggan" readonly value="<?= $penjualan['fb_pelanggan'] ?>">
+            </div>
+
+            <div class="form-group">
+              <label>Instagram</label>
+              <input type="text" class="form-control <?= form_error('ig_pelanggan') ? 'is-invalid' : '' ?>" name="ig_pelanggan" id="ig_pelanggan" readonly value="<?= $penjualan['ig_pelanggan'] ?>">
+            </div>
+
             <div>
               <a href="<?= base_url() . 'admin/' . strtolower($menu) ?>"><button class="btn btn-block btn-dark">Kembali</button></a>
             </div>
