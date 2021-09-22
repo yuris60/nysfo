@@ -59,7 +59,7 @@
                     <th>Nama</th>
                     <th>Alamat</th>
                     <th>No Handphone</th>
-                    <th width="auto">Aksi</th>
+                    <th width="120px">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -77,9 +77,9 @@
                         <a href="<?= base_url() ?>admin/detail_penjualan/read/<?= $p['id_penjualan'] ?>">
                           <button class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top" title="Lihat Detail Penjualan"><i class="fas fa-info-circle"></i></button>
                         </a>
-                        <!-- <a href="<?= base_url() ?>penjualan/update/<?= $p['id_penjualan'] ?>">
+                        <a href="<?= base_url() ?>admin/penjualan/update/<?= $p['id_penjualan'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
-                        </a> -->
+                        </a>
                         <a href="<?= base_url() ?>admin/penjualan/delete/<?= $p['id_penjualan'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
                           <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
                         </a>

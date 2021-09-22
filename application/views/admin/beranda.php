@@ -197,6 +197,17 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
             </div>
           </div>
         </div>
+
+        <!-- <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+              <h5 class="card-header bg-light"><i class="fas fa-box"></i> Laporan Penjualan Tahun <?= date('Y') ?></h5>
+              <div class="card-body">
+                <canvas id="myChart3"></canvas>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
 
       <!-- Kanan -->

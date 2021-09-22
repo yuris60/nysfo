@@ -84,6 +84,38 @@ class Pasien_model extends CI_Model
     $this->db->insert('notifikasi', $datanotifikasi);
   }
 
+  public function simpan_wajah_before($where, $where2)
+  {
+    $this->db->set('foto_sebelum', $where2);
+    $this->db->where('id_pelanggan', $where);
+    $this->db->update('pelanggan');
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data Foto",
+      'tabel' => "Pasien",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
+  }         
+
+  public function simpan_wajah_after($where, $where2)
+  {
+    $this->db->set('foto_sesudah', $where2);
+    $this->db->where('id_pelanggan', $where);
+    $this->db->update('pelanggan');
+
+    //simpan notifikasi
+    $datanotifikasi = [
+      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+      'notifikasi' => "Menyimpan Data Foto",
+      'tabel' => "Pasien",
+      'waktu_simpan' => date('Y-m-d H:i:s')
+    ];
+    $this->db->insert('notifikasi', $datanotifikasi);
+  }         
+
   public function update($where = null)
   {
     $data = [

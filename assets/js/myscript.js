@@ -1,5 +1,6 @@
 const flashData = $('.flash-data').data('flashdata');
 const flashDataStokKurang = $('.flash-data-stok-kurang').data('flashdata');
+const flashDataStokGudangKurang = $('.flash-data-stok-gudang-kurang').data('flashdata');
 
 //login
 const flashDataLoginAdmin = $('.flash-data-login').data('flashdata');
@@ -19,6 +20,14 @@ if (flashDataStokKurang) {
   Swal.fire({
     title: 'Maaf',
     text: 'Stok yang tersedia tidak mencukupi dari jumlah ' + flashDataStokKurang,
+    icon: 'error'
+  });
+}
+
+if (flashDataStokGudangKurang) {
+  Swal.fire({
+    title: 'Maaf',
+    text: 'Stok gudang yang tersedia tidak mencukupi dari jumlah input produk' + flashDataStokGudangKurang,
     icon: 'error'
   });
 }

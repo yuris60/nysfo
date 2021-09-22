@@ -56,7 +56,7 @@
                     <th>Alamat</th>
                     <th>No Telp</th>
                     <th>JK</th>
-                    <th width="auto">Aksi</th>
+                    <th width="170px">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -71,6 +71,9 @@
                       <td><?= $p['notelp_pelanggan'] ?></td>
                       <td><?= $p['jk_pelanggan'] ?></td>
                       <td>
+                        <a href="<?= base_url() ?>admin/pasien/wajah/<?= $p['id_pelanggan'] ?>">
+                          <button type="button" class="btn btn-sm btn-success" data-toggle="tooltip" data-placement="top" title="Lihat Wajah Pasien"><i class="fas fa-smile"></i></button>
+                        </a>
                         <a href="<?= base_url() ?>admin/pasien/history/<?= $p['id_pelanggan'] ?>">
                           <button type="button" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top" title="Riwayat Penjualan"><i class="fas fa-history"></i></button>
                         </a>

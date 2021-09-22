@@ -64,6 +64,9 @@
 <!-- Datatables -->
 <script src="<?= base_url('assets/') ?>vendor/datatables/datatables.min.js"></script>
 
+<!-- Dropify -->
+<script src="<?= base_url('assets/') ?>vendor/dropify/dist/js/dropify.min.js"></script>
+
 <!-- morris js -->
 <script src="<?= base_url('assets/') ?>concept/assets/vendor/charts/morris-bundle/raphael.min.js"></script>
 <script src="<?= base_url('assets/') ?>concept/assets/vendor/charts/morris-bundle/morris.js"></script>
@@ -220,7 +223,18 @@
       });
     }).change();
   });
-  // 
+
+  //dropify
+  $(document).ready(function(){
+        $('.dropify').dropify({
+            messages: {
+                default: 'Drag atau drop untuk memilih gambar',
+                replace: 'Ganti',
+                remove:  'Hapus',
+                error:   'error'
+            }
+        });
+    }); 
 </script>
 </body>
 

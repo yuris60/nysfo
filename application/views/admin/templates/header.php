@@ -40,6 +40,9 @@
   <link rel="stylesheet" href="<?= base_url('assets/') ?>concept/assets/vendor/charts/c3charts/c3.css">
   <link rel="stylesheet" href="<?= base_url('assets/') ?>concept/assets/vendor/charts/morris-bundle/morris.css">
 
+  <!-- Dropify -->
+  <link href="<?= base_url('assets/') ?>vendor/dropify/dist/css/dropify.min.css" rel="stylesheet">
+
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">

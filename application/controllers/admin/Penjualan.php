@@ -64,10 +64,10 @@ class Penjualan extends CI_Controller
     $data['submenu'] = "Perbaharui Data";
 
     $data['penjualan'] = $this->penjualan_model->getById($where);
+    $data['dokter'] = $this->penjualan_model->getAllDokter();
 
     //validation
-    $this->form_validation->set_rules('tgl_pembelian', 'Tanggal Penjualan', 'required|trim');
-    $this->form_validation->set_rules('nm_supplier', 'Nama Supplier', 'required|trim');
+    $this->form_validation->set_rules('tgl_penjualan', 'Tanggal Penjualan', 'required|trim');
 
     if ($this->form_validation->run() == FALSE) {
       $this->load->view('admin/templates/header', $data);

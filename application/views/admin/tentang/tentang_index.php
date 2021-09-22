@@ -81,7 +81,7 @@
                 <!-- .metric -->
                 <div class="metric">
                   <h6 class="metric-value"> S2 </h6>
-                  <p class="metric-label"> On Going </p>
+                  <p class="metric-label"> 2021 </p>
                 </div>
                 <!-- /.metric -->
               </div>
@@ -98,7 +98,7 @@
             <div class="card bg-info mb-3">
               <div class="card-body text-center">
                 <h4 class="card-text">Versi Aplikasi Saat Ini :</h4>
-                <h1>v.1.0.4</h1>
+                <h1>v.1.0.5</h1>
               </div>
             </div>
           </div>
@@ -122,6 +122,22 @@
             img--location = kuning
             -->
 
+                <!-- 22 September 2021 -->
+                <div class="cd-timeline__block js-cd-block">
+                  <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+                    <img src="<?= base_url('assets/svg/home.svg') ?>" alt="Picture">
+                  </div>
+                  <!-- cd-timeline__img -->
+                  <div class="cd-timeline__content js-cd-content">
+                    <h3>Penambahan Fitur</h3>
+                    <p>Penambahan fitur upload wajah pasien, hitung total produk yang terjual, dan perbaikan beberapa bug pada aplikasi.</p>
+                    <p>Versi : v.1.0.5</p>
+                    <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
+                    <span class="cd-timeline__date"> 22 September 2021</span>
+                  </div>
+                  <!-- cd-timeline__content -->
+                </div>
+
                 <!-- 17 Agustus 2021 -->
                 <div class="cd-timeline__block js-cd-block">
                   <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
@@ -133,7 +149,7 @@
                     <p>Penambahan fitur tabel pasien untuk membantu men-tracking riwayat penjualan pasien</p>
                     <p>Versi : v.1.0.4</p>
                     <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
-                    <span class="cd-timeline__date">17 Agustus 2021</span>
+                    <span class="cd-timeline__date"> 17 Agustus 2021</span>
                   </div>
                   <!-- cd-timeline__content -->
                 </div>
@@ -149,7 +165,7 @@
                     <p>Penambahan fitur grafik pada menu beranda dan perbaikan-perbaikan bug pada aplikasi.</p>
                     <p>Versi : v.1.0.3</p>
                     <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
-                    <span class="cd-timeline__date">7 Mei 2021</span>
+                    <span class="cd-timeline__date"> 7 Mei 2021</span>
                   </div>
                   <!-- cd-timeline__content -->
                 </div>
@@ -165,7 +181,7 @@
                     <p>Bismillah, tahap launching aplikasi dengan fitur hingga struk belanja pelanggan</p>
                     <p>Versi : v.1.0.2</p>
                     <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
-                    <span class="cd-timeline__date">22 Maret 2021</span>
+                    <span class="cd-timeline__date"> 22 Maret 2021</span>
                   </div>
                   <!-- cd-timeline__content -->
                 </div>
@@ -181,7 +197,7 @@
                     <p>Penambahan fitur struk belanja pelanggan</p>
                     <p>Versi : v.1.0.1</p>
                     <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
-                    <span class="cd-timeline__date">21 Maret 2021</span>
+                    <span class="cd-timeline__date"> 21 Maret 2021</span>
                   </div>
                   <!-- cd-timeline__content -->
                 </div>
@@ -197,7 +213,7 @@
                     <p>Instalasi dan uji coba aplikasi tanpa struk belanja</p>
                     <p>Versi : v.1.0.0</p>
                     <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
-                    <span class="cd-timeline__date">12 Maret 2021</span>
+                    <span class="cd-timeline__date"> 12 Maret 2021</span>
                   </div>
                   <!-- cd-timeline__content -->
                 </div>

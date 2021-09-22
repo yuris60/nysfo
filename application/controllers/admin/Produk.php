@@ -37,7 +37,8 @@ class Produk extends CI_Controller
 
     //validation
     $this->form_validation->set_rules('jns_produk', 'Jenis Produk', 'required|trim');
-    $this->form_validation->set_rules('stok', 'Stok', 'required|trim|is_numeric');
+    $this->form_validation->set_rules('stok', 'Stok Ready', 'required|trim|is_numeric');
+    $this->form_validation->set_rules('stok_gudang', 'Stok Gudang', 'required|trim|is_numeric');
     $this->form_validation->set_rules('harga_produk', 'Harga', 'required|trim|is_numeric');
 
     if ($this->form_validation->run() == FALSE) {
@@ -66,7 +67,6 @@ class Produk extends CI_Controller
 
     //validation
     $this->form_validation->set_rules('jns_produk', 'Jenis Produk', 'required|trim');
-    $this->form_validation->set_rules('stok', 'Stok', 'required|trim|is_numeric');
     $this->form_validation->set_rules('harga_produk', 'Harga', 'required|trim|is_numeric');
 
     if ($this->form_validation->run() == FALSE) {
@@ -77,6 +77,62 @@ class Produk extends CI_Controller
       $this->load->view('admin/templates/footer');
     } else {
       $this->produk_model->update($where);
+      $this->session->set_flashdata('flash', 'diperbaharui');
+      redirect('admin/produk');
+    }
+  }
+
+  public function addstokready($where)
+  {
+    $data['user'] = $this->login_model->getSession();
+    $where = $this->uri->segment(4);
+    $data['title'] = "Perbaharui Data Produk";
+    $data['icon'] = "box";
+    $data['menu'] = "Produk";
+    $data['submenu'] = "Tambah Stok Ready";
+
+    $data['produk'] = $this->produk_model->getById($where);
+
+    //validation
+    $this->form_validation->set_rules('jns_produk', 'Jenis Produk', 'required|trim');
+    $this->form_validation->set_rules('harga_produk', 'Harga', 'required|trim|is_numeric');
+
+    if ($this->form_validation->run() == FALSE) {
+      $this->load->view('admin/templates/header', $data);
+      $this->load->view('admin/templates/navbar');
+      $this->load->view('admin/templates/sidebar');
+      $this->load->view('admin/produk/produk_add_stokready', $data);
+      $this->load->view('admin/templates/footer');
+    } else {
+      $this->produk_model->addStokready($where);
+      // $this->produk_model->reduceStokGudang($where);
+      $this->session->set_flashdata('flash', 'diperbaharui');
+      // redirect('admin/produk');
+    }
+  }
+
+  public function addstokgudang($where)
+  {
+    $data['user'] = $this->login_model->getSession();
+    $where = $this->uri->segment(4);
+    $data['title'] = "Perbaharui Data Produk";
+    $data['icon'] = "box";
+    $data['menu'] = "Produk";
+    $data['submenu'] = "Tambah Stok Gudang";
+
+    $data['produk'] = $this->produk_model->getById($where);
+
+    //validation
+    $this->form_validation->set_rules('stok_gudang', 'Stok Gudang', 'required|trim');
+
+    if ($this->form_validation->run() == FALSE) {
+      $this->load->view('admin/templates/header', $data);
+      $this->load->view('admin/templates/navbar');
+      $this->load->view('admin/templates/sidebar');
+      $this->load->view('admin/produk/produk_add_stokgudang', $data);
+      $this->load->view('admin/templates/footer');
+    } else {
+      $this->produk_model->addStokGudang($where);
       $this->session->set_flashdata('flash', 'diperbaharui');
       redirect('admin/produk');
     }

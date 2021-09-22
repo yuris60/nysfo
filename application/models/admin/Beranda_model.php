@@ -5,6 +5,11 @@ date_default_timezone_set('Asia/Jakarta');
 
 class Beranda_model extends CI_Model
 {
+  public function getAllProduk()
+  {
+    return $this->db->get('produk')->result_array();
+  }
+
   public function getPenjualan()
   {
     $this->db->select('*');

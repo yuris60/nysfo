@@ -29,9 +29,9 @@
     <!-- ============================================================== -->
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-        <div class="alert alert-warning" role="alert">
-          <h4 class="alert-warning"><i class="fas fa-info"></i> Perhatian</h4>
-          Silahkan perbaharui formulir data <strong><?= strtoupper($menu) ?></strong> ini dengan baik dan benar.
+        <div class="alert alert-info" role="alert">
+          <h4 class="alert-info"><i class="fas fa-info"></i> Perhatian</h4>
+          Silahkan isi formulir data <strong><?= strtoupper($menu) ?></strong> ini dengan baik dan benar.
         </div>
       </div>
     </div>
@@ -50,33 +50,34 @@
 
               <div class="form-group">
                 <label>Jenis Produk</label>
-                <input type="text" class="form-control <?= form_error('jns_produk') ? 'is-invalid' : '' ?>" name="jns_produk" id="jns_produk" value="<?= $produk['jns_produk'] ?>">
+                <input type="text" class="form-control <?= form_error('jns_produk') ? 'is-invalid' : '' ?>" name="jns_produk" id="jns_produk" value="<?= $produk['jns_produk'] ?>" readonly>
                 <div class="invalid-feedback">
                   <?= form_error('jns_produk'); ?>
                 </div>
               </div>
 
-              <!-- <div class="form-group">
-                <label>Stok</label>
-                <input type="number" min=0 class="form-control <?= form_error('stok') ? 'is-invalid' : '' ?>" name="stok" id="stok" value="<?= $produk['stok'] ?>">
-                <div class="invalid-feedback">
-                  <?= form_error('stok'); ?>
-                </div>
-              </div> -->
-
+              
               <div class="form-group">
-                <label>Harga</label>
-                <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text">Rp. </span></span>
-                  <input type="number" min=0 class="form-control <?= form_error('harga_produk') ? 'is-invalid' : '' ?>" name="harga_produk" id="harga_produk" value="<?= $produk['harga_produk'] ?>">
+                  <label>Harga</label>
+                  <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text">Rp. </span></span>
+                  <input type="number" min=0 class="form-control <?= form_error('harga_produk') ? 'is-invalid' : '' ?>" name="harga_produk" id="harga_produk" value="<?= $produk['harga_produk'] ?>" readonly>
                   <div class="invalid-feedback">
-                    <?= form_error('harga_produk'); ?>
-                  </div>
+                      <?= form_error('harga_produk'); ?>
+                    </div>
                 </div>
+            </div>
+
+            <div class="form-group">
+              <label>Tambah Stok Ready</label>
+              <input type="number" min=0 class="form-control <?= form_error('stok') ? 'is-invalid' : '' ?>" name="stok" id="stok" autofocus>
+              <div class="invalid-feedback">
+                <?= form_error('stok'); ?>
               </div>
+            </div>
 
             </div>
             <div class="card-footer">
-              <button type="submit" class="btn btn-warning"><i class="fas fa-edit"></i> Perbaharui</button>
+              <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Simpan</button>
               <a href="<?= base_url() . 'admin/' . strtolower($menu) ?>"><button type="button" class="btn btn-dark"><i class="fas fa-reply"></i> Kembali</button></a>
             </div>
           </div>

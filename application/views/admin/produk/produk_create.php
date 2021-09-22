@@ -57,10 +57,18 @@
               </div>
 
               <div class="form-group">
-                <label>Stok</label>
+                <label>Stok Ready</label>
                 <input type="number" min=0 class="form-control <?= form_error('stok') ? 'is-invalid' : '' ?>" name="stok" id="stok">
                 <div class="invalid-feedback">
                   <?= form_error('stok'); ?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Stok Gudang</label>
+                <input type="number" min=0 class="form-control <?= form_error('stok_gudang') ? 'is-invalid' : '' ?>" name="stok_gudang" id="stok_gudang">
+                <div class="invalid-feedback">
+                  <?= form_error('stok_gudang'); ?>
                 </div>
               </div>
 

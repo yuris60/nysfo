@@ -1,3 +1,5 @@
+<div class="flash-data-stok-kurang" data-flashdata="<?= $this->session->flashdata('flash-data-stok-gudang-kurang'); ?>"></div>
+
 <!-- wrapper  -->
 <!-- ============================================================== -->
 <div class="dashboard-wrapper">
@@ -52,23 +54,44 @@
                 <thead>
                   <tr>
                     <th>No</th>
-                    <th>Jenis Produk</th>
-                    <th>Stok</th>
-                    <th>Harga</th>
-                    <th width="auto">Aksi</th>
+                    <th width="auto">Jenis Produk</th>
+                    <th width="80px">Harga</th>
+                    <th>Stok Ready</th>
+                    <th>Stok Gudang</th>
+                    <th>Terjual</th>
+                    <th width="170px">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
                   <?php
                   $no = 1;
-                  foreach ($produk as $p) {
+                  foreach ($produk as $p) :
+                    // $this->db->select('(SELECT SUM(detail_penjualan.qty_produk) WHERE detail_penjualan.id_produk = ' . $p['id_produk'] . ') AS qty', FALSE);
+                    $this->db->select_sum('detail_penjualan.qty_produk');
+                    $this->db->where("detail_penjualan.id_produk", $p['id_produk']);
+                    $query = $this->db->get('detail_penjualan')->result_array();
+                    foreach ($query as $q) :
                   ?>
                     <tr>
                       <td><?= $no ?></td>
                       <td><?= $p['jns_produk'] ?></td>
-                      <td><?= $p['stok'] ?></td>
-                      <td><?= rupiah($p['harga_produk']) ?></td>
+                      <td align="right"><?= rupiah($p['harga_produk']) ?></td>
+                      <td align="center"><?= $p['stok'] ?></td>
+                      <td align="center"><?= $p['stok_gudang'] ?></td>
+                      <td align="center">
+                        <?php 
+                          if($q['qty_produk']==""){
+                            echo 0;
+                          } else echo $q['qty_produk'];
+                        ?>
+                      </td>
                       <td>
+                        <a href="<?= base_url() ?>admin/produk/addstokready/<?= $p['id_produk'] ?>">
+                          <button type="button" class="btn btn-sm btn-success" data-toggle="tooltip" data-placement="top" title="Tambah Stok Ready"><i class="fas fa-check"></i></button>
+                        </a>
+                        <a href="<?= base_url() ?>admin/produk/addstokgudang/<?= $p['id_produk'] ?>">
+                          <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Tambah Stok Gudang"><i class="fas fa-warehouse"></i></button>
+                        </a>
                         <a href="<?= base_url() ?>admin/produk/update/<?= $p['id_produk'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
                         </a>
@@ -77,8 +100,8 @@
                         </a>
                       </td>
                     </tr>
-                  <?php $no++;
-                  } ?>
+                  <?php endforeach; $no++;
+                  endforeach; ?>
                 </tbody>
               </table>
             </div>

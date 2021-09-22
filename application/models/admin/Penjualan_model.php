@@ -29,7 +29,22 @@ class Penjualan_model extends CI_Model
 
   public function getById($where)
   {
-    return $this->db->get_where('penjualan', ["id_penjualan" => $where])->row_array();
+    // return $this->db->get_where('penjualan', ["id_penjualan" => $where])->row_array();
+    $this->db->select('*');
+    $this->db->from('penjualan');
+    $this->db->join('pelanggan', 'penjualan.id_pelanggan = pelanggan.id_pelanggan');
+    $this->db->order_by('tgl_penjualan', 'DESC');
+    $this->db->order_by('id_penjualan', 'DESC');
+    $this->db->where('id_penjualan', $where);
+    return $this->db->get()->row_array();
+  }
+
+  public function getAllDokter()
+  {
+    $this->db->select('*');
+    $this->db->from('dokter');
+    $this->db->order_by('nm_dokter', 'ASC');
+    return $this->db->get()->result_array();
   }
 
   public function simpan()
@@ -81,7 +96,8 @@ class Penjualan_model extends CI_Model
   {
     $data = [
       'tgl_penjualan' => htmlspecialchars($this->input->post('tgl_penjualan', true)),
-      'nm_supplier' => htmlspecialchars($this->input->post('nm_supplier', true)),
+      'id_dokter' => htmlspecialchars($this->input->post('id_dokter', true)),
+      'nm_beautician' => htmlspecialchars($this->input->post('nm_beautician', true)),
     ];
 
     $this->db->where('id_penjualan', $where);
