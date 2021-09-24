@@ -39,50 +39,68 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-        <?php echo form_open_multipart('admin/pasien/upload_wajah_before/' . $this->uri->segment(4));?>
+        <?php if (!empty($pasien['foto_sebelum'])) : ?>
           <div class="card">
             <div class="card-header">
               <h4><i class="fas fa-meh"></i> Wajah Sebelum (Before)</h4>
             </div>
             <div class="card-body">
-            <?php if(!empty($pasien['foto_sebelum'])) : ?>
               <input type="file" name="fotosebelum" class="dropify" data-default-file="<?= base_url('assets/img/pelanggan/') . $pasien['foto_sebelum'] ?>" data-height="500">
-              <?php else : ?>
-                <input type="file" name="fotosebelum" class="dropify" data-height="500">
-              <?php endif; ?>
             </div>
             <div class="card-footer">
-              <?php if(empty($pasien['foto_sebelum'])) : ?>
-                <button class="btn btn-success btn-block">Simpan Gambar</button>
-              <?php endif; ?>
+              <a href="<?= base_url() ?>admin/pasien/delete_wajah_before/<?= $pasien['id_pelanggan'] ?>"><button class="btn btn-danger btn-block"><i class="fas fa-trash"></i> Hapus Gambar</button></a>
             </div>
           </div>
-        </form>
+        <?php else : ?>
+          <?php echo form_open_multipart('admin/pasien/upload_wajah_before/' . $this->uri->segment(4)); ?>
+          <div class="card">
+            <div class="card-header">
+              <h4><i class="fas fa-meh"></i> Wajah Sebelum (Before)</h4>
+            </div>
+            <div class="card-body">
+              <input type="hidden" value="<?= $user['id_admin'] ?>">
+              <input type="file" name="fotosebelum" class="dropify" data-height="500">
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success btn-block"><i class="fas fa-save"></i> Simpan Gambar</button>
+            </div>
+          </div>
+          </form>
+        <?php endif; ?>
       </div>
 
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-        <?php echo form_open_multipart('admin/pasien/upload_wajah_after/' . $this->uri->segment(4));?>
+        <?php if (!empty($pasien['foto_sesudah'])) : ?>
           <div class="card">
             <div class="card-header">
               <h4><i class="fas fa-smile"></i> Wajah Sesudah (After)</h4>
             </div>
             <div class="card-body">
-            <?php if(!empty($pasien['foto_sesudah'])) : ?>
               <input type="file" name="fotosesudah" class="dropify" data-default-file="<?= base_url('assets/img/pelanggan/') . $pasien['foto_sesudah'] ?>" data-height="500">
-              <?php else : ?>
-                <input type="file" name="fotosesudah" class="dropify" data-height="500">
-              <?php endif; ?>
             </div>
             <div class="card-footer">
-              <?php if(empty($pasien['foto_sesudah'])) : ?>
-                <button class="btn btn-success btn-block">Simpan Gambar</button>
-              <?php endif; ?>
+              <a href="<?= base_url() ?>admin/pasien/delete_wajah_after/<?= $pasien['id_pelanggan'] ?>"><button class="btn btn-danger btn-block"><i class="fas fa-trash"></i> Hapus Gambar</button></a>
             </div>
           </div>
-        </form>
+        <?php else : ?>
+          <?php echo form_open_multipart('admin/pasien/upload_wajah_after/' . $this->uri->segment(4)); ?>
+          <div class="card">
+            <div class="card-header">
+              <h4><i class="fas fa-smile"></i> Wajah Sesudah (After)</h4>
+            </div>
+            <div class="card-body">
+              <input type="hidden" value="<?= $user['id_admin'] ?>">
+              <input type="file" name="fotosesudah" class="dropify" data-height="500">
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-success btn-block"><i class="fas fa-save"></i> Simpan Gambar</button>
+            </div>
+          </div>
+          </form>
+        <?php endif; ?>
       </div>
     </div>
 

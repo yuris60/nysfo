@@ -198,16 +198,87 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
           </div>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
+          <!-- Top 10 produk -->
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="card">
-              <h5 class="card-header bg-light"><i class="fas fa-box"></i> Laporan Penjualan Tahun <?= date('Y') ?></h5>
+              <h5 class="card-header bg-light"><i class="fas fa-box"></i> Produk Terlaris Tahun <?= date('Y') ?></h5>
               <div class="card-body">
-                <canvas id="myChart3"></canvas>
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th width="auto">Jenis Produk</th>
+                        <th>Terjual</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      $no = 1;
+                      foreach ($topproduk as $tp) :
+                      ?>
+                        <tr>
+                          <td><?= $no ?></td>
+                          <td><?= $tp['jns_produk'] ?></td>
+                          <td align="center">
+                            <?php
+                            if ($tp['qty'] == "") {
+                              echo 0;
+                            } else echo $tp['qty'];
+                            ?>
+                          </td>
+                        </tr>
+                      <?php
+                        $no++;
+                      endforeach; ?>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
-        </div> -->
+
+          <!-- Top 10 treatment -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="card">
+              <h5 class="card-header bg-light"><i class="fas fa-stethoscope"></i> 10 Treatment Terlaris Tahun <?= date('Y') ?></h5>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th width="auto">Jenis Produk</th>
+                        <th>Terjual</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      $no = 1;
+                      foreach ($toptreatment as $tt) :
+                      ?>
+                        <tr>
+                          <td><?= $no ?></td>
+                          <td><?= $tt['nm_treatment'] ?></td>
+                          <td align="center">
+                            <?php
+                            if ($tt['qty'] == "") {
+                              echo 0;
+                            } else echo $tt['qty'];
+                            ?>
+                          </td>
+                        </tr>
+                      <?php
+                        $no++;
+                      endforeach; ?>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Kanan -->

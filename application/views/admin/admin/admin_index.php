@@ -53,7 +53,6 @@
                   <tr>
                     <th>No</th>
                     <th>Nama Admin</th>
-                    <th>Username</th>
                     <th>Akses</th>
                     <th width="auto">Aksi</th>
                   </tr>
@@ -66,7 +65,6 @@
                     <tr>
                       <td><?= $no ?></td>
                       <td><?= $a['nm_admin'] ?></td>
-                      <td><?= $a['username'] ?></td>
                       <td><?= $a['akses'] ?></td>
                       <td>
                         <a href="<?= base_url() ?>admin/admin/delete/<?= $a['id_admin'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">

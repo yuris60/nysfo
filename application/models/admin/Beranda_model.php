@@ -10,6 +10,36 @@ class Beranda_model extends CI_Model
     return $this->db->get('produk')->result_array();
   }
 
+  public function getTopProduct()
+  {
+    $sql = "SELECT produk.id_produk, produk.jns_produk, (
+                                                        Select SUM(detail_penjualan.qty_produk)
+                                                        FROM detail_penjualan
+                                                        WHERE detail_penjualan.id_produk = produk.id_produk
+                                                        ) as qty
+            FROM produk
+            LEFT JOIN detail_penjualan USING(id_produk)
+            GROUP BY id_produk
+            ORDER BY qty DESC
+            LIMIT 10";
+    return $topproduk = $this->db->query($sql)->result_array();
+  }
+
+  public function getTopTreatment()
+  {
+    $sql = "SELECT detail_treatment.id_detailtreatment, detail_treatment.nm_treatment, (
+                                                                                        Select SUM(detail_penjualan.qty_treatment)
+                                                                                        FROM detail_penjualan
+                                                                                        WHERE detail_penjualan.id_detailtreatment = detail_treatment.id_detailtreatment
+                                                                                        ) as qty
+            FROM detail_treatment
+            LEFT JOIN detail_penjualan USING(id_detailtreatment)
+            GROUP BY id_detailtreatment
+            ORDER BY qty DESC
+            LIMIT 10";
+    return $topproduk = $this->db->query($sql)->result_array();
+  }
+
   public function getPenjualan()
   {
     $this->db->select('*');

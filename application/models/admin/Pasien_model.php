@@ -93,12 +93,12 @@ class Pasien_model extends CI_Model
     //simpan notifikasi
     $datanotifikasi = [
       'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
-      'notifikasi' => "Menyimpan Data Foto",
+      'notifikasi' => "Menyimpan Data",
       'tabel' => "Pasien",
       'waktu_simpan' => date('Y-m-d H:i:s')
     ];
     $this->db->insert('notifikasi', $datanotifikasi);
-  }         
+  }
 
   public function simpan_wajah_after($where, $where2)
   {
@@ -109,12 +109,40 @@ class Pasien_model extends CI_Model
     //simpan notifikasi
     $datanotifikasi = [
       'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
-      'notifikasi' => "Menyimpan Data Foto",
+      'notifikasi' => "Menyimpan Data",
       'tabel' => "Pasien",
       'waktu_simpan' => date('Y-m-d H:i:s')
     ];
     $this->db->insert('notifikasi', $datanotifikasi);
-  }         
+  }
+
+  public function delete_wajah_before($where)
+  {
+    $pelanggan = $this->db->get_where('pelanggan', ['id_pelanggan' => $where])->row_array();
+    $this->db->set('foto_sebelum', '');
+    $this->db->where('id_pelanggan', $where);
+    $query = $this->db->update('pelanggan');
+
+    if ($query) {
+      $gambar = './assets/img/pelanggan/' . $pelanggan['foto_sebelum'];
+      chmod($gambar, 0777);
+      unlink($gambar);
+    }
+  }
+
+  public function delete_wajah_after($where)
+  {
+    $pelanggan = $this->db->get_where('pelanggan', ['id_pelanggan' => $where])->row_array();
+    $this->db->set('foto_sesudah', '');
+    $this->db->where('id_pelanggan', $where);
+    $query = $this->db->update('pelanggan');
+
+    if ($query) {
+      $gambar = './assets/img/pelanggan/' . $pelanggan['foto_sesudah'];
+      chmod($gambar, 0777);
+      unlink($gambar);
+    }
+  }
 
   public function update($where = null)
   {

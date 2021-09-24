@@ -8,6 +8,7 @@ class Beranda extends CI_Controller
     parent::__construct();
     $this->load->model('admin/beranda_model');
     $this->load->model('admin/login_model');
+    $this->load->helper('formatrupiah_helper');
   }
   public function index()
   {
@@ -17,6 +18,8 @@ class Beranda extends CI_Controller
     $data['icon'] = "home";
 
     $data['produk'] = $this->beranda_model->getAllProduk();
+    $data['topproduk'] = $this->beranda_model->getTopProduct();
+    $data['toptreatment'] = $this->beranda_model->getTopTreatment();
     $data['penjualan'] = $this->beranda_model->getPenjualan();
     $data['jumlahdokter'] = $this->beranda_model->jumlahDokter();
     $data['jumlahmember'] = $this->beranda_model->jumlahMember();
