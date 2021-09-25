@@ -8,6 +8,7 @@
   <base href="<?php echo base_url(); ?>/">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title><?= $title ?> | NBC System Information (Nysfo)</title>
+  <link rel="icon" href="<?= base_url('assets/') ?>img/logo_nastya2.png">
 
 
   <!-- Bootstrap CSS -->

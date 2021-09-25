@@ -202,7 +202,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
           <!-- Top 10 produk -->
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="card">
-              <h5 class="card-header bg-light"><i class="fas fa-box"></i> Produk Terlaris Tahun <?= date('Y') ?></h5>
+              <h5 class="card-header bg-light"><i class="fas fa-box"></i> 10 Produk Terlaris Tahun <?= date('Y') ?></h5>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-striped table-bordered">

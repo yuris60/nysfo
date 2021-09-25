@@ -50,7 +50,7 @@
 
               <div class="form-group">
                 <label>Nama Dokter</label>
-                <input type="text" class="form-control <?= form_error('nm_dokter') ? 'is-invalid' : '' ?>" name="nm_dokter" id="nm_dokter" value="<?= $dokter['nm_dokter'] ?>">
+                <input type="text" class="form-control <?= form_error('nm_dokter') ? 'is-invalid' : '' ?>" name="nm_dokter" id="nm_dokter" value="<?= $dokter['nm_dokter'] ?>" autofocus>
                 <div class="invalid-feedback">
                   <?= form_error('nm_dokter'); ?>
                 </div>

@@ -19,7 +19,7 @@ if (flashData) {
 if (flashDataStokKurang) {
   Swal.fire({
     title: 'Maaf',
-    text: 'Stok yang tersedia tidak mencukupi dari jumlah ' + flashDataStokKurang,
+    text: 'Stok gudang yang tersedia tidak mencukupi dari jumlah ' + flashDataStokKurang,
     icon: 'error'
   });
 }

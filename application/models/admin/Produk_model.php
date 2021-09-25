@@ -77,82 +77,83 @@ class Produk_model extends CI_Model
     //simpan notifikasi
     $datanotifikasi = [
       'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
-      'notifikasi' => "Menambahkan Stok Gudang",
+      'notifikasi' => "Memperbaharui Data",
       'tabel' => "Produk",
       'waktu_simpan' => date('Y-m-d H:i:s')
     ];
     $this->db->insert('notifikasi', $datanotifikasi);
   }
 
-  public function reduceStokGudang($where)
-  {
-    $this->db->select('stok_gudang');
-    $this->db->from('produk');
-    $this->db->where('id_produk', $where);
-    $query = $this->db->get()->row_array();
+  // public function reduceStokGudang($where)
+  // {
+  //   $this->db->select('stok_gudang');
+  //   $this->db->from('produk');
+  //   $this->db->where('id_produk', $where);
+  //   $query = $this->db->get()->row_array();
 
-    $stokgudanglama = $query['stok_gudang'];
-    $kurangistokgudang = htmlspecialchars($this->input->post('stok', true));
+  //   $stokgudanglama = $query['stok_gudang'];
+  //   $kurangistokgudang = htmlspecialchars($this->input->post('stok', true));
 
-    $stokgudangbaru = $stokgudanglama - $kurangistokgudang;
+  //   $stokgudangbaru = $stokgudanglama - $kurangistokgudang;
 
-    $this->db->set('stok_gudang', $stokgudangbaru);
-    $this->db->where('id_produk', $where);
-    $this->db->update('produk');
+  //   // echo $stokgudangbaru;
 
-    //simpan notifikasi
-    $datanotifikasi = [
-      'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
-      'notifikasi' => "Menambahkan Stok Ready",
-      'tabel' => "Produk",
-      'waktu_simpan' => date('Y-m-d H:i:s')
-    ];
-  }
+  //   $this->db->set('stok_gudang', $stokgudangbaru);
+  //   $this->db->where('id_produk', $where);
+  //   $this->db->update('produk');
+
+  //   //simpan notifikasi
+  //   $datanotifikasi = [
+  //     'id_admin' => htmlspecialchars($this->input->post('id_admin', true)),
+  //     'notifikasi' => "Memperbaharui Data",
+  //     'tabel' => "Produk",
+  //     'waktu_simpan' => date('Y-m-d H:i:s')
+  //   ];
+  // }
 
   public function addStokReady($where)
   {
-    
+
     //panggil stok_ready terakhir
     $this->db->select('stok');
     $this->db->from('produk');
     $this->db->where('id_produk', $where);
     $query_ready = $this->db->get()->row_array();
-    
+
     //panggil stok_gudang terakhir
     $this->db->select('stok_gudang');
     $this->db->from('produk');
     $this->db->where('id_produk', $where);
     $query_gudang = $this->db->get()->row_array();
-    
+
     // buatkan variabel diatas
     $stokreadylama = $query_ready['stok'];
     $stokgudanglama = $query_gudang['stok_gudang'];
 
-    
+
     //panggil inputan
     $tambahstokready = htmlspecialchars($this->input->post('stok', true));
 
-    echo "Stok Ready Lama" . $stokreadylama . "<br>";
-    echo "Stok Gudang Lama" . $stokgudanglama . "<br>";
-    echo "Input Baru" . $tambahstokready;
-    
-    if($stokgudanglama < $tambahstokready){ //jika input stok ready melebihi stok gudang
+    // echo "Stok Ready Lama" . $stokreadylama . "<br>";
+    // echo "Stok Gudang Lama" . $stokgudanglama . "<br>";
+    // echo "Input Baru" . $tambahstokready;
+
+    if ($stokgudanglama < $tambahstokready) { //jika input stok ready melebihi stok gudang
       $this->session->set_flashdata('flash-data-stok-gudang-kurang', 'ready');
       redirect('admin/produk');
-    } else {  
-      //tambahkan stok ready
-      // $stokreadybaru = $stokreadylama + $tambahstokready;
-      // $this->db->set('stok', $stokreadybaru);
-      // $this->db->where('id_produk', $where);
-      // $this->db->update('produk');
+    } else {
+      // tambahkan stok ready
+      $stokreadybaru = $stokreadylama + $tambahstokready;
+      $this->db->set('stok', $stokreadybaru);
+      $this->db->where('id_produk', $where);
+      $this->db->update('produk');
 
-      // //kurangi stok gudang
-      // $stokgudangbaru = $stokgudanglama - $tambahstokready;
-      // $this->db->set('stok_gudang', $stokgudangbaru);
-      // $this->db->where('id_produk', $where);
-      // $this->db->update('produk');
+      //kurangi stok gudang
+      $stokgudangbaru = $stokgudanglama - $tambahstokready;
+      $this->db->set('stok_gudang', $stokgudangbaru);
+      $this->db->where('id_produk', $where);
+      $this->db->update('produk');
     }
-    
   }
 
   public function delete($where)

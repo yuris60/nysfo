@@ -52,7 +52,7 @@
 
               <div class="form-group">
                 <label>Nama Treatment</label>
-                <input type="text" class="form-control <?= form_error('nm_treatment') ? 'is-invalid' : '' ?>" name="nm_treatment" id="nm_treatment" value="<?= $detail_treatment['nm_treatment'] ?>">
+                <input type="text" class="form-control <?= form_error('nm_treatment') ? 'is-invalid' : '' ?>" name="nm_treatment" id="nm_treatment" value="<?= $detail_treatment['nm_treatment'] ?>" autofocus>
                 <div class="invalid-feedback">
                   <?= form_error('nm_treatment'); ?>
                 </div>

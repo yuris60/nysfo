@@ -9,6 +9,7 @@ class Detail_treatment extends CI_Controller
     $this->load->model('admin/detail_treatment_model');
     $this->load->model('admin/login_model');
     $this->load->helper('formatrupiah_helper');
+    $this->load->library('user_agent');
   }
 
   public function read($where)
@@ -58,7 +59,8 @@ class Detail_treatment extends CI_Controller
     } else {
       $this->detail_treatment_model->simpan();
       $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('admin/treatment');
+      $referred_from = $this->session->userdata('detail_treatment');
+      redirect($referred_from, 'refresh');
       // redirect('detail_treatment/read/' . $data['treatment'][$where]);
 
     }
@@ -91,8 +93,9 @@ class Detail_treatment extends CI_Controller
       $this->load->view('admin/templates/footer');
     } else {
       $this->detail_treatment_model->update($where2);
-      $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('admin/treatment');
+      $this->session->set_flashdata('flash', 'diperbaharui');
+      $referred_from = $this->session->userdata('detail_treatment');
+      redirect($referred_from, 'refresh');
       // redirect('detail_treatment/read/' . $data['treatment'] . "/" . $where2);
     }
   }
@@ -103,6 +106,7 @@ class Detail_treatment extends CI_Controller
     $this->detail_treatment_model->delete($where);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_treatment/read/' . $data['treatment'] . "/" . $where2);
-    redirect('admin/treatment');
+    $referred_from = $this->session->userdata('detail_treatment');
+    redirect($referred_from, 'refresh');
   }
 }

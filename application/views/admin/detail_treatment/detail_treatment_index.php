@@ -37,6 +37,7 @@
       </div>
     </div>
 
+    <?php $this->session->set_userdata('detail_treatment', current_url()); ?>
     <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
 
     <div class="row">

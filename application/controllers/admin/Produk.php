@@ -107,7 +107,7 @@ class Produk extends CI_Controller
       $this->produk_model->addStokready($where);
       // $this->produk_model->reduceStokGudang($where);
       $this->session->set_flashdata('flash', 'diperbaharui');
-      // redirect('admin/produk');
+      redirect('admin/produk');
     }
   }
 

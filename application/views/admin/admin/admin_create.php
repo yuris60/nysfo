@@ -50,7 +50,7 @@
 
               <div class="form-group">
                 <label>Nama Admin</label>
-                <input type="text" class="form-control <?= form_error('nm_admin') ? 'is-invalid' : '' ?>" name="nm_admin" id="nm_admin" value="<?= set_value('nm_admin') ?>">
+                <input type="text" class="form-control <?= form_error('nm_admin') ? 'is-invalid' : '' ?>" name="nm_admin" id="nm_admin" value="<?= set_value('nm_admin') ?>" autofocus>
                 <div class="invalid-feedback">
                   <?= form_error('nm_admin'); ?>
                 </div>

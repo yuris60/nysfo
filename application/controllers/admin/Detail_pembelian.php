@@ -9,6 +9,8 @@ class Detail_pembelian extends CI_Controller
     $this->load->model('admin/detail_pembelian_model');
     $this->load->model('admin/login_model');
     $this->load->helper('tglindo');
+    $this->load->helper('formatrupiah');
+    $this->load->library('user_agent');
   }
 
   public function read($where)
@@ -61,7 +63,8 @@ class Detail_pembelian extends CI_Controller
       $this->detail_pembelian_model->simpan();
       $this->detail_pembelian_model->tambahStok();
       $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('admin/pembelian');
+      $referred_from = $this->session->userdata('detail_pembelian');
+      redirect($referred_from, 'refresh');
       // redirect('detail_pembelian/read/' . $data['pembelian'][$where]);
 
     }
@@ -103,7 +106,8 @@ class Detail_pembelian extends CI_Controller
       $this->detail_pembelian_model->tambahStok();
       $this->detail_pembelian_model->update($where2);
       $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('admin/pembelian');
+      $referred_from = $this->session->userdata('detail_pembelian');
+      redirect($referred_from, 'refresh');
       // redirect('detail_pembelian/read/' . $data['pembelian'] . "/" . $where2);
     }
   }
@@ -117,6 +121,7 @@ class Detail_pembelian extends CI_Controller
     $this->detail_pembelian_model->kurangiStok2($where, $where2);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_pembelian/read/' . $data['pembelian'] . "/" . $where2);
-    redirect('admin/pembelian');
+    $referred_from = $this->session->userdata('detail_pembelian');
+    redirect($referred_from, 'refresh');
   }
 }

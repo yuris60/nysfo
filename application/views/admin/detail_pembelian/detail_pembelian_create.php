@@ -52,7 +52,7 @@
 
               <div class="form-group">
                 <label>Jenis Produk</label>
-                <select class="custom-select" name="id_produk">
+                <select class="custom-select" name="id_produk" autofocus>
                   <option>-== Pilih Disini ==-</option>
                   <?php
                   $no = 1;

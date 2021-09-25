@@ -51,7 +51,7 @@
               <input type="file" name="fotosebelum" class="dropify" data-default-file="<?= base_url('assets/img/pelanggan/') . $pasien['foto_sebelum'] ?>" data-height="500">
             </div>
             <div class="card-footer">
-              <a href="<?= base_url() ?>admin/pasien/delete_wajah_before/<?= $pasien['id_pelanggan'] ?>"><button class="btn btn-danger btn-block"><i class="fas fa-trash"></i> Hapus Gambar</button></a>
+              <a class="tombol-hapus" href="<?= base_url() ?>admin/pasien/delete_wajah_before/<?= $pasien['id_pelanggan'] ?>"><button class="btn btn-danger btn-block"><i class="fas fa-trash"></i> Hapus Gambar</button></a>
             </div>
           </div>
         <?php else : ?>
@@ -82,7 +82,7 @@
               <input type="file" name="fotosesudah" class="dropify" data-default-file="<?= base_url('assets/img/pelanggan/') . $pasien['foto_sesudah'] ?>" data-height="500">
             </div>
             <div class="card-footer">
-              <a href="<?= base_url() ?>admin/pasien/delete_wajah_after/<?= $pasien['id_pelanggan'] ?>"><button class="btn btn-danger btn-block"><i class="fas fa-trash"></i> Hapus Gambar</button></a>
+              <a class="tombol-hapus" href="<?= base_url() ?>admin/pasien/delete_wajah_after/<?= $pasien['id_pelanggan'] ?>"><button class="btn btn-danger btn-block"><i class="fas fa-trash"></i> Hapus Gambar</button></a>
             </div>
           </div>
         <?php else : ?>

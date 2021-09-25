@@ -7,7 +7,10 @@ class Detail_pembelian_model extends CI_Model
 {
   public function getAll($where)
   {
-    return $this->db->get_where('detail_pembelian', ["id_pembelian" => $where])->result_array();
+    $this->db->select('*');
+    $this->db->from('detail_pembelian');
+    $this->db->join('produk', 'detail_pembelian.id_produk = produk.id_produk');
+    return $this->db->get()->result_array();
   }
 
   public function getAllProduk()
