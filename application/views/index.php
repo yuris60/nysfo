@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nastya Beauty Care</title>
+  <title>Nastyaderm</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">Nastya Beauty Care</a></h1>
+      <h1 class="logo mr-auto"><a href="index.html">Nastyaderm</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -88,8 +88,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Klinik Kecantikan <br> Nastya Beauty Care</h1>
-          <h2>Isi tema disini, bisa diganti yaa...</h2>
+          <h1>Nastyaderm</h1>
+          <h2>Inner Beauty Skin</h2>
           <div class="d-lg-flex">
             <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Tonton Testimoni Kami <i class="icofont-play-alt-2"></i></a>
@@ -185,10 +185,10 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3>Seputar Tentang <strong>Nastya Beauty Care</strong></h3>
-              <p>
+              <h3>Seputar Tentang <strong>Nastyaderm</strong></h3>
+              <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+              </p> -->
             </div>
 
             <div class="accordion-list">
@@ -296,7 +296,10 @@
         </div>
 
         <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-xl-1"></div>
+
+          <div class="col-xl-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-target-lock"></i></div>
               <h4><a href="">Keunggulan 1</a></h4>
@@ -304,7 +307,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-user-check"></i></div>
               <h4><a href="">Keunggulan 2</a></h4>
@@ -312,7 +315,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-book-reader"></i></div>
               <h4><a href="">Keunggulan 3</a></h4>
@@ -320,7 +323,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-network-chart"></i></div>
               <h4><a href="">Keunggulan 4</a></h4>
@@ -328,11 +331,89 @@
             </div>
           </div>
 
+          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-network-chart"></i></div>
+              <h4><a href="">Keunggulan 4</a></h4>
+              <p>Teks Keunggulan isi disini ya, bebas mau diisi apa sesuai kebutuhan</p>
+            </div>
+          </div>
+
+          <div class="col-xl-1"></div>
+
         </div>
 
       </div>
     </section>
     <!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pilihan Paket</h2>
+          <p>Berikut ini produk yang sudah kami paketkan sesuai dengan kebutuhan anda.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h2>Paket Acne</h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Acne.jpg'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check"></i> Facial Wash </li>
+                <li><i class="bx bx-check"></i> Skin Toner</li>
+                <li><i class="bx bx-check"></i> Day Cream</li>
+                <li><i class="bx bx-check"></i> Night Cream</li>
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box featured">
+              <h2>Paket Anti Aging</h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.jpg'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check"></i> Facial Wash </li>
+                <li><i class="bx bx-check"></i> Skin Toner</li>
+                <li><i class="bx bx-check"></i> Day Cream</li>
+                <li><i class="bx bx-check"></i> Night Cream</li>
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h2>Paket Flek Hitam</h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Flek.jpg'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check"></i> Facial Wash </li>
+                <li><i class="bx bx-check"></i> Skin Toner</li>
+                <li><i class="bx bx-check"></i> Day Cream</li>
+                <li><i class="bx bx-check"></i> Night Cream</li>
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Pricing Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -550,67 +631,6 @@
     </section>
     <!-- End Team Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pilihan Produk</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Produk 1</h3>
-              <h4><sup>Rp</sup>0</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Kunjungi Kami</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Produk 2</h3>
-              <h4><sup>Rp</sup>29</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Kunjungi Kami</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Produk 3</h3>
-              <h4><sup>Rp</sup>49</h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
-              </ul>
-              <a href="#" class="buy-btn">Kunjungi Kami</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <!-- <section id="faq" class="faq section-bg">

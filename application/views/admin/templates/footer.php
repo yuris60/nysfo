@@ -76,6 +76,9 @@
 <script src="<?= base_url('assets/') ?>vendor\chartjs\Chart.js\js\chart.js"></script>
 <script src="<?= base_url('assets/') ?>vendor\chartjs\Chart.js\js\chart.min.js"></script>
 <script src="<?= base_url('assets/') ?>vendor\chartjs\Chart.js\js\chart.bundle.js"></script>
+
+<!-- Webcam -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
 <!-- <script src="<?= base_url('assets/') ?>js/grafik.js"></script> -->
 
 <script>
@@ -225,16 +228,16 @@
   });
 
   //dropify
-  $(document).ready(function(){
-        $('.dropify').dropify({
-            messages: {
-                default: 'Drag atau drop untuk memilih gambar',
-                replace: 'Ganti',
-                remove:  'Hapus',
-                error:   'error'
-            }
-        });
-    }); 
+  $(document).ready(function() {
+    $('.dropify').dropify({
+      messages: {
+        default: 'Drag atau drop untuk memilih gambar',
+        replace: 'Ganti',
+        remove: 'Hapus',
+        error: 'error'
+      }
+    });
+  });
 </script>
 </body>
 
