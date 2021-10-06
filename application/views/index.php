@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?= base_url('assets/') ?>img/favicon.png" rel="icon">
+  <link rel="icon" href="<?= base_url('assets/') ?>img/logo_nastya.png">
   <link href="<?= base_url('assets/') ?>img/apple-touch-icon.png" rel="Nastya">
 
   <!-- Google Fonts -->
@@ -51,10 +51,12 @@
           <li class="active"><a href="<?= base_url('beranda') ?>">Beranda</a></li>
           <li><a href="#why-us">Seputar</a></li>
           <li><a href="#services">Keunggulan</a></li>
-          <li><a href="#portfolio">Treatment</a></li>
+          <li><a href="#pricing">Paket</a></li>
+          <li><a href="#product">Produk</a></li>
+          <li><a href="#portfolio">Klinik</a></li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#contact">Tentang</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li> -->
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -89,7 +91,7 @@
       <div class="row">
         <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Nastyaderm</h1>
-          <h2>Inner Beauty Skin</h2>
+          <h2><i>" Inner Beauty Skin "</i></h2>
           <div class="d-lg-flex">
             <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Tonton Testimoni Kami <i class="icofont-play-alt-2"></i></a>
@@ -97,7 +99,7 @@
         </div>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
           <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
-          <img src="assets/img/logo_nastya.png" class="img-fluid animated" alt="">
+          <img src="<?= base_url('assets/img/beranda/logo_nastya_new.webp') ?>" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -194,28 +196,30 @@
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Apakah itu Nastya Beauty Care? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Apakah itu Nastyaderm? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                     <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                      Nastyaderm merupakan salah satu brand skincare lokal asli Indonesia yang terbuat dari bahan alami dan aman untuk anda yang memiliki kulit sensitif. Produk kecantikan ini dibuat langsung oleh dr. Lina Wijaya. Saat ini produk Nastyaderm memiliki beberapa varian paket yaitu paket acne, paket glowing/antiaging dan paket flek. Dari masing-masing paket tersebut terdiri dari facial wash, skin toker, day cream dan night cream
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Apakah produknya sudah terdaftar pada BPOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Apakah produk Nastyaderm menggunakan bahan kimia berbahaya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                      Produk Nastyaderm tidak mengandung bahan kimia berbahaya. Bahan-bahan yang terdapat pada produk Nastyaderm dibuat dari tumbuh-tumbuhan dan mineral alam sehingga banyak orang yang menggunakan produk ini. Produk ini juga aman digunakan oleh ibu hamil dan menyusui serta tidak menyebabkan ketergantungan.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Apakah dokter & beautician nya berpengalaman? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Apakah produk Nastyderm itu halal dan terdaftar BPOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                      Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diracik langsung oleh dokter dan apoteker yang berkompeten.
+                      Selain itu, produk Nastyaderm juga telah terdaftar pada BPOM (Badan Pengawas Obat dan Makanan)
+
                     </p>
                   </div>
                 </li>
@@ -225,7 +229,7 @@
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/clinic.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/beranda/clinic2.webp");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
@@ -297,49 +301,37 @@
 
         <div class="row">
 
-          <div class="col-xl-1"></div>
-
-          <div class="col-xl-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-target-lock"></i></div>
-              <h4><a href="">Keunggulan 1</a></h4>
-              <p>Teks Keunggulan isi disini ya, bebas mau diisi apa sesuai kebutuhan</p>
-            </div>
-          </div>
-
-          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-user-check"></i></div>
-              <h4><a href="">Keunggulan 2</a></h4>
-              <p>Teks Keunggulan isi disini ya, bebas mau diisi apa sesuai kebutuhan</p>
+              <h4><a href="#">Aman</a></h4>
+              <p>Aman untuk kulit yang hyper sensitif ibu hamil & menyusui serta tidak ketergantungan</p>
             </div>
           </div>
 
-          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-xl-3 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-book-reader"></i></div>
-              <h4><a href="">Keunggulan 3</a></h4>
-              <p>Teks Keunggulan isi disini ya, bebas mau diisi apa sesuai kebutuhan</p>
+              <div class="icon"><i class="bx bx-heart-circle"></i></div>
+              <h4><a href="#">Natural</a></h4>
+              <p>Produk dibuat dari bahan alami seperti tumbuh-tumbuhan.</p>
             </div>
           </div>
 
-          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-3 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-network-chart"></i></div>
-              <h4><a href="">Keunggulan 4</a></h4>
-              <p>Teks Keunggulan isi disini ya, bebas mau diisi apa sesuai kebutuhan</p>
+              <div class="icon"><i class="bx bx-notepad"></i></div>
+              <h4><a href="#">Terpercaya</a></h4>
+              <p>Tersertifikasi halal & aman oleh BPOM dan sudah banyak yang menggunakan.</p>
             </div>
           </div>
 
-          <div class="col-xl-2 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-3 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-network-chart"></i></div>
-              <h4><a href="">Keunggulan 4</a></h4>
-              <p>Teks Keunggulan isi disini ya, bebas mau diisi apa sesuai kebutuhan</p>
+              <div class="icon"><i class="bx bx-money"></i></div>
+              <h4><a href="#">Ekonomis</a></h4>
+              <p>Harga terjangkau dan bisa bersaing dengan produk lain terkemuka.</p>
             </div>
           </div>
-
-          <div class="col-xl-1"></div>
 
         </div>
 
@@ -353,7 +345,7 @@
 
         <div class="section-title">
           <h2>Pilihan Paket</h2>
-          <p>Berikut ini produk yang sudah kami paketkan sesuai dengan kebutuhan anda.</p>
+          <p>Berikut ini produk yang sudah kami siapkan sesuai dengan kebutuhan anda.</p>
         </div>
 
         <div class="row">
@@ -365,8 +357,9 @@
               <ul>
                 <li><i class="bx bx-check"></i> Facial Wash </li>
                 <li><i class="bx bx-check"></i> Skin Toner</li>
-                <li><i class="bx bx-check"></i> Day Cream</li>
-                <li><i class="bx bx-check"></i> Night Cream</li>
+                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
+                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
+                <li><i class="bx bx-gift"></i> Bonus : Vit Cream</li>
                 <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
               </ul>
@@ -382,8 +375,9 @@
               <ul>
                 <li><i class="bx bx-check"></i> Facial Wash </li>
                 <li><i class="bx bx-check"></i> Skin Toner</li>
-                <li><i class="bx bx-check"></i> Day Cream</li>
-                <li><i class="bx bx-check"></i> Night Cream</li>
+                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
+                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
+                <li><i class="bx bx-gift"></i> Bonus : Vit Cream Glowing</li>
                 <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
               </ul>
@@ -399,8 +393,9 @@
               <ul>
                 <li><i class="bx bx-check"></i> Facial Wash </li>
                 <li><i class="bx bx-check"></i> Skin Toner</li>
-                <li><i class="bx bx-check"></i> Day Cream</li>
-                <li><i class="bx bx-check"></i> Night Cream</li>
+                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
+                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
+                <li><i class="bx bx-gift"></i> Bonus : Vit Cream Flek</li>
                 <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
               </ul>
@@ -415,31 +410,118 @@
     </section>
     <!-- End Pricing Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3>Nastya Beauty Care</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Kunjungi Kami</a>
-          </div>
+    <!-- Product -->
+    <section id="product" class="product section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Pilihan Produk</h2>
+          <p>Berikut ini produk lainnya yang anda bisa pilih sesuai dengan kebutuhan anda.</p>
         </div>
+        <div class="row">
 
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/BB Cream.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">BB Cream</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Day Cream.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Day Cream</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Facial Wash.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Facial Wash</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Night Cream.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Night Cream</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Serum Acne</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Serum Glowing.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Serum Glowing</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Serum Vit C.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Serum Vit C</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Skin Toner</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/White Cream.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">White Cream</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.jpg') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Whitening Secret Night Cream</h5>
+                <p class="card-text">Detail Produk Isi Disini</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
-    <!-- End Cta Section -->
+    <!-- End of Product -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Treatment Kami</h2>
-          <p>Berikut ini adalah dokumentasi dari treatment kami.</p>
+          <h2>Klinik Kami</h2>
+          <p>Selain menjual produk kecantikan, kami pun mempunyai klinik kecantikan bagi konsumen yang ingin konsultasi langsung kepada kami.</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -546,6 +628,25 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>Klinik Nastya Beauty Care</h3>
+            <p> Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, Kec. Karawang Timur, <br>
+              Kabupaten Karawang, Jawa Barat 41314</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://www.google.com/maps/place/Nastyaderm,+Klinik+Nastya+Slim+%26+Beauty+Care/@-6.306924,107.321702,14z/data=!4m5!3m4!1s0x0:0xa40356db7661f32c!8m2!3d-6.3069241!4d107.3217019?hl=id" target="_blank">Kunjungi Kami</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
@@ -565,10 +666,8 @@
                 <span>Chief Executive Officer</span>
                 <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -582,10 +681,8 @@
                 <span>Product Manager</span>
                 <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -599,10 +696,8 @@
                 <span>CTO</span>
                 <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -616,10 +711,8 @@
                 <span>Accountant</span>
                 <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -701,7 +794,7 @@
 
         <div class="section-title">
           <h2>Kontak Kami</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem magni, recusandae, harum cumque ullam distinctio dolorem sapiente enim dolores excepturi ut quae atque nulla blanditiis corporis inventore beatae? Architecto.</p>
+          <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami.</p>
         </div>
 
         <div class="row">
@@ -711,19 +804,19 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Lokasi:</h4>
-                <p>Lokasi bisa disisipkan disini</p>
+                <p class="text-dark">Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, Kec. Karawang Tim., Kabupaten Karawang, Jawa Barat 41314</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>email bisa disisipkan disini</p>
+                <p class="text-dark">nastyaderm@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Telp:</h4>
-                <p>telp bisa disisipkan disini</p>
+                <p class="text-dark">0878 8513 6269</p>
               </div>
 
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
@@ -796,11 +889,11 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h3>Nastya Beauty Care</h3>
             <p>
-              Alamat bisa diisi disini<br>
-              Alamat bisa diisi disini<br>
-              Alamat bisa diisi disini<br><br>
-              <strong>Telp :</strong> no telp bisa diisi disini<br>
-              <strong>Email:</strong> email bisa diisi disini<br>
+              Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, <br>
+              Kec. Karawang Tim., Kabupaten Karawang, <br>
+              Jawa Barat 41314<br><br>
+              <strong>Telp :</strong> 0878 8513 6269<br>
+              <strong>Email:</strong> nastyaderm@gmail.com<br>
             </p>
           </div>
 
@@ -843,8 +936,8 @@
       </div>
     </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
+    <div class="container footer-bottom clearfix mb-5">
+      <div class="text-center">
         Copyright &copy; 2021 Nastya Beauty Care. Made With <i class="icofont-heart"></i> by Yuris Alkhalifi.
       </div>
       <div class="credits">
@@ -855,6 +948,12 @@
         <!-- Thanks to : <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
+
+    <a href="#">
+      <div class="fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
+        <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
+      </div>
+    </a>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
