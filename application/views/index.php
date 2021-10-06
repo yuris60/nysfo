@@ -94,7 +94,7 @@
           <h2><i>" Inner Beauty Skin "</i></h2>
           <div class="d-lg-flex">
             <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Tonton Testimoni Kami <i class="icofont-play-alt-2"></i></a>
+            <a href="https://www.youtube.com/watch?v=s9TjnzuZ2gE" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Lihat Video Branding Kami <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -218,8 +218,7 @@
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
                       Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diracik langsung oleh dokter dan apoteker yang berkompeten.
-                      Selain itu, produk Nastyaderm juga telah terdaftar pada BPOM (Badan Pengawas Obat dan Makanan)
-
+                      Selain itu, produk Nastyaderm juga telah <a style="display: inline; padding-right: 0px;" target="_blank" href="https://cekbpom.pom.go.id//home/produk/sscv39tfdc9lidsnhoaqjadvs0/all/row/10/page/3/order/4/DESC/search/2/Nastyaderm">Terdaftar</a> pada BPOM (Badan Pengawas Obat dan Makanan)
                     </p>
                   </div>
                 </li>
@@ -854,7 +853,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
+              <div class="text-center"><button type="submit" disabled>Kirim Pesan</button></div>
             </form>
           </div>
 
