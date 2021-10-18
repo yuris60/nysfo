@@ -52,7 +52,9 @@
               <input type="hidden" name="qty_produk" id="qty_produk" value="0">
               <input type="hidden" name="id_admin" value="<?= $user['id_admin'] ?>">
 
-              <div class="form-group">
+              <input type="hidden" name="id_detailtreatment" id="id_detailtreatment">
+
+              <!-- <div class="form-group">
                 <label>Jenis Treatment</label>
                 <select class="custom-select" name="id_detailtreatment">
                   <option>-== Pilih Disini ==-</option>
@@ -63,6 +65,14 @@
                   <?php $no++;
                   } ?>
                 </select>
+              </div> -->
+
+              <label>Nama Treatment</label>
+              <div class="input-group mb-3">
+                <input type="text" name="nm_treatment" id="nm_treatment" class="form-control" readonly>
+                <div class="input-group-append">
+                  <a href="#" data-toggle="modal" data-target="#modal-item"><button type="button" class="btn btn-primary"><i class="fas fa-search"></i> Cari Treatment</button></a>
+                </div>
               </div>
 
               <div class="form-group">
@@ -83,3 +93,61 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cari Pasien</h5>
+          <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+        </div>
+        <div class="modal-body table-responsive">
+          <h2 class="text-center">Cari Pasien</h2>
+          <table class="table table-bordered table-striped first" id="#table1" width="100%">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Jenis Treatment</th>
+                <th>Nama Treatment</th>
+                <th>Harga Treatment</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($treatment as $t) : ?>
+                <tr>
+                  <td><?= $t['id_detailtreatment'] ?></td>
+                  <td><?= $t['jns_treatment'] ?></td>
+                  <td><?= $t['nm_treatment'] ?></td>
+                  <td><?= rupiah($t['harga_treatment']) ?></td>
+                  <td>
+                    <button class="btn btn-sm btn-primary" id="pilih" data-id="<?= $t['id_detailtreatment'] ?>" data-jenis="<?= $t['jns_treatment'] ?>" data-nama="<?= $t['nm_treatment'] ?>" data-harga="<?= $t['harga_treatment'] ?>"><i class="fas fa-check"></i> Pilih</button>
+                  </td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-dark" data-dismiss="modal">Tutup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+  <script src="<?= base_url('assets/') ?>concept/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(document).on('click', '#pilih', function() {
+        var item_id = $(this).data('id');
+        var item_nama = $(this).data('nama');
+        $('#id_detailtreatment').val(item_id);
+        $('#nm_treatment').val(item_nama);
+        $('#modal-item').modal('hide');
+      })
+    })
+  </script>
