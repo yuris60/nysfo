@@ -97,13 +97,13 @@ h6 {
 	width: 40px;
 	height: 40px;
 	border-radius: 50px;
-	background: #28a745;
+	background: #208337;
 	color: #fff;
 	transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-	background: #208337;
+	background: #18662a;
 	color: #fff;
 }
 
@@ -912,8 +912,9 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-	background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
-		url("../img/cta-bg.jpg") fixed center center;
+	/* background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), */
+	background: linear-gradient(rgba(18, 74, 31, 0.6), rgba(18, 74, 31, 0.6)),
+		url("../img/cta-bg2.webp") fixed center center;
 	background-size: cover;
 	padding: 120px 0;
 }
@@ -943,8 +944,9 @@ section {
 }
 
 .cta .cta-btn:hover {
-	background: #28a745;
-	border: 2px solid #28a745;
+	background: #fff;
+	color: #28a745;
+	/* border: 2px solid #28a745; */
 }
 
 @media (max-width: 1024px) {
@@ -1202,6 +1204,31 @@ section {
 
 .team .member .social a + a {
 	margin-left: 8px;
+}
+
+/*--------------------------------------------------------------
+# Testimoni
+--------------------------------------------------------------*/
+.testimoni {
+	background: #fff;
+}
+
+.testimoni .customer h5 {
+	color: #28a745;
+	margin-top: 30px;
+}
+
+.testimoni .customer h5 small {
+	color: #000;
+	font-weight: bold;
+}
+
+.testimoni .customer {
+	text-align: center;
+}
+
+.testimoni .customer p {
+	font-size: 13px;
 }
 
 /*--------------------------------------------------------------

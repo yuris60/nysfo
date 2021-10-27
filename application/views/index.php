@@ -23,6 +23,7 @@
   <link href="<?= base_url('assets/') ?>vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/venobox/venobox.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets/') ?>vendor/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -55,6 +56,7 @@
           <li><a href="#product">Produk</a></li>
           <li><a href="#portfolio">Klinik</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#contact">Tentang</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
@@ -79,7 +81,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="<?= base_url('beranda/formulir') ?>" class="get-started-btn scrollto">Kunjungi Kami</a>
+      <!-- <a href="<?= base_url('beranda/formulir') ?>" class="get-started-btn scrollto">Kunjungi Kami</a> -->
 
     </div>
   </header><!-- End Header -->
@@ -93,7 +95,8 @@
           <h1>Nastyaderm</h1>
           <h2><i>" Inner Beauty Skin "</i></h2>
           <div class="d-lg-flex">
-            <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a>
+            <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
+            <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://www.veno.es">Kunjungi Kami</a>
             <a href="https://www.youtube.com/watch?v=s9TjnzuZ2gE" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Lihat Video Branding Kami <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
@@ -352,7 +355,7 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <h2>Paket Acne</h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Acne.jpg'); ?>" width="100%" alt="">
+              <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Facial Wash </li>
                 <li><i class="bx bx-check"></i> Skin Toner</li>
@@ -370,7 +373,7 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box featured">
               <h2>Paket Anti Aging</h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.jpg'); ?>" width="100%" alt="">
+              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Facial Wash </li>
                 <li><i class="bx bx-check"></i> Skin Toner</li>
@@ -388,7 +391,7 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <h2>Paket Flek Hitam</h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Flek.jpg'); ?>" width="100%" alt="">
+              <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Facial Wash </li>
                 <li><i class="bx bx-check"></i> Skin Toner</li>
@@ -420,7 +423,7 @@
 
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/BB Cream.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">BB Cream</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -429,7 +432,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Day Cream.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Day Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Day Cream</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -438,7 +441,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Facial Wash.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Facial Wash</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -447,7 +450,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Night Cream.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Night Cream</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -456,7 +459,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Acne.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Serum Acne</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -465,7 +468,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Glowing.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Serum Glowing</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -474,7 +477,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Vit C.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Serum Vit C</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -483,7 +486,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Skin Toner</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -492,7 +495,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/White Cream.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/White Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">White Cream</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -501,7 +504,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.jpg') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Whitening Secret Night Cream</h5>
                 <p class="card-text">Detail Produk Isi Disini</p>
@@ -520,105 +523,125 @@
 
         <div class="section-title">
           <h2>Klinik Kami</h2>
-          <p>Selain menjual produk kecantikan, kami pun mempunyai klinik kecantikan bagi konsumen yang ingin konsultasi langsung kepada kami.</p>
+          <p>Selain menjual produk kecantikan, kami pun mempunyai klinik kecantikan bagi konsumen yang ingin konsultasi, membeli produk dan melakukan treatment kepada kami.</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
           <li data-filter="*" class="filter-active">Semuanya</li>
-          <li data-filter=".filter-app">Treatment 1</li>
-          <li data-filter=".filter-card">Treatment 2</li>
-          <li data-filter=".filter-card">Treatment 3</li>
+          <li data-filter=".filter-klinik">Klinik</li>
+          <li data-filter=".filter-treatment">Treatment</li>
+          <li data-filter=".filter-beforeafter">Before After</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Klinik</h4>
+              <p>Dokumentasi 1</p>
+              <a href="assets/img/portfolio/portfolio-1.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Treatment</h4>
+              <p>Dokumentasi 1</p>
+              <a href="assets/img/portfolio/portfolio-2.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Klinik</h4>
+              <p>Dokumentasi 2</p>
+              <a href="assets/img/portfolio/portfolio-3.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-beforeafter">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Before After</h4>
+              <p>Dokumentasi 1</p>
+              <a href="assets/img/portfolio/portfolio-4.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Treatment</h4>
+              <p>Dokumentasi 2</p>
+              <a href="assets/img/portfolio/portfolio-5.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Treatment</h4>
+              <p>Dokumentasi 3</p>
+              <a href="assets/img/portfolio/portfolio-5.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Klinik</h4>
+              <p>Dokumentasi 3</p>
+              <a href="assets/img/portfolio/portfolio-6.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Klinik</h4>
+              <p>Dokumentasi 4</p>
+              <a href="assets/img/portfolio/portfolio-3.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-beforeafter">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Before After</h4>
+              <p>Dokumentasi 2</p>
+              <a href="assets/img/portfolio/portfolio-7.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-beforeafter">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Before After</h4>
+              <p>Dokumentasi 3</p>
+              <a href="assets/img/portfolio/portfolio-8.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Treatment</h4>
+              <p>Dokumentasi 4</p>
+              <a href="assets/img/portfolio/portfolio-9.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -652,21 +675,20 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Agar melayani dengan maksimal perlu mementingkan kerja sama tim. Berikut ini adalah beberapa anggota dari tim kami.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>dr. Hj. Lina Nuryani</h4>
+                <span>Dokter + Owner</span>
                 <div class="social">
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Linanuryani72" target="_blank"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -674,14 +696,13 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>H. Prastya Widjaja, SE</h4>
+                <span>Manager Nastyaderm</span>
                 <div class="social">
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/syifafatimah25" target="_blank"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -689,14 +710,13 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Tiara Anggraeni</h4>
+                <span>Beautician Nastyaderm</span>
                 <div class="social">
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -704,14 +724,13 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <h4>Lidiyawati</h4>
+                <span>Beauty Consultan Nastyaderm</span>
                 <div class="social">
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Lidiyagomessa" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Lidiyagomessa" target="_blank"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -725,66 +744,70 @@
 
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <!-- <section id="faq" class="faq section-bg">
+    <section id="testimoni" class="testimoni section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Testimoni</h2>
+          <p>Sudah banyak yang bergabung dengan kami dan menjadi pasien rutin pada produk & klinik kami. <br> Berikut ini beberapa testimoni dari pasien kami</p>
         </div>
 
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
+        <div class="row justify-content-md-center">
+          <!-- <div class="col-lg-8">
+            <div class="owl-carousel owl-theme">
+              <div class="item col align-self-center" style="width:250px; align-items: center;">
+                <img src="assets/img/team/team-3.webp" w class="img-fluid" alt="">
+                <h4>1</h4>
               </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
+              <div class="item" style="width:250px">
+                <img src="assets/img/team/team-3.webp" class="img-fluid" alt="">
+                <h4>2</h4>
               </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
+              <div class="item" style="width:250px">
+                <img src="assets/img/team/team-3.webp" class="img-fluid" alt="">
+                <h4>3</h4>
               </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
+              <div class="item" style="width:250px">
+                <img src="assets/img/team/team-3.webp" class="img-fluid" alt="">
+                <h4>4</h4>
               </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
-          </ul>
+            </div>
+          </div> -->
+          <div class="col-lg-3">
+            <div class="customer mx-auto">
+              <img src="assets/img/team/team-3.webp" class="rounded-circle" width="80%" alt="">
+              <h5>
+                Tiara Anggraeni <br>
+                <small>Lamaran</small>
+              </h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga minima laudantium possimus exercitationem doloremque reprehenderit tempora ipsum, repellendus quaerat magni eligendi omnis explicabo ut, in doloribus iusto laborum. Mollitia!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-5">
+            <div class="customer mx-auto">
+              <img src="assets/img/team/team-3.webp" class="rounded-circle" width="80%" alt="">
+              <h5>
+                Tiara Anggraeni <br>
+                <small>Lamaran</small>
+              </h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga minima laudantium possimus exercitationem doloremque reprehenderit tempora ipsum, repellendus quaerat magni eligendi omnis explicabo ut, in doloribus iusto laborum. Mollitia!</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="customer mx-auto">
+              <img src="assets/img/team/team-3.webp" class="rounded-circle" width="80%" alt="">
+              <h5>
+                Tiara Anggraeni <br>
+                <small>Lamaran</small>
+              </h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga minima laudantium possimus exercitationem doloremque reprehenderit tempora ipsum, repellendus quaerat magni eligendi omnis explicabo ut, in doloribus iusto laborum. Mollitia!</p>
+            </div>
+          </div>
         </div>
+
 
       </div>
-    </section> -->
+    </section>
     <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
@@ -829,23 +852,23 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Nama Lengkap</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" disabled />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Nomor Telepon</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" disabled />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="name">Judul Pertanyaan</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" disabled />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
                 <label for="name">Isi Pesan</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" disabled></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -886,7 +909,7 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h3>Nastya Beauty Care</h3>
+            <h3>Nastyaderm</h3>
             <p>
               Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, <br>
               Kec. Karawang Tim., Kabupaten Karawang, <br>
@@ -897,15 +920,15 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Tautan</h4>
+            <!-- <h4>Tautan</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('beranda') ?>">Beranda</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Seputar</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Treatment</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Pilihan Produk</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#product">Pilihan Produk</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">Kontak Kami</a></li>
-            </ul>
+            </ul> -->
           </div>
 
           <!-- <div class="col-lg-4 col-md-6 footer-links">
@@ -948,11 +971,16 @@
       </div>
     </div>
 
-    <a href="#">
-      <div class="fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
-        <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
-      </div>
-    </a>
+    <div class="hubungikami">
+      <a href="#">
+        <!-- <div class="tombol fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
+          <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
+        </div> -->
+        <button class="btn btn-block btn-success fixed-bottom">
+          <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
+        </button>
+      </a>
+    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
@@ -972,6 +1000,13 @@
   <!-- Template Main JS File -->
   <script src="<?= base_url('assets/') ?>js/main.js"></script>
 
+  <script>
+    $('.owl-carousel').owlCarousel({
+      // margin: 50,
+      items: 1,
+      // nav: true,
+    });
+  </script>
 </body>
 
 </html>
