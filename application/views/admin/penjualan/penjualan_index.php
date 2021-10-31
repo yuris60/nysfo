@@ -45,14 +45,14 @@
           <div class="card-header">
             <h4><i class="fas fa-database"></i> Data
               <!-- <button type="button" class="btn btn-sm btn-danger float-right ml-2" data-toggle="modal" data-target="#pilihan_laporan" title="Cetak Laporan"><i class="fas fa-file-pdf"></i> Cetak Laporan</button> -->
-              <button type="button" class="btn btn-sm btn-danger belum-tersedia float-right ml-2" title="Cetak Laporan"><i class="fas fa-file-pdf"></i> Cetak Laporan</button>
+              <!-- <button type="button" class="btn btn-sm btn-danger belum-tersedia float-right ml-2" title="Cetak Laporan"><i class="fas fa-file-pdf"></i> Cetak Laporan</button> -->
               <a href="<?= base_url('admin/penjualan/create') ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
 
             </h4>
           </div>
           <div class="card-body">
             <div class="table-responsive">
-              <table class="table table-striped table-bordered first">
+              <table class="table table-striped table-bordered first" id="mauexport">
                 <thead>
                   <tr>
                     <th>No</th>

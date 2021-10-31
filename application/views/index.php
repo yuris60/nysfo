@@ -347,7 +347,7 @@
 
         <div class="section-title">
           <h2>Pilihan Paket</h2>
-          <p>Berikut ini produk yang sudah kami siapkan sesuai dengan kebutuhan anda.</p>
+          <p>Sudah kami siapkan saran paket produk yang bisa anda pilih sesuai dengan keinginan anda.</p>
         </div>
 
         <div class="row">
@@ -417,7 +417,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Pilihan Produk</h2>
-          <p>Berikut ini produk lainnya yang anda bisa pilih sesuai dengan kebutuhan anda.</p>
+          <p>Mau beli produk satuan juga bisa loh. Silahkan anda bisa pilih beberapa varian dari produk kami.</p>
         </div>
         <div class="row">
 
@@ -752,7 +752,7 @@
           <p>Sudah banyak yang bergabung dengan kami dan menjadi pasien rutin pada produk & klinik kami. <br> Berikut ini beberapa testimoni dari pasien kami</p>
         </div>
 
-        <div class="row justify-content-md-center">
+        <div class="row">
           <!-- <div class="col-lg-8">
             <div class="owl-carousel owl-theme">
               <div class="item col align-self-center" style="width:250px; align-items: center;">
@@ -773,34 +773,44 @@
               </div>
             </div>
           </div> -->
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <div class="customer mx-auto">
-              <img src="assets/img/team/team-3.webp" class="rounded-circle" width="80%" alt="">
+              <img src="assets/img/testimoni/testimoni-1.webp" class="rounded-circle" width="80%" alt="">
               <h5>
-                Tiara Anggraeni <br>
-                <small>Lamaran</small>
+                Helda <br>
+                <small>Telagasari, Karawang</small>
               </h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga minima laudantium possimus exercitationem doloremque reprehenderit tempora ipsum, repellendus quaerat magni eligendi omnis explicabo ut, in doloribus iusto laborum. Mollitia!</p>
+              <p>Kemarin sempet ada jerawatnya, tapi Alhamdulillah sekarang udah kering. Hasil treatmentnya bagus maksimal setelah 3 hari, hasilnya glowing sekali.</p>
             </div>
           </div>
-          <div class="col-lg-3 mx-5">
+          <div class="col-lg-3 col-md-6">
             <div class="customer mx-auto">
-              <img src="assets/img/team/team-3.webp" class="rounded-circle" width="80%" alt="">
+              <img src="assets/img/testimoni/testimoni-2.webp" class="rounded-circle" width="80%" alt="">
               <h5>
-                Tiara Anggraeni <br>
-                <small>Lamaran</small>
+                Rini <br>
+                <small>Palumbon Tesa, Karawang</small>
               </h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga minima laudantium possimus exercitationem doloremque reprehenderit tempora ipsum, repellendus quaerat magni eligendi omnis explicabo ut, in doloribus iusto laborum. Mollitia!</p>
+              <p>Alhamdulillah sudah mulai ada pengelupasan, Insya Allah nanti dirutinkan supaya cepet hilang fleknya.</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <div class="customer mx-auto">
-              <img src="assets/img/team/team-3.webp" class="rounded-circle" width="80%" alt="">
+              <img src="assets/img/testimoni/testimoni-3.webp" class="rounded-circle" width="80%" alt="">
               <h5>
-                Tiara Anggraeni <br>
-                <small>Lamaran</small>
+                Tiara <br>
+                <small>Cilamaya, Karawang</small>
               </h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga minima laudantium possimus exercitationem doloremque reprehenderit tempora ipsum, repellendus quaerat magni eligendi omnis explicabo ut, in doloribus iusto laborum. Mollitia!</p>
+              <p>Alhamdulillah jerawatnya udah mengering, bekas jerawatnya juga udah memudar.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="customer mx-auto">
+              <img src="assets/img/testimoni/testimoni-4.webp" class="rounded-circle" width="80%" alt="">
+              <h5>
+                Tati <br>
+                <small>Pulau Kalimantan</small>
+              </h5>
+              <p>Jerawat saya memudar dan mengering, dan bekas jerawatnya juga menghilang. Pokoknya Nastyaderm oke banget.</p>
             </div>
           </div>
         </div>

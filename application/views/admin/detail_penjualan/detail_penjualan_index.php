@@ -1,5 +1,3 @@
-<?= $this->session->set_userdata('detail_index', current_url()); ?>
-
 <!-- wrapper  -->
 <!-- ============================================================== -->
 <div class="dashboard-wrapper">

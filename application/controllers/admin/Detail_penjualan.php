@@ -11,7 +11,6 @@ class Detail_penjualan extends CI_Controller
     $this->load->helper('tglindo_helper');
     $this->load->helper('formatrupiah');
     $this->load->helper('terbilang');
-    $this->load->library('user_agent');
   }
 
   public function read($where)
@@ -66,11 +65,11 @@ class Detail_penjualan extends CI_Controller
       $this->detail_penjualan_model->simpan($where);
       $this->session->set_flashdata('flash', 'ditambahkan');
       // redirect('admin/penjualan/' . $where);
-      // redirect('admin/detail_penjualan/read/' . $where);
+      redirect('admin/detail_penjualan/read/' . $where);
       // header("location:javascript://history.go(-2)");
+
       // redirect('detail_penjualan/read/' . $data['penjualan'][$where]);
-      $referred_from = $this->session->userdata('detail_index');
-      redirect($referred_from, 'refresh');
+
     }
   }
 
@@ -104,9 +103,7 @@ class Detail_penjualan extends CI_Controller
       $this->detail_penjualan_model->kurangiStokProdukCreate();
       $this->session->set_flashdata('flash', 'ditambahkan');
       // redirect('admin/penjualan');
-      // redirect('admin/detail_penjualan/read/' . $where);
-      $referred_from = $this->session->userdata('detail_index');
-      redirect($referred_from, 'refresh');
+      redirect('admin/detail_penjualan/read/' . $where);
       // redirect('detail_penjualan/read/' . $data['penjualan'][$where]);
 
     }
@@ -122,9 +119,7 @@ class Detail_penjualan extends CI_Controller
     $this->detail_penjualan_model->tambahStokProdukDelete($where2, $where4);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_penjualan/read/' . $data['penjualan'] . "/" . $where2);
-    // redirect('admin/penjualan');
-    $referred_from = $this->session->userdata('detail_index');
-    redirect($referred_from, 'refresh');
+    redirect('admin/penjualan');
   }
 
   public function deleteTreatment($where)
@@ -134,9 +129,7 @@ class Detail_penjualan extends CI_Controller
     $this->detail_penjualan_model->deleteTreatment($where3);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_penjualan/read/' . $data['penjualan'] . "/" . $where2);
-    // redirect('admin/penjualan');
-    $referred_from = $this->session->userdata('detail_index');
-    redirect($referred_from, 'refresh');
+    redirect('admin/penjualan');
   }
 
   public function update($where, $where2)

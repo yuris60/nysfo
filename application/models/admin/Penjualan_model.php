@@ -116,6 +116,7 @@ class Penjualan_model extends CI_Model
   public function delete($where)
   {
     $this->db->delete('penjualan', $where);
+    $this->db->delete('detail_penjualan', $where);
 
     //simpan notifikasi
     $datanotifikasi = [

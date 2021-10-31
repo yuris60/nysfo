@@ -1782,7 +1782,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
 	font-size: 14px;
-	background: #28a745;
+	background: #fff;
+	color: #333;
 }
 
 #footer .footer-newsletter {
@@ -1936,7 +1937,7 @@ section {
 #footer .footer-bottom {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	color: #fff;
+	color: #333;
 }
 
 #footer .copyright {

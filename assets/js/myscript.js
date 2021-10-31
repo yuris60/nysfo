@@ -86,6 +86,27 @@ $('.tombol-hapus').on('click', function (e) {
   })
 });
 
+$('.tombol-hapus2').on('click', function (e) {
+
+  e.preventDefault();
+  const href = $(this).attr('href');
+
+  Swal.fire({
+    title: 'Peringatan!',
+    text: "Sebelum dihapus, pastikan data pada Detail Penjualan didalamnya dihapus terlebih dahulu",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#4e73df',
+    cancelButtonColor: '#e74a3b',
+    confirmButtonText: 'Hapus',
+    cancelButtonText: 'Batal'
+  }).then((result) => {
+    if (result.value) {
+      document.location.href = href;
+    }
+  })
+});
+
 //belum tersedia
 $('.belum-tersedia').on('click', function (e) {
   Swal.fire({

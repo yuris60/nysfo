@@ -32,7 +32,7 @@
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="alert alert-primary" role="alert">
           <h4 class="alert-primary"><i class="fas fa-info"></i> Informasi</h4>
-          Berikut ini adalah data <strong><?= strtoupper($menu) ?></strong> yang sudah tersimpan dalam database.
+          Berikut ini adalah menu <strong><?= strtoupper($menu) ?></strong>. Silahkan pilih laporan yang akan dibuat.
         </div>
       </div>
     </div>
@@ -44,8 +44,8 @@
         <div class="card">
           <div class="card-header">
             <h4><i class="fas fa-database"></i> Data
-              <!-- <a href="<?= base_url('admin/' . strtolower($menu) . '/laporanpdfall') ?>" target="_blank"><button type="button" class="btn btn-sm btn-danger float-right mx-2" data-toggle="tooltip" data-placement="top" title="Export PDF"><i class="fas fa-file-pdf"></i></button></a> -->
-              <a href="<?= base_url('admin/produk/create') ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
+              <a href="<?= base_url('admin/laporanproduk/exporttoexcel') ?>" target="_blank"><button type="button" class="btn btn-sm btn-success float-right" data-toggle="tooltip" data-placement="top" title="Export to Excel"><i class="fas fa-file-excel"></i></button></a>
+              <a href="<?= base_url('admin/laporanproduk/exporttopdf') ?>" target="_blank"><button type="button" class="btn btn-sm btn-danger float-right mx-2" data-toggle="tooltip" data-placement="top" title="Export to PDF"><i class="fas fa-file-pdf"></i></button></a>
             </h4>
           </div>
           <div class="card-body">
@@ -58,8 +58,6 @@
                     <th width="80px">Harga</th>
                     <th>Stok Ready</th>
                     <th>Stok Gudang</th>
-                    <th>Terjual</th>
-                    <th width="170px">Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -78,27 +76,6 @@
                         <td align="right"><?= rupiah($p['harga_produk']) ?></td>
                         <td align="center"><?= $p['stok'] ?></td>
                         <td align="center"><?= $p['stok_gudang'] ?></td>
-                        <td align="center">
-                          <?php
-                          if ($q['qty_produk'] == "") {
-                            echo 0;
-                          } else echo $q['qty_produk'];
-                          ?>
-                        </td>
-                        <td>
-                          <a href="<?= base_url() ?>admin/produk/addstokready/<?= $p['id_produk'] ?>">
-                            <button type="button" class="btn btn-sm btn-success" data-toggle="tooltip" data-placement="top" title="Tambah Stok Ready"><i class="fas fa-check"></i></button>
-                          </a>
-                          <a href="<?= base_url() ?>admin/produk/addstokgudang/<?= $p['id_produk'] ?>">
-                            <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Tambah Stok Gudang"><i class="fas fa-warehouse"></i></button>
-                          </a>
-                          <a href="<?= base_url() ?>admin/produk/update/<?= $p['id_produk'] ?>">
-                            <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
-                          </a>
-                          <a href="<?= base_url() ?>admin/produk/delete/<?= $p['id_produk'] ?>/<?= $user['id_admin'] ?>" class="tombol-hapus">
-                            <button type="button" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" title="Hapus Data"><i class="fas fa-trash"></i></button>
-                          </a>
-                        </td>
                       </tr>
                   <?php endforeach;
                     $no++;
