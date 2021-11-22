@@ -96,7 +96,7 @@
           <h2><i>" Inner Beauty Skin "</i></h2>
           <div class="d-lg-flex">
             <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
-            <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://www.veno.es">Kunjungi Kami</a>
+            <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://drive.google.com/file/d/19YrSBfBAZ1V73V5UgUCA5ns_pJcIkYWG/preview">Pengenalan Produk</a>
             <a href="https://www.youtube.com/watch?v=s9TjnzuZ2gE" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Lihat Video Branding Kami <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
@@ -426,7 +426,8 @@
               <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">BB Cream</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Mencerahkan wajah dapat menutupi bekas jerawat dan flek</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
               </div>
             </div>
           </div>
@@ -434,8 +435,9 @@
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Day Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Day Cream</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <h5 class="card-title">White Cream</h5>
+                <p class="card-text">Mencerahkan wajah,glowing secara merata</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
               </div>
             </div>
           </div>
@@ -444,7 +446,8 @@
               <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Facial Wash</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 70.000</h5>
               </div>
             </div>
           </div>
@@ -452,8 +455,9 @@
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Night Cream</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <h5 class="card-title">Night Cream Nutrition Cream</h5>
+                <p class="card-text">Membantu mencerahkan hiperpigmentasi dengan cara menghambat proses pembentukan melanin kulit</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 90.000</h5>
               </div>
             </div>
           </div>
@@ -462,7 +466,8 @@
               <img src="<?= base_url('assets/img/beranda/Serum Acne.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Serum Acne</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Berfungsi untuk menyembuhkan jerawat aktif dan beruntusan</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
               </div>
             </div>
           </div>
@@ -471,7 +476,8 @@
               <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Serum Glowing</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 85.000</h5>
               </div>
             </div>
           </div>
@@ -480,7 +486,8 @@
               <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Serum Vit C</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
               </div>
             </div>
           </div>
@@ -489,7 +496,8 @@
               <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Skin Toner</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 60.000</h5>
               </div>
             </div>
           </div>
@@ -497,8 +505,9 @@
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/White Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">White Cream</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <h5 class="card-title">Sunscreen Acne</h5>
+                <p class="card-text">Berfungsi untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
               </div>
             </div>
           </div>
