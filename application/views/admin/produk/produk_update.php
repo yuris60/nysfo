@@ -56,13 +56,13 @@
                 </div>
               </div>
 
-              <!-- <div class="form-group">
+              <div class="form-group">
                 <label>Stok</label>
                 <input type="number" min=0 class="form-control <?= form_error('stok') ? 'is-invalid' : '' ?>" name="stok" id="stok" value="<?= $produk['stok'] ?>">
                 <div class="invalid-feedback">
                   <?= form_error('stok'); ?>
                 </div>
-              </div> -->
+              </div>
 
               <div class="form-group">
                 <label>Harga</label>

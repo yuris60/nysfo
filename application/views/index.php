@@ -516,7 +516,8 @@
               <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Whitening Secret Night Cream</h5>
-                <p class="card-text">Detail Produk Isi Disini</p>
+                <p class="card-text">Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari</p>
+                <h5 class="text-center text-success"><sup>Rp.</sup> 90.000</h5>
               </div>
             </div>
           </div>
