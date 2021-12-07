@@ -417,110 +417,61 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Pilihan Produk</h2>
-          <p>Mau beli produk satuan juga bisa loh. Silahkan anda bisa pilih beberapa varian dari produk kami.</p>
+          <p>Mau beli produk satuan juga bisa loh. Silahkan anda bisa pilih beberapa jenis produk kami.</p>
         </div>
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">BB Cream</h5>
-                <p class="card-text">Mencerahkan wajah dapat menutupi bekas jerawat dan flek</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Day Cream.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">White Cream</h5>
-                <p class="card-text">Mencerahkan wajah,glowing secara merata</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Facial Wash</h5>
-                <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 70.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Night Cream.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Night Cream Nutrition Cream</h5>
-                <p class="card-text">Membantu mencerahkan hiperpigmentasi dengan cara menghambat proses pembentukan melanin kulit</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 90.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Acne.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Serum Acne</h5>
-                <p class="card-text">Berfungsi untuk menyembuhkan jerawat aktif dan beruntusan</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Serum Glowing</h5>
-                <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 85.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Serum Vit C</h5>
-                <p class="card-text">Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Skin Toner</h5>
-                <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 60.000</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/White Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Sunscreen Acne</h5>
-                <p class="card-text">Berfungsi untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 75.000</h5>
+                <h4 class="card-title">White Cream</h4>
+                <p class="card-text">Mencerahkan wajah,glowing secara merata</p>
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Facial Wash</h4>
+                <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p>
+                <h4 class="text-center text-success"><sup>Rp.</sup> 70.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Whitening Secret Night Cream</h5>
+                <h4 class="card-title">Whitening Nutrition Night Cream</h4>
                 <p class="card-text">Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari</p>
-                <h5 class="text-center text-success"><sup>Rp.</sup> 90.000</h5>
+                <h4 class="text-center text-success"><sup>Rp.</sup> 90.000</h4>
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Serum Glowing</h4>
+                <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p>
+                <h4 class="text-center text-success"><sup>Rp.</sup> 85.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Skin Toner</h4>
+                <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p>
+                <h4 class="text-center text-success"><sup>Rp.</sup> 60.000</h4>
+              </div>
+            </div>
+          </div>
+
 
         </div>
       </div>
@@ -966,11 +917,9 @@
             <h4>Media Sosial Kami</h4>
             <p>Kami sediakan akun media sosial kami, agar kami lebih dekat dengan anda</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100064213232223" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/nastyaderm/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://shopee.co.id/nastyaderm?categoryId=14840&itemId=2949379248" class="google-plus"><i class="bx bxl-shopify"></i></a>
             </div>
           </div>
 
