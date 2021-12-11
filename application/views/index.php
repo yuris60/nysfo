@@ -941,13 +941,15 @@
     </div>
 
     <div class="hubungikami">
-      <a href="#">
+      <a href="#" target="_blank">
         <!-- <div class="tombol fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
           <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
         </div> -->
-        <button class="btn btn-block btn-success fixed-bottom">
-          <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
-        </button>
+        <a href="https://wa.me/6281316857489?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
+          <button class="btn btn-block btn-success fixed-bottom">
+            <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
+          </button>
+        </a>
       </a>
     </div>
   </footer><!-- End Footer -->
