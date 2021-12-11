@@ -202,7 +202,7 @@
                   <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Apakah itu Nastyaderm? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                     <p>
-                      Nastyaderm merupakan salah satu brand skincare lokal asli Indonesia yang terbuat dari bahan alami dan aman untuk anda yang memiliki kulit sensitif. Produk kecantikan ini dibuat langsung oleh dr. Lina Wijaya. Saat ini produk Nastyaderm memiliki beberapa varian paket yaitu paket acne, paket glowing/antiaging dan paket flek. Dari masing-masing paket tersebut terdiri dari facial wash, skin toker, day cream dan night cream
+                      Nastyaderm merupakan salah satu brand skincare lokal asli Indonesia yang terbuat dari bahan alami dan aman untuk anda yang memiliki kulit sensitif. Produk kecantikan ini dibuat langsung oleh dr. Lina Wijaya. Saat ini produk Nastyaderm memiliki beberapa varian paket yaitu paket acne, paket glowing/antiaging dan paket flek. Dari masing-masing paket tersebut terdiri dari facial wash, skin toner, day cream dan night cream
                     </p>
                   </div>
                 </li>
@@ -354,14 +354,14 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h2>Paket Acne</h2>
+              <h2>Paket Acne (Paket Extra Acne Series)</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
               <ul>
-                <li><i class="bx bx-check"></i> Facial Wash </li>
-                <li><i class="bx bx-check"></i> Skin Toner</li>
-                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
-                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
-                <li><i class="bx bx-gift"></i> Bonus : Vit Cream</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner TTO</li>
+                <li><i class="bx bx-check"></i> Sunscreen Acne</li>
+                <li><i class="bx bx-check"></i> Acne Clearing Moisturizer Cream</li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream</li> -->
                 <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
               </ul>
@@ -372,14 +372,14 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box featured">
-              <h2>Paket Anti Aging</h2>
+              <h2>Paket Glowing (Paket Extra Anti Aging</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
               <ul>
-                <li><i class="bx bx-check"></i> Facial Wash </li>
-                <li><i class="bx bx-check"></i> Skin Toner</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
                 <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
                 <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
-                <li><i class="bx bx-gift"></i> Bonus : Vit Cream Glowing</li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Glowing</li> -->
                 <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
               </ul>
@@ -390,14 +390,14 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h2>Paket Flek Hitam</h2>
+              <h2>Paket Flek Hitam (Paket Extra Flek Hitam)</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
               <ul>
-                <li><i class="bx bx-check"></i> Facial Wash </li>
-                <li><i class="bx bx-check"></i> Skin Toner</li>
-                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
-                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
-                <li><i class="bx bx-gift"></i> Bonus : Vit Cream Flek</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
+                <li><i class="bx bx-check"></i> Lightening Sunscreen BB Cream (Day Cream)</li>
+                <li><i class="bx bx-check"></i> Whitening Secret Night Cream (Night Cream)</li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Flek</li> -->
                 <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
               </ul>
