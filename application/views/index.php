@@ -93,7 +93,7 @@
       <div class="row">
         <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Nastyaderm</h1>
-          <h2><i>" Inner Beauty Skin "</i></h2>
+          <h2><i>" Inner Beauty For Skin "</i></h2>
           <div class="d-lg-flex">
             <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
             <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://drive.google.com/file/d/19YrSBfBAZ1V73V5UgUCA5ns_pJcIkYWG/preview">Pengenalan Produk</a>
@@ -211,7 +211,7 @@
                   <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Apakah produk Nastyaderm menggunakan bahan kimia berbahaya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Produk Nastyaderm tidak mengandung bahan kimia berbahaya. Bahan-bahan yang terdapat pada produk Nastyaderm dibuat dari tumbuh-tumbuhan dan mineral alam sehingga banyak orang yang menggunakan produk ini. Produk ini juga aman digunakan oleh ibu hamil dan menyusui serta tidak menyebabkan ketergantungan.
+                      Produk Nastyaderm tidak mengandung bahan kimia berbahaya yang dapat menyebabkan irirtasi kulit dan menyebabkan kelupasan. Bahan-bahan yang terdapat pada produk Nastyaderm dibuat dari tumbuh-tumbuhan dan mineral alam sehingga dapat tahan lama dan menyerap ke kulit pada saat menggunakan makeup. Oleh karenanya banyak orang yang menggunakan produk ini. Produk kami juga aman digunakan oleh ibu hamil dan menyusui serta tidak menyebabkan ketergantungan.
                     </p>
                   </div>
                 </li>
@@ -220,8 +220,8 @@
                   <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Apakah produk Nastyderm itu halal dan terdaftar BPOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diracik langsung oleh dokter dan apoteker yang berkompeten.
-                      Selain itu, produk Nastyaderm juga telah <a style="display: inline; padding-right: 0px;" target="_blank" href="https://cekbpom.pom.go.id//home/produk/sscv39tfdc9lidsnhoaqjadvs0/all/row/10/page/3/order/4/DESC/search/2/Nastyaderm">Terdaftar</a> pada BPOM (Badan Pengawas Obat dan Makanan)
+                      Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diberi resep oleh dokter dan diracik oleh apoteker yang berkompeten.
+                      Selain itu, produk Nastyaderm juga telah Terdaftar pada BPOM (Badan Pengawas Obat dan Makanan) dan Sertifikasi Halal dari MUI (Majelis Ulama Indonesia).
                     </p>
                   </div>
                 </li>
@@ -611,6 +611,15 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <section id="treatment" class="product section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Pilihan Treatment</h2>
+          <p>Pada klinik kami, kami menyediakan pilihan treatment yang sesuai dengan kebutuhan kulit anda.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
@@ -786,30 +795,36 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Kontak Kami</h2>
+          <h2>Tentang Kami</h2>
           <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami.</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="col-lg-12 d-flex align-items-stretch">
             <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Lokasi:</h4>
-                <p class="text-dark">Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, Kec. Karawang Tim., Kabupaten Karawang, Jawa Barat 41314</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p class="text-dark">nastyaderm@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Telp:</h4>
-                <p class="text-dark">0878 8513 6269</p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="address">
+                    <i class="icofont-google-map"></i>
+                    <h4>Lokasi:</h4>
+                    <p class="text-dark">Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, Kec. Karawang Tim., Kabupaten Karawang, Jawa Barat 41314</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="email">
+                    <i class="icofont-envelope"></i>
+                    <h4>Email:</h4>
+                    <p class="text-dark">nastyaderm@gmail.com</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="phone">
+                    <i class="icofont-phone"></i>
+                    <h4>Telp:</h4>
+                    <p class="text-dark">0878 8513 6269</p>
+                  </div>
+                </div>
               </div>
 
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
@@ -818,7 +833,7 @@
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -849,7 +864,7 @@
               </div>
               <div class="text-center"><button type="submit" disabled>Kirim Pesan</button></div>
             </form>
-          </div>
+          </div> -->
 
         </div>
 
