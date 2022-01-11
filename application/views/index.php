@@ -26,6 +26,9 @@
   <link href="<?= base_url('assets/') ?>vendor/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/aos/aos.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?= base_url('assets/') ?>concept/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+
   <!-- Template Main CSS File -->
   <link href="<?= base_url('assets/') ?>css/style.css" rel="stylesheet">
 
@@ -55,8 +58,8 @@
           <li><a href="#pricing">Paket</a></li>
           <li><a href="#product">Produk</a></li>
           <li><a href="#portfolio">Klinik</a></li>
-          <li><a href="#team">Team</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#contact">Tentang</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
@@ -743,79 +746,6 @@
     </section>
     <!-- End Cta Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Agar melayani dengan maksimal perlu mementingkan kerja sama tim. Berikut ini adalah beberapa anggota dari tim kami.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>dr. Hj. Lina Nuryani</h4>
-                <span>Dokter + Owner</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Linanuryani72" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>H. Prastya Widjaja, SE</h4>
-                <span>Manager Nastyaderm</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/syifafatimah25" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Tiara Anggraeni</h4>
-                <span>Beautician Nastyaderm</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Lidiyawati</h4>
-                <span>Beauty Consultan Nastyaderm</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Lidiyagomessa" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Lidiyagomessa" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Team Section -->
-
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="testimoni" class="testimoni section-bg">
@@ -895,7 +825,7 @@
     <!-- End Frequently Asked Questions Section -->
 
     <!-- Contact Gabung Reseller -->
-    <section class="bg-success reseller">
+    <section class="bg-success gabungreseller">
       <div class="container" data-aos="zoom-in">
         <div class="section-title">
           <h2 class="text-white">Dapatkan Uang Jutaan Rupiah</h2>
@@ -905,6 +835,252 @@
     </section>
     <!-- Contact Gabung Reseller -->
 
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Agar melayani dengan maksimal perlu mementingkan kerja sama tim. Berikut ini adalah beberapa anggota dari tim kami.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>dr. Hj. Lina Nuryani</h4>
+                <span>Dokter + Owner</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Linanuryani72" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>H. Prastya Widjaja, SE</h4>
+                <span>Manager Nastyaderm</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/syifafatimah25" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Tiara Anggraeni</h4>
+                <span>Beautician Nastyaderm</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lidiyawati</h4>
+                <span>Beauty Consultan Nastyaderm</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Lidiyagomessa" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Lidiyagomessa" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- Teamn Reseller -->
+    <section id="teamreseller">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-title">
+          <h2>Distributor, Agen & Reseller Kami</h2>
+          <p>Sudah banyak yang bergabung dan mempercayakan produk kami dari berbagai daerah se-Indonesia.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-primary text-white">Distributor</span>
+              <div class="text-center">
+                <p class="name">Irma</p>
+                <i class="fas fa-home"></i> Green Darden <br>
+                <i class="fas fa-phone"></i> 088211821640
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Ari Penti</p>
+                <i class="fas fa-home"></i> Pontianak <br>
+                <i class="fas fa-phone"></i> 082157831986
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Rusbaiyah</p>
+                <i class="fas fa-home"></i> Semarang <br>
+                <i class="fas fa-phone"></i> 081274411639
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Nia Agustina</p>
+                <i class="fas fa-home"></i> Cibungur, Karawang <br>
+                <i class="fas fa-phone"></i> 085710690001
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Siti Rohmah</p>
+                <i class="fas fa-home"></i> Wadas, Karawang <br>
+                <i class="fas fa-phone"></i> 085776880282
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Fatimah</p>
+                <i class="fas fa-home"></i> Lamaran, Karawang <br>
+                <i class="fas fa-phone"></i> 0896864003503
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Widhi Jatmiko</p>
+                <i class="fas fa-home"></i> Semarang <br>
+                <i class="fas fa-phone"></i> 08122869596
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Nurdedeh</p>
+                <i class="fas fa-home"></i> Telagasari, Karawang <br>
+                <i class="fas fa-phone"></i> 089653259975
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Helda</p>
+                <i class="fas fa-home"></i> Telagasari, Karawang <br>
+                <i class="fas fa-phone"></i> 085711361854
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Ghina</p>
+                <i class="fas fa-home"></i> Wadas, Karawang <br>
+                <i class="fas fa-phone"></i> 085693206286
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Santi</p>
+                <i class="fas fa-home"></i> Majalaya, Karawang <br>
+                <i class="fas fa-phone"></i> 087741125515
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Citra Santika</p>
+                <i class="fas fa-home"></i> Bumi Taruno, Karawang <br>
+                <i class="fas fa-phone"></i> 08182158823
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Tati</p>
+                <i class="fas fa-home"></i> Kalimantan <br>
+                <i class="fas fa-phone"></i> 085810482337
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Lia Widianti</p>
+                <i class="fas fa-home"></i> Kosambi, Karawang <br>
+                <i class="fas fa-phone"></i> 085234506146
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Miftahusa'adah</p>
+                <i class="fas fa-home"></i> Karawang <br>
+                <i class="fas fa-phone"></i>0881024137523
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Suci</p>
+                <i class="fas fa-home"></i> Guro 3, Karawang <br>
+                <i class="fas fa-phone"></i> 085860752596
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Reseller -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
