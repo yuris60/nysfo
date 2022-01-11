@@ -354,7 +354,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h2>Paket Acne (Paket Extra Acne Series)</h2>
+              <h2 class="title">Paket Acne (Paket Extra Acne Series)</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
@@ -372,7 +372,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box featured">
-              <h2>Paket Glowing (Paket Extra Anti Aging</h2>
+              <h2 class="title">Paket Glowing (Paket Extra Anti Aging</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
@@ -390,7 +390,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h2>Paket Flek Hitam (Paket Extra Flek Hitam)</h2>
+              <h2 class="title">Paket Flek Hitam (Paket Extra Flek Hitam)</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
@@ -412,6 +412,48 @@
     </section>
     <!-- End Pricing Section -->
 
+    <section id="treatment" class="">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Pilihan Treatment</h2>
+          <p>Pada klinik kami, kami menyediakan pilihan treatment yang sesuai dengan kebutuhan kulit anda.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/1.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/2.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/3.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/4.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/5.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/6.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/7.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/8.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/9.webp') ?>" height="350px" class="border border-dark" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Product -->
     <section id="product" class="product section-bg">
       <div class="container" data-aos="fade-up">
@@ -421,53 +463,124 @@
         </div>
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/White Cream.webp') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title">White Cream</h4>
-                <p class="card-text">Mencerahkan wajah,glowing secara merata</p>
+                <h4 class="card-title text-center">White Cream</h4>
+                <!-- <p class="card-text">Mencerahkan wajah,glowing secara merata</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="White Cream" data-detail="Mencerahkan wajah, glowing secara merata."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title">Facial Wash</h4>
-                <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p>
+                <h4 class="card-title text-center">Facial Wash</h4>
+                <!-- <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 70.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Facial Wash" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title">Whitening Nutrition Night Cream</h4>
-                <p class="card-text">Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari</p>
+                <h4 class="card-title text-center">Whitening Nutrition Night Cream</h4>
+                <!-- <p class="card-text">Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 90.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Whitening Nutrition Night Cream" data-detail="Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title">Serum Glowing</h4>
-                <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p>
+                <h4 class="card-title text-center">Serum Glowing</h4>
+                <!-- <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 85.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Glowing" data-detail="Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title">Skin Toner</h4>
-                <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p>
+                <h4 class="card-title text-center">Serum Acne Clearing Moisturizer Cream</h4>
+                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Acne Clearing Moisturizer Cream" data-detail="Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Serum Vit C</h4>
+                <!-- <p class="card-text">Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung/p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Vit C" data-detail="Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung"><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Skin Toner</h4>
+                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 60.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Skin Toner" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Sunscreen Acne</h4>
+                <!-- <p class="card-text">Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif</p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Acne" data-detail="Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Milk-Cleanser.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Milk Cleanser</h4>
+                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 60.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Milk Cleanser" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">BB Cream</h4>
+                <!-- <p class="card-text">Mencerahkan wajah dapat menutupi bekas jerawat dan flek</p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="BB Cream" data-detail="Mencerahkan wajah dapat menutupi bekas jerawat dan flek."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Day Cream.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Day Cream</h4>
+                <!-- <p class="card-text">mencerahkan wajah,glowing secara merata</p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Mencerahkan wajah, glowing secara merata."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -610,15 +723,6 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-
-    <section id="treatment" class="product section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Pilihan Treatment</h2>
-          <p>Pada klinik kami, kami menyediakan pilihan treatment yang sesuai dengan kebutuhan kulit anda.</p>
-        </div>
-      </div>
-    </section>
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -789,6 +893,18 @@
       </div>
     </section>
     <!-- End Frequently Asked Questions Section -->
+
+    <!-- Contact Gabung Reseller -->
+    <section class="bg-success reseller">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-title">
+          <h2 class="text-white">Dapatkan Uang Jutaan Rupiah</h2>
+          <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Gabung Reseller -->
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
@@ -972,6 +1088,42 @@
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
   <div id="preloader"></div>
 
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="modal-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nm_produk"></h5>
+          <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </a>
+        </div>
+        <div class="modal-body table-responsive">
+          <p id="detail"></p>
+          <!-- <input type="text" class="form-control" id="detail"> -->
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-dark" data-dismiss="modal">Tutup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+  <script src="<?= base_url('assets/') ?>concept/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(document).on('click', '#pilih', function() {
+        var item_nm_produk = $(this).data('nm_produk');
+        var item_detail = $(this).data('detail');
+        // $('#detail').val(item_detail);
+        document.getElementById("nm_produk").innerHTML = item_nm_produk;
+        document.getElementById("detail").innerHTML = item_detail;
+      })
+    })
+  </script>
+
   <!-- Vendor JS Files -->
   <script src="<?= base_url('assets/') ?>vendor/jquery/jquery.min.js"></script>
   <script src="<?= base_url('assets/') ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -988,10 +1140,11 @@
 
   <script>
     $('.owl-carousel').owlCarousel({
-      // margin: 50,
-      items: 1,
-      // nav: true,
-    });
+      margin: 10,
+      loop: true,
+      autoWidth: true,
+      items: 4
+    })
   </script>
 </body>
 
