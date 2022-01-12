@@ -828,8 +828,37 @@
     <section class="bg-success gabungreseller">
       <div class="container" data-aos="zoom-in">
         <div class="section-title">
-          <h2 class="text-white">Dapatkan Uang Jutaan Rupiah</h2>
-          <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami.</p>
+          <h2 class="text-white">
+            <i class="bx bx-money"></i> <i class="bx bx-money"></i> <i class="bx bx-money"></i><br>
+            Ingin Mendapatkan Uang Tambahan Jutaan Rupiah?
+          </h2>
+          <p class="text-white">Mari bergabung menjadi mitra kami, raih uang tambahan jutaan rupiah dan dapatkan <b>diskon hingga 35%</b></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="text-center">Distributor</h2>
+                <img src="<?= base_url('assets/img/beranda/distributor.png') ?>" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="text-center">Agen</h2>
+                <img src="<?= base_url('assets/img/beranda/agen.png') ?>" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="text-center">Reseller</h2>
+                <img src="<?= base_url('assets/img/beranda/reseller.png') ?>" width="100%" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1074,6 +1103,86 @@
                 <p class="name">Suci</p>
                 <i class="fas fa-home"></i> Guro 3, Karawang <br>
                 <i class="fas fa-phone"></i> 085860752596
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Mia</p>
+                <i class="fas fa-home"></i> Klari, Karawang <br>
+                <i class="fas fa-phone"></i> 081292904440
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Esty</p>
+                <i class="fas fa-home"></i> Pontianak <br>
+                <i class="fas fa-phone"></i> 081254659499
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Dini</p>
+                <i class="fas fa-home"></i> Semarang <br>
+                <i class="fas fa-phone"></i>082177779088
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Suci</p>
+                <i class="fas fa-home"></i> Guro 3, Karawang <br>
+                <i class="fas fa-phone"></i> 085860752596
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Nita</p>
+                <i class="fas fa-home"></i> Telukjambe, Karawang <br>
+                <i class="fas fa-phone"></i> 081288473779
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Ida</p>
+                <i class="fas fa-home"></i> Johar, Karawang <br>
+                <i class="fas fa-phone"></i> 081510128929
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Teti</p>
+                <i class="fas fa-home"></i> Cilacap <br>
+                <i class="fas fa-phone"></i>085866164309
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Euis Kumala</p>
+                <i class="fas fa-home"></i> Bandarsari II <br>
+                <i class="fas fa-phone"></i> 089604565101
               </div>
             </div>
           </div>
