@@ -653,21 +653,21 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Treatment</h4>
               <p>Dokumentasi 2</p>
-              <a href="assets/img/portfolio/portfolio-5.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-12.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-13.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Treatment</h4>
               <p>Dokumentasi 3</p>
-              <a href="assets/img/portfolio/portfolio-5.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-13.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
@@ -779,6 +779,16 @@
           </div> -->
           <div class="col-lg-3 col-md-6">
             <div class="customer mx-auto">
+              <img src="assets/img/testimoni/testimoni-5.webp" class="rounded-circle" width="80%" alt="">
+              <h5>
+                Anni <br>
+                <small>Karawang</small>
+              </h5>
+              <p>Pas wisuda makeupnya menempel di wajah dengan bagus dan halus, tidak seperti produk lain yang tidak menempel diwajah. produk Nastyaderm memang bagus.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="customer mx-auto">
               <img src="assets/img/testimoni/testimoni-1.webp" class="rounded-circle" width="80%" alt="">
               <h5>
                 Helda <br>
@@ -807,16 +817,6 @@
               <p>Alhamdulillah jerawatnya udah mengering, bekas jerawatnya juga udah memudar.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="customer mx-auto">
-              <img src="assets/img/testimoni/testimoni-4.webp" class="rounded-circle" width="80%" alt="">
-              <h5>
-                Tati <br>
-                <small>Pulau Kalimantan</small>
-              </h5>
-              <p>Jerawat saya memudar dan mengering, dan bekas jerawatnya juga menghilang. Pokoknya Nastyaderm oke banget.</p>
-            </div>
-          </div>
         </div>
 
 
@@ -832,14 +832,21 @@
             <i class="bx bx-money"></i> <i class="bx bx-money"></i> <i class="bx bx-money"></i><br>
             Ingin Mendapatkan Uang Tambahan Jutaan Rupiah?
           </h2>
-          <p class="text-white">Mari bergabung menjadi mitra kami, raih uang tambahan jutaan rupiah dan dapatkan <b>diskon hingga 35%</b></p>
+          <p class="text-white">Mari bergabung menjadi mitra kami, raih uang tambahan jutaan rupiah dan dapatkan <b>diskon hingga 35%.</b></p>
+          <a class="venobox" href="https://drive.google.com/file/d/1qFwEk2B4zgG488c4uAttFryjtNxBpNXG/preview" data-vbtype="iframe" frameborder="0"><button class="btn btn-danger mt-3">Baca Lebih Lengkap</button></a>
+          <a href="https://wa.me/6281316857489?text=Halo%20kak,%20setelah%20saya%20melihat%20website%20Nastyaderm,%20saya%20tertarik%20dan%20ingin%20bergabung%20menjadi%20mitra.%20Tolong%20beritahu%20saya%20info%20lengkapnya,%20terimakasih.">
+            <button class="btn btn-primary mt-3 mx-2">Bergabung Menjadi Mitra</button>
+          </a>
         </div>
         <div class="row">
           <div class="col-lg-4 col-12">
             <div class="card">
               <div class="card-body">
-                <h2 class="text-center">Distributor</h2>
-                <img src="<?= base_url('assets/img/beranda/distributor.png') ?>" width="100%" alt="">
+                <h2 class="text-center">Reseller</h2>
+                <img src="<?= base_url('assets/img/beranda/reseller.png') ?>" width="100%" alt="">
+              </div>
+              <div class="card-footer">
+                <h4 class="text-center">Diskon <span class="badge bg-primary text-white">20%</span></h4>
               </div>
             </div>
           </div>
@@ -849,13 +856,19 @@
                 <h2 class="text-center">Agen</h2>
                 <img src="<?= base_url('assets/img/beranda/agen.png') ?>" width="100%" alt="">
               </div>
+              <div class="card-footer">
+                <h4 class="text-center">Diskon <span class="badge bg-primary text-white">25%</span></h4>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 col-12">
             <div class="card">
               <div class="card-body">
-                <h2 class="text-center">Reseller</h2>
-                <img src="<?= base_url('assets/img/beranda/reseller.png') ?>" width="100%" alt="">
+                <h2 class="text-center">Distributor</h2>
+                <img src="<?= base_url('assets/img/beranda/distributor.png') ?>" width="100%" alt="">
+              </div>
+              <div class="card-footer">
+                <h4 class="text-center">Diskon <span class="badge bg-primary text-white">35%</span></h4>
               </div>
             </div>
           </div>
@@ -938,7 +951,7 @@
     <!-- End Team Section -->
 
     <!-- Teamn Reseller -->
-    <section id="teamreseller">
+    <section id="team">
       <div class="container" data-aos="zoom-in">
         <div class="section-title">
           <h2>Distributor, Agen & Reseller Kami</h2>
@@ -951,7 +964,7 @@
               <span class="badge bg-primary text-white">Distributor</span>
               <div class="text-center">
                 <p class="name">Irma</p>
-                <i class="fas fa-home"></i> Green Darden <br>
+                <i class="fas fa-home"></i> Green Garden <br>
                 <i class="fas fa-phone"></i> 088211821640
               </div>
             </div>
@@ -1197,7 +1210,7 @@
 
         <div class="section-title">
           <h2>Tentang Kami</h2>
-          <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami.</p>
+          <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami atau bisa datang langsung ke klinik kami.</p>
         </div>
 
         <div class="row">
@@ -1333,9 +1346,10 @@
             <h4>Media Sosial Kami</h4>
             <p>Kami sediakan akun media sosial kami, agar kami lebih dekat dengan anda</p>
             <div class="social-links mt-3">
-              <a href="https://www.facebook.com/profile.php?id=100064213232223" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/nastyaderm/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://shopee.co.id/nastyaderm?categoryId=14840&itemId=2949379248" class="google-plus"><i class="bx bxl-shopify"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100064213232223" class="facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/nastyaderm/" class="instagram" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><i class="bx bxl-instagram" target="_blank"></i></a>
+              <a href="https://shopee.co.id/nastyaderm?categoryId=14840&itemId=2949379248" class="google-plus" data-bs-toggle="tooltip" data-bs-placement="top" title="Shopee" target="_blank"><i class="bx bxl-shopify"></i></a>
+              <a href="https://linktr.ee/nastyaderm" class="link-tree" data-bs-toggle="tooltip" data-bs-placement="top" title="Linktree" target="_blank"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -1345,7 +1359,7 @@
 
     <div class="container footer-bottom clearfix mb-5">
       <div class="text-center">
-        Copyright &copy; 2021 Nastya Beauty Care. Made With <i class="icofont-heart"></i> by Yuris Alkhalifi.
+        Copyright &copy; 2021 Nastyaderm | Nastya Beauty Care | <a href="http://instagram.com/yuris60" target="_blank">YAK</a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -1429,6 +1443,11 @@
       loop: true,
       autoWidth: true,
       items: 4
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
     })
   </script>
 </body>
