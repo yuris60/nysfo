@@ -1365,14 +1365,38 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Reseller
+# Gabung Reseller
 --------------------------------------------------------------*/
 
-.reseller h2 {
+.gabungreseller h2 {
 	font-weight: 800;
 	margin-bottom: 15px;
 	font-size: 50px;
 	color: #28a745;
+}
+
+/*--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Team Reseller Kami
+--------------------------------------------------------------*/
+
+.name {
+	/* color: #28a745; */
+	font-weight: 800;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.kotakluar {
+	padding: 20px;
+	border: 1px solid #777;
+	margin-bottom: 20px;
+}
+
+.kotakdalam {
 }
 
 /*--------------------------------------------------------------*/
