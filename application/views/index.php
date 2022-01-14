@@ -26,9 +26,6 @@
   <link href="<?= base_url('assets/') ?>vendor/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?= base_url('assets/') ?>concept/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-
   <!-- Template Main CSS File -->
   <link href="<?= base_url('assets/') ?>css/style.css" rel="stylesheet">
 
@@ -58,8 +55,8 @@
           <li><a href="#pricing">Paket</a></li>
           <li><a href="#product">Produk</a></li>
           <li><a href="#portfolio">Klinik</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#team">Team</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#contact">Tentang</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
@@ -96,7 +93,7 @@
       <div class="row">
         <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Nastyaderm</h1>
-          <h2><i>" Inner Beauty For Skin "</i></h2>
+          <h2><i>" Inner Beauty Skin "</i></h2>
           <div class="d-lg-flex">
             <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
             <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://drive.google.com/file/d/19YrSBfBAZ1V73V5UgUCA5ns_pJcIkYWG/preview">Pengenalan Produk</a>
@@ -214,7 +211,7 @@
                   <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Apakah produk Nastyaderm menggunakan bahan kimia berbahaya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Produk Nastyaderm tidak mengandung bahan kimia berbahaya yang dapat menyebabkan irirtasi kulit dan menyebabkan kelupasan. Bahan-bahan yang terdapat pada produk Nastyaderm dibuat dari tumbuh-tumbuhan dan mineral alam sehingga dapat tahan lama dan menyerap ke kulit pada saat menggunakan makeup. Oleh karenanya banyak orang yang menggunakan produk ini. Produk kami juga aman digunakan oleh ibu hamil dan menyusui serta tidak menyebabkan ketergantungan.
+                      Produk Nastyaderm tidak mengandung bahan kimia berbahaya. Bahan-bahan yang terdapat pada produk Nastyaderm dibuat dari tumbuh-tumbuhan dan mineral alam sehingga banyak orang yang menggunakan produk ini. Produk ini juga aman digunakan oleh ibu hamil dan menyusui serta tidak menyebabkan ketergantungan.
                     </p>
                   </div>
                 </li>
@@ -223,8 +220,8 @@
                   <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Apakah produk Nastyderm itu halal dan terdaftar BPOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diberi resep oleh dokter dan diracik oleh apoteker yang berkompeten.
-                      Selain itu, produk Nastyaderm juga telah Terdaftar pada BPOM (Badan Pengawas Obat dan Makanan) dan Sertifikasi Halal dari MUI (Majelis Ulama Indonesia).
+                      Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diracik langsung oleh dokter dan apoteker yang berkompeten.
+                      Selain itu, produk Nastyaderm juga telah <a style="display: inline; padding-right: 0px;" target="_blank" href="https://cekbpom.pom.go.id//home/produk/sscv39tfdc9lidsnhoaqjadvs0/all/row/10/page/3/order/4/DESC/search/2/Nastyaderm">Terdaftar</a> pada BPOM (Badan Pengawas Obat dan Makanan)
                     </p>
                   </div>
                 </li>
@@ -357,7 +354,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h2 class="title">Paket Acne (Paket Extra Acne Series)</h2>
+              <h2>Paket Acne (Paket Extra Acne Series)</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
@@ -375,7 +372,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box featured">
-              <h2 class="title">Paket Glowing (Paket Extra Anti Aging</h2>
+              <h2>Paket Glowing (Paket Extra Anti Aging</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
@@ -393,7 +390,7 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
-              <h2 class="title">Paket Flek Hitam (Paket Extra Flek Hitam)</h2>
+              <h2>Paket Flek Hitam (Paket Extra Flek Hitam)</h2>
               <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
@@ -415,48 +412,6 @@
     </section>
     <!-- End Pricing Section -->
 
-    <section id="treatment" class="">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Pilihan Treatment</h2>
-          <p>Pada klinik kami, kami menyediakan pilihan treatment yang sesuai dengan kebutuhan kulit anda.</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/1.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/2.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/3.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/4.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/5.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/6.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/7.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/8.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/9.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Product -->
     <section id="product" class="product section-bg">
       <div class="container" data-aos="fade-up">
@@ -466,124 +421,53 @@
         </div>
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/White Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">White Cream</h4>
-                <!-- <p class="card-text">Mencerahkan wajah,glowing secara merata</p> -->
+                <h4 class="card-title">White Cream</h4>
+                <p class="card-text">Mencerahkan wajah,glowing secara merata</p>
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="White Cream" data-detail="Mencerahkan wajah, glowing secara merata."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Facial Wash</h4>
-                <!-- <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p> -->
+                <h4 class="card-title">Facial Wash</h4>
+                <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p>
                 <h4 class="text-center text-success"><sup>Rp.</sup> 70.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Facial Wash" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Whitening Nutrition Night Cream</h4>
-                <!-- <p class="card-text">Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari</p> -->
+                <h4 class="card-title">Whitening Nutrition Night Cream</h4>
+                <p class="card-text">Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari</p>
                 <h4 class="text-center text-success"><sup>Rp.</sup> 90.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Whitening Nutrition Night Cream" data-detail="Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Serum Glowing</h4>
-                <!-- <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p> -->
+                <h4 class="card-title">Serum Glowing</h4>
+                <p class="card-text">Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah</p>
                 <h4 class="text-center text-success"><sup>Rp.</sup> 85.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Glowing" data-detail="Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Serum Acne Clearing Moisturizer Cream</h4>
-                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Acne Clearing Moisturizer Cream" data-detail="Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Serum Vit C</h4>
-                <!-- <p class="card-text">Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung/p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Vit C" data-detail="Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung"><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Skin Toner</h4>
-                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
+                <h4 class="card-title">Skin Toner</h4>
+                <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p>
                 <h4 class="text-center text-success"><sup>Rp.</sup> 60.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Skin Toner" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Sunscreen Acne</h4>
-                <!-- <p class="card-text">Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif</p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Acne" data-detail="Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Milk-Cleanser.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Milk Cleanser</h4>
-                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 60.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Milk Cleanser" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">BB Cream</h4>
-                <!-- <p class="card-text">Mencerahkan wajah dapat menutupi bekas jerawat dan flek</p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="BB Cream" data-detail="Mencerahkan wajah dapat menutupi bekas jerawat dan flek."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Day Cream.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Day Cream</h4>
-                <!-- <p class="card-text">mencerahkan wajah,glowing secara merata</p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Mencerahkan wajah, glowing secara merata."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -746,6 +630,79 @@
     </section>
     <!-- End Cta Section -->
 
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Agar melayani dengan maksimal perlu mementingkan kerja sama tim. Berikut ini adalah beberapa anggota dari tim kami.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>dr. Hj. Lina Nuryani</h4>
+                <span>Dokter + Owner</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Linanuryani72" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>H. Prastya Widjaja, SE</h4>
+                <span>Manager Nastyaderm</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/syifafatimah25" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Tiara Anggraeni</h4>
+                <span>Beautician Nastyaderm</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lidiyawati</h4>
+                <span>Beauty Consultan Nastyaderm</span>
+                <div class="social">
+                  <a href="http://www.facebook.com/Lidiyagomessa" target="_blank"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Lidiyagomessa" target="_blank"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Team Section -->
+
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="testimoni" class="testimoni section-bg">
@@ -824,408 +781,35 @@
     </section>
     <!-- End Frequently Asked Questions Section -->
 
-    <!-- Contact Gabung Reseller -->
-    <section class="bg-success gabungreseller">
-      <div class="container" data-aos="zoom-in">
-        <div class="section-title">
-          <h2 class="text-white">
-            <i class="bx bx-money"></i> <i class="bx bx-money"></i> <i class="bx bx-money"></i><br>
-            Ingin Mendapatkan Uang Tambahan Jutaan Rupiah?
-          </h2>
-          <p class="text-white">Mari bergabung menjadi mitra kami, raih uang tambahan jutaan rupiah dan dapatkan <b>diskon hingga 35%</b></p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="text-center">Distributor</h2>
-                <img src="<?= base_url('assets/img/beranda/distributor.png') ?>" width="100%" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="text-center">Agen</h2>
-                <img src="<?= base_url('assets/img/beranda/agen.png') ?>" width="100%" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h2 class="text-center">Reseller</h2>
-                <img src="<?= base_url('assets/img/beranda/reseller.png') ?>" width="100%" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Gabung Reseller -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Agar melayani dengan maksimal perlu mementingkan kerja sama tim. Berikut ini adalah beberapa anggota dari tim kami.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>dr. Hj. Lina Nuryani</h4>
-                <span>Dokter + Owner</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Linanuryani72" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>H. Prastya Widjaja, SE</h4>
-                <span>Manager Nastyaderm</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/syifafatimah25" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Tiara Anggraeni</h4>
-                <span>Beautician Nastyaderm</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Lidiyawati</h4>
-                <span>Beauty Consultan Nastyaderm</span>
-                <div class="social">
-                  <a href="http://www.facebook.com/Lidiyagomessa" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Lidiyagomessa" target="_blank"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Team Section -->
-
-    <!-- Teamn Reseller -->
-    <section id="teamreseller">
-      <div class="container" data-aos="zoom-in">
-        <div class="section-title">
-          <h2>Distributor, Agen & Reseller Kami</h2>
-          <p>Sudah banyak yang bergabung dan mempercayakan produk kami dari berbagai daerah se-Indonesia.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-primary text-white">Distributor</span>
-              <div class="text-center">
-                <p class="name">Irma</p>
-                <i class="fas fa-home"></i> Green Darden <br>
-                <i class="fas fa-phone"></i> 088211821640
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Ari Penti</p>
-                <i class="fas fa-home"></i> Pontianak <br>
-                <i class="fas fa-phone"></i> 082157831986
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Rusbaiyah</p>
-                <i class="fas fa-home"></i> Semarang <br>
-                <i class="fas fa-phone"></i> 081274411639
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Nia Agustina</p>
-                <i class="fas fa-home"></i> Cibungur, Karawang <br>
-                <i class="fas fa-phone"></i> 085710690001
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Siti Rohmah</p>
-                <i class="fas fa-home"></i> Wadas, Karawang <br>
-                <i class="fas fa-phone"></i> 085776880282
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Fatimah</p>
-                <i class="fas fa-home"></i> Lamaran, Karawang <br>
-                <i class="fas fa-phone"></i> 0896864003503
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Widhi Jatmiko</p>
-                <i class="fas fa-home"></i> Semarang <br>
-                <i class="fas fa-phone"></i> 08122869596
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Nurdedeh</p>
-                <i class="fas fa-home"></i> Telagasari, Karawang <br>
-                <i class="fas fa-phone"></i> 089653259975
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Helda</p>
-                <i class="fas fa-home"></i> Telagasari, Karawang <br>
-                <i class="fas fa-phone"></i> 085711361854
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Ghina</p>
-                <i class="fas fa-home"></i> Wadas, Karawang <br>
-                <i class="fas fa-phone"></i> 085693206286
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Santi</p>
-                <i class="fas fa-home"></i> Majalaya, Karawang <br>
-                <i class="fas fa-phone"></i> 087741125515
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Citra Santika</p>
-                <i class="fas fa-home"></i> Bumi Taruno, Karawang <br>
-                <i class="fas fa-phone"></i> 08182158823
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Tati</p>
-                <i class="fas fa-home"></i> Kalimantan <br>
-                <i class="fas fa-phone"></i> 085810482337
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Lia Widianti</p>
-                <i class="fas fa-home"></i> Kosambi, Karawang <br>
-                <i class="fas fa-phone"></i> 085234506146
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Miftahusa'adah</p>
-                <i class="fas fa-home"></i> Karawang <br>
-                <i class="fas fa-phone"></i>0881024137523
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Suci</p>
-                <i class="fas fa-home"></i> Guro 3, Karawang <br>
-                <i class="fas fa-phone"></i> 085860752596
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Mia</p>
-                <i class="fas fa-home"></i> Klari, Karawang <br>
-                <i class="fas fa-phone"></i> 081292904440
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Esty</p>
-                <i class="fas fa-home"></i> Pontianak <br>
-                <i class="fas fa-phone"></i> 081254659499
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Dini</p>
-                <i class="fas fa-home"></i> Semarang <br>
-                <i class="fas fa-phone"></i>082177779088
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Suci</p>
-                <i class="fas fa-home"></i> Guro 3, Karawang <br>
-                <i class="fas fa-phone"></i> 085860752596
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Nita</p>
-                <i class="fas fa-home"></i> Telukjambe, Karawang <br>
-                <i class="fas fa-phone"></i> 081288473779
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Ida</p>
-                <i class="fas fa-home"></i> Johar, Karawang <br>
-                <i class="fas fa-phone"></i> 081510128929
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Teti</p>
-                <i class="fas fa-home"></i> Cilacap <br>
-                <i class="fas fa-phone"></i>085866164309
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
-            <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
-              <div class="text-center">
-                <p class="name">Euis Kumala</p>
-                <i class="fas fa-home"></i> Bandarsari II <br>
-                <i class="fas fa-phone"></i> 089604565101
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Team Reseller -->
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Tentang Kami</h2>
+          <h2>Kontak Kami</h2>
           <p>Jika masih ragu dan ingin bertanya lebih lanjut, silahkan hubungi kami.</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-12 d-flex align-items-stretch">
+          <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="address">
-                    <i class="icofont-google-map"></i>
-                    <h4>Lokasi:</h4>
-                    <p class="text-dark">Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, Kec. Karawang Tim., Kabupaten Karawang, Jawa Barat 41314</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="email">
-                    <i class="icofont-envelope"></i>
-                    <h4>Email:</h4>
-                    <p class="text-dark">nastyaderm@gmail.com</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="phone">
-                    <i class="icofont-phone"></i>
-                    <h4>Telp:</h4>
-                    <p class="text-dark">0878 8513 6269</p>
-                  </div>
-                </div>
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Lokasi:</h4>
+                <p class="text-dark">Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, Kec. Karawang Tim., Kabupaten Karawang, Jawa Barat 41314</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p class="text-dark">nastyaderm@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Telp:</h4>
+                <p class="text-dark">0878 8513 6269</p>
               </div>
 
               <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
@@ -1234,7 +818,7 @@
 
           </div>
 
-          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -1265,7 +849,7 @@
               </div>
               <div class="text-center"><button type="submit" disabled>Kirim Pesan</button></div>
             </form>
-          </div> -->
+          </div>
 
         </div>
 
@@ -1373,42 +957,6 @@
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
   <div id="preloader"></div>
 
-  <!-- Modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="modal-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="nm_produk"></h5>
-          <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </a>
-        </div>
-        <div class="modal-body table-responsive">
-          <p id="detail"></p>
-          <!-- <input type="text" class="form-control" id="detail"> -->
-        </div>
-        <div class="modal-footer">
-          <a href="#" class="btn btn-dark" data-dismiss="modal">Tutup</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Modal -->
-
-  <script src="<?= base_url('assets/') ?>concept/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $(document).on('click', '#pilih', function() {
-        var item_nm_produk = $(this).data('nm_produk');
-        var item_detail = $(this).data('detail');
-        // $('#detail').val(item_detail);
-        document.getElementById("nm_produk").innerHTML = item_nm_produk;
-        document.getElementById("detail").innerHTML = item_detail;
-      })
-    })
-  </script>
-
   <!-- Vendor JS Files -->
   <script src="<?= base_url('assets/') ?>vendor/jquery/jquery.min.js"></script>
   <script src="<?= base_url('assets/') ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1425,11 +973,10 @@
 
   <script>
     $('.owl-carousel').owlCarousel({
-      margin: 10,
-      loop: true,
-      autoWidth: true,
-      items: 4
-    })
+      // margin: 50,
+      items: 1,
+      // nav: true,
+    });
   </script>
 </body>
 
