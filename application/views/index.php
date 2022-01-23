@@ -471,9 +471,9 @@
               <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">White Cream</h4>
-                <!-- <p class="card-text">Mencerahkan wajah,glowing secara merata</p> -->
+                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="White Cream" data-detail="Mencerahkan wajah, glowing secara merata."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="White Cream" data-detail="Membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari"><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -482,9 +482,9 @@
               <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">Facial Wash</h4>
-                <!-- <p class="card-text">Membersihkan wajah dari kotoran debu dan sisa makeup</p> -->
+                <!-- <p class="card-text">Membersihkan kotoran dan sisa make up di wajah, serta dapat melembapkan dan mencerahkan kulit wajah</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 70.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Facial Wash" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Facial Wash" data-detail="Membersihkan kotoran dan sisa make up di wajah, serta dapat melembapkan dan mencerahkan kulit wajah."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -512,12 +512,12 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Serum Acne Clearing Moisturizer Cream</h4>
-                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
+                <h4 class="card-title text-center">Serum Acne</h4>
+                <!-- <p class="card-text">Mengeringkan jerawat, mencerahkan kulit wajah, serta melembapkan kulit wajah</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Acne Clearing Moisturizer Cream" data-detail="Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Acne Clearing Moisturizer Cream" data-detail="Mengeringkan jerawat, mencerahkan kulit wajah, serta melembapkan kulit wajah."><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -526,9 +526,9 @@
               <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">Serum Vit C</h4>
-                <!-- <p class="card-text">Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung/p> -->
+                <!-- <p class="card-text">Membantu mencerahkan kulit wajah, merangsang produksi kolagen,  serta mengencangkan kulit wajah/p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Vit C" data-detail="Berfungsi untuk mengencangkan kulit wajah dan menutrisi wajah karena mengandung"><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Vit C" data-detail="Membantu mencerahkan kulit wajah, merangsang produksi kolagen,  serta mengencangkan kulit wajah"><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -537,15 +537,15 @@
               <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">Skin Toner</h4>
-                <!-- <p class="card-text">Bahan natural alami dari ekstrak flower,berguna untuk membersihkan serta melembabkan kulit wajah dan kulit bagian leher</p> -->
+                <!-- <p class="card-text">Menyegarkan kulit wajah, melembapkan kulit wajah serta  mengontrol minyak berlebih di wajah</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 60.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Skin Toner" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Skin Toner" data-detail="Menyegarkan kulit wajah, melembapkan kulit wajah serta  mengontrol minyak berlebih di wajah"><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Sunscreen Acne.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">Sunscreen Acne</h4>
                 <!-- <p class="card-text">Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif</p> -->
@@ -578,12 +578,23 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
-              <img src="<?= base_url('assets/img/beranda/Day Cream.webp') ?>" class="card-img-top" alt="...">
+              <img src="<?= base_url('assets/img/beranda/Acne Clearing.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h4 class="card-title text-center">Day Cream</h4>
-                <!-- <p class="card-text">mencerahkan wajah,glowing secara merata</p> -->
+                <h4 class="card-title text-center">Acne Clearing</h4>
+                <!-- <p class="card-text">Membantu mempercepat proses penyembuhan Acne</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Mencerahkan wajah, glowing secara merata."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Membantu mempercepat proses penyembuhan Acne"><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Serum Scar</h4>
+                <!-- <p class="card-text">Kandungan Centela asiatica Membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah</p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Mandungan Centela asiatica Membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah"><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -843,7 +854,7 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Reseller</h2>
-                <img src="<?= base_url('assets/img/beranda/reseller.png') ?>" width="100%" alt="">
+                <img src="<?= base_url('assets/img/beranda/reseller.webp') ?>" width="100%" alt="">
               </div>
               <div class="card-footer">
                 <h4 class="text-center">Diskon <span class="badge bg-primary text-white">20%</span></h4>
@@ -854,7 +865,7 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Agen</h2>
-                <img src="<?= base_url('assets/img/beranda/agen.png') ?>" width="100%" alt="">
+                <img src="<?= base_url('assets/img/beranda/agen.webp') ?>" width="100%" alt="">
               </div>
               <div class="card-footer">
                 <h4 class="text-center">Diskon <span class="badge bg-primary text-white">25%</span></h4>
@@ -865,7 +876,7 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Distributor</h2>
-                <img src="<?= base_url('assets/img/beranda/distributor.png') ?>" width="100%" alt="">
+                <img src="<?= base_url('assets/img/beranda/distributor.webp') ?>" width="100%" alt="">
               </div>
               <div class="card-footer">
                 <h4 class="text-center">Diskon <span class="badge bg-primary text-white">35%</span></h4>
