@@ -792,8 +792,8 @@
             <div class="customer mx-auto">
               <img src="assets/img/testimoni/testimoni-5.webp" class="rounded-circle" width="80%" alt="">
               <h5>
-                Anni <br>
-                <small>Karawang</small>
+                Winda Melati <br>
+                <small>Magelang</small>
               </h5>
               <p>Pas wisuda makeupnya menempel di wajah dengan bagus dan halus, tidak seperti produk lain yang tidak menempel diwajah. produk Nastyaderm memang bagus.</p>
             </div>
