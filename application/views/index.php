@@ -583,7 +583,7 @@
                 <h4 class="card-title text-center">Acne Clearing</h4>
                 <!-- <p class="card-text">Membantu mempercepat proses penyembuhan Acne</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Membantu mempercepat proses penyembuhan Acne"><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Acne Clearing" data-detail="Membantu mempercepat proses penyembuhan Acne"><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
@@ -594,7 +594,7 @@
                 <h4 class="card-title text-center">Serum Scar</h4>
                 <!-- <p class="card-text">Kandungan Centela asiatica Membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah</p> -->
                 <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Day Cream" data-detail="Mandungan Centela asiatica Membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah"><button class="btn btn-success btn-block">Lihat Detail</button></a>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Serum Scar" data-detail="Mandungan Centela asiatica Membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah"><button class="btn btn-success btn-block">Lihat Detail</button></a>
               </div>
             </div>
           </div>
