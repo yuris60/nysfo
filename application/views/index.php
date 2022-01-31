@@ -845,7 +845,7 @@
           </h2>
           <p class="text-white">Mari bergabung menjadi mitra kami, raih uang tambahan jutaan rupiah dan dapatkan <b>diskon hingga 35%.</b></p>
           <a class="venobox" href="https://drive.google.com/file/d/1qFwEk2B4zgG488c4uAttFryjtNxBpNXG/preview" data-vbtype="iframe" frameborder="0"><button class="btn btn-danger mt-3">Baca Lebih Lengkap</button></a>
-          <a href="https://wa.me/6281316857489?text=Halo%20kak,%20setelah%20saya%20melihat%20website%20Nastyaderm,%20saya%20tertarik%20dan%20ingin%20bergabung%20menjadi%20mitra.%20Tolong%20beritahu%20saya%20info%20lengkapnya,%20terimakasih.">
+          <a target="_blank" href="https://wa.me/6281316857489?text=Halo%20kak,%20setelah%20saya%20melihat%20website%20Nastyaderm,%20saya%20tertarik%20dan%20ingin%20bergabung%20menjadi%20mitra.%20Tolong%20beritahu%20saya%20info%20lengkapnya,%20terimakasih.">
             <button class="btn btn-primary mt-3 mx-2">Bergabung Menjadi Mitra</button>
           </a>
         </div>
@@ -982,11 +982,11 @@
           </div>
           <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
             <div class="kotakluar" style="padding: 20px;">
-              <span class="badge bg-success text-white">Reseller</span>
+              <span class="badge bg-primary text-white">Distributor</span>
               <div class="text-center">
-                <p class="name">Ari Penti</p>
-                <i class="fas fa-home"></i> Pontianak <br>
-                <i class="fas fa-phone"></i> 082157831986
+                <p class="name">Rusbaiyah</p>
+                <i class="fas fa-home"></i> Semarang <br>
+                <i class="fas fa-phone"></i> 081274411639
               </div>
             </div>
           </div>
@@ -994,9 +994,9 @@
             <div class="kotakluar" style="padding: 20px;">
               <span class="badge bg-success text-white">Reseller</span>
               <div class="text-center">
-                <p class="name">Rusbaiyah</p>
-                <i class="fas fa-home"></i> Semarang <br>
-                <i class="fas fa-phone"></i> 081274411639
+                <p class="name">Ari Penti</p>
+                <i class="fas fa-home"></i> Pontianak <br>
+                <i class="fas fa-phone"></i> 082157831986
               </div>
             </div>
           </div>
@@ -1240,14 +1240,15 @@
                   <div class="email">
                     <i class="icofont-envelope"></i>
                     <h4>Email:</h4>
-                    <p class="text-dark">nastyaderm@gmail.com</p>
+                    <!-- <p class="text-dark">admin@nastyadermofficial.com</p> -->
+                    <a class="text-dark" href="mailto:admin@nastyadermofficial.com">admin@nastyadermofficial.com</a>
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="phone">
                     <i class="icofont-phone"></i>
                     <h4>Telp:</h4>
-                    <p class="text-dark">0878 8513 6269</p>
+                    <p class="text-dark">0813 1685 7489</p>
                   </div>
                 </div>
               </div>
@@ -1325,8 +1326,10 @@
               Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, <br>
               Kec. Karawang Tim., Kabupaten Karawang, <br>
               Jawa Barat 41314<br><br>
-              <strong>Telp :</strong> 0878 8513 6269<br>
-              <strong>Email:</strong> nastyaderm@gmail.com<br>
+              <strong>Telp :</strong> 0813 1685 7489<br>
+              <strong>Email:</strong>
+              <a class="text-dark" href="mailto:admin@nastyadermofficial.com">admin@nastyadermofficial.com</a>
+              <br>
             </p>
           </div>
 
@@ -1370,7 +1373,7 @@
 
     <div class="container footer-bottom clearfix mb-5">
       <div class="text-center">
-        Copyright &copy; 2021 Nastyaderm | Nastya Beauty Care | <a href="http://instagram.com/yuris60" target="_blank">YAK</a>
+        Copyright &copy; <?= date('Y') ?> Nastyaderm. All Right Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -1386,7 +1389,7 @@
         <!-- <div class="tombol fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
           <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
         </div> -->
-        <a href="https://wa.me/6281316857489?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
+        <a target="_blank" href="https://wa.me/6281316857489?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
           <button class="btn btn-block btn-success fixed-bottom">
             <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
           </button>
