@@ -845,7 +845,7 @@
           </h2>
           <p class="text-white">Mari bergabung menjadi mitra kami, raih uang tambahan jutaan rupiah dan dapatkan <b>diskon hingga 35%.</b></p>
           <a class="venobox" href="https://drive.google.com/file/d/1qFwEk2B4zgG488c4uAttFryjtNxBpNXG/preview" data-vbtype="iframe" frameborder="0"><button class="btn btn-danger mt-3">Baca Lebih Lengkap</button></a>
-          <a target="_blank" href="https://wa.me/6281316857489?text=Halo%20kak,%20setelah%20saya%20melihat%20website%20Nastyaderm,%20saya%20tertarik%20dan%20ingin%20bergabung%20menjadi%20mitra.%20Tolong%20beritahu%20saya%20info%20lengkapnya,%20terimakasih.">
+          <a target="_blank" href="https://wa.me/6283871700686?text=Halo%20kak,%20setelah%20saya%20melihat%20website%20Nastyaderm,%20saya%20tertarik%20dan%20ingin%20bergabung%20menjadi%20mitra.%20Tolong%20beritahu%20saya%20info%20lengkapnya,%20terimakasih.">
             <button class="btn btn-primary mt-3 mx-2">Bergabung Menjadi Mitra</button>
           </a>
         </div>
@@ -1248,7 +1248,7 @@
                   <div class="phone">
                     <i class="icofont-phone"></i>
                     <h4>Telp:</h4>
-                    <p class="text-dark">0813 1685 7489</p>
+                    <p class="text-dark">0838 7170 0686</p>
                   </div>
                 </div>
               </div>
@@ -1326,7 +1326,7 @@
               Jl. Raya Syeh Quro, RT.002/RW.18, Karawang Wetan, <br>
               Kec. Karawang Tim., Kabupaten Karawang, <br>
               Jawa Barat 41314<br><br>
-              <strong>Telp :</strong> 0813 1685 7489<br>
+              <strong>Telp :</strong> 0838 7170 0686<br>
               <strong>Email:</strong>
               <a class="text-dark" href="mailto:admin@nastyadermofficial.com">admin@nastyadermofficial.com</a>
               <br>
@@ -1389,7 +1389,7 @@
         <!-- <div class="tombol fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
           <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
         </div> -->
-        <a target="_blank" href="https://wa.me/6281316857489?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
+        <a target="_blank" href="https://wa.me/6283871700686?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
           <button class="btn btn-block btn-success fixed-bottom">
             <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
           </button>
