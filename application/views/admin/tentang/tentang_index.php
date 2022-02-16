@@ -98,7 +98,7 @@
             <div class="card bg-info mb-3">
               <div class="card-body text-center">
                 <h4 class="card-text">Versi Aplikasi Saat Ini :</h4>
-                <h1>v.1.0.7</h1>
+                <h1>v.1.1.0</h1>
               </div>
             </div>
           </div>
@@ -121,6 +121,54 @@
             img--picture = hijau
             img--location = kuning
             -->
+
+                <!-- 16 Februari 2022 -->
+                <div class="cd-timeline__block js-cd-block">
+                  <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+                    <img src="<?= base_url('assets/svg/home.svg') ?>" alt="Picture">
+                  </div>
+                  <!-- cd-timeline__img -->
+                  <div class="cd-timeline__content js-cd-content">
+                    <h3>Pembaruan Fitur</h3>
+                    <p>Pembaruan fitur pada tampilan menu beranda.</p>
+                    <p>Versi : v.1.1.0</p>
+                    <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
+                    <span class="cd-timeline__date"> 16 Februari 2022</span>
+                  </div>
+                  <!-- cd-timeline__content -->
+                </div>
+
+                <!-- 13 Februari 2022 -->
+                <div class="cd-timeline__block js-cd-block">
+                  <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+                    <img src="<?= base_url('assets/svg/home.svg') ?>" alt="Picture">
+                  </div>
+                  <!-- cd-timeline__img -->
+                  <div class="cd-timeline__content js-cd-content">
+                    <h3>Pembaruan Fitur</h3>
+                    <p>Penambahan fitur diskon pada penjualan.</p>
+                    <p>Versi : v.1.0.9</p>
+                    <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
+                    <span class="cd-timeline__date"> 13 Februari 2022</span>
+                  </div>
+                  <!-- cd-timeline__content -->
+                </div>
+
+                <!-- 28 Januari 2022 -->
+                <div class="cd-timeline__block js-cd-block">
+                  <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+                    <img src="<?= base_url('assets/svg/test.svg') ?>" alt="Picture">
+                  </div>
+                  <!-- cd-timeline__img -->
+                  <div class="cd-timeline__content js-cd-content">
+                    <h3>Launching Front-End</h3>
+                    <p>Website Front-End berhasil dihosting pertama kali.</p>
+                    <p>Versi : v.1.0.8</p>
+                    <!-- <a href="#0" class="btn btn-primary btn-lg">Read More</a> -->
+                    <span class="cd-timeline__date"> 28 Januari 2022</span>
+                  </div>
+                  <!-- cd-timeline__content -->
+                </div>
 
                 <!-- 18 Oktober 2021 -->
                 <div class="cd-timeline__block js-cd-block">

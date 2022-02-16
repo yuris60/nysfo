@@ -10,7 +10,7 @@ class Beranda_model extends CI_Model
     return $this->db->get('produk')->result_array();
   }
 
-  public function getTopProduct()
+  public function getTopProductAll() //keseluruhan
   {
     $sql = "SELECT produk.id_produk, produk.jns_produk, (
                                                         Select SUM(detail_penjualan.qty_produk)
@@ -26,7 +26,25 @@ class Beranda_model extends CI_Model
     return $topproduk = $this->db->query($sql)->result_array();
   }
 
-  public function getTopTreatment()
+  public function getTopProductYear() //tahun ini
+  {
+    $tahunini = date('Y');
+    $sql = "SELECT produk.id_produk, produk.jns_produk, (
+                                                        Select SUM(detail_penjualan.qty_produk)
+                                                        FROM detail_penjualan
+                                                        JOIN penjualan ON detail_penjualan.id_penjualan = penjualan.id_penjualan
+                                                        WHERE detail_penjualan.id_produk = produk.id_produk
+                                                        AND YEAR(penjualan.tgl_penjualan) = $tahunini
+                                                        ) as qty
+            FROM produk
+            LEFT JOIN detail_penjualan USING(id_produk)
+            GROUP BY id_produk
+            ORDER BY qty DESC
+            LIMIT 10";
+    return $topproduk = $this->db->query($sql)->result_array();
+  }
+
+  public function getTopTreatmentAll()
   {
     $sql = "SELECT detail_treatment.id_detailtreatment, detail_treatment.nm_treatment, (
                                                                                         Select SUM(detail_penjualan.qty_treatment)
@@ -39,7 +57,25 @@ class Beranda_model extends CI_Model
             GROUP BY id_detailtreatment
             ORDER BY qty DESC
             LIMIT 10";
-    return $topproduk = $this->db->query($sql)->result_array();
+    return $toptreatment = $this->db->query($sql)->result_array();
+  }
+
+  public function getTopTreatmentYear()
+  {
+    $tahunini = date('Y');
+    $sql = "SELECT detail_treatment.id_detailtreatment, detail_treatment.nm_treatment, (
+                                                                                        Select SUM(detail_penjualan.qty_treatment)
+                                                                                        FROM detail_penjualan
+                                                                                        JOIN penjualan ON detail_penjualan.id_penjualan = penjualan.id_penjualan
+                                                                                        WHERE detail_penjualan.id_detailtreatment = detail_treatment.id_detailtreatment
+                                                                                        AND YEAR(penjualan.tgl_penjualan) = $tahunini
+                                                                                        ) as qty
+            FROM detail_treatment
+            LEFT JOIN detail_penjualan USING(id_detailtreatment)
+            GROUP BY id_detailtreatment
+            ORDER BY qty DESC
+            LIMIT 10";
+    return $toptreatment2 = $this->db->query($sql)->result_array();
   }
 
   public function getPenjualan()
@@ -85,7 +121,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanHariIni()
   {
     $hariini = date("Y-m-d");
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('penjualan.tgl_penjualan', $hariini);
     return $query = $this->db->get('detail_penjualan')->row();
@@ -400,7 +436,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanJanuari()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=01');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -410,7 +446,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanFebruari()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=02');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -420,7 +456,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanMaret()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=03');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -430,7 +466,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanApril()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=04');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -439,7 +475,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanMei()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=05');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -449,7 +485,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanJuni()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=06');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -459,7 +495,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanJuli()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=07');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -469,7 +505,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanAgustus()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=08');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -479,7 +515,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanSeptember()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=09');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -489,7 +525,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanOktober()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=10');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -499,7 +535,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanNovember()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=11');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);
@@ -509,7 +545,7 @@ class Beranda_model extends CI_Model
   public function jumlahPendapatanDesember()
   {
     $tahun = date('Y');
-    $this->db->select_sum('detail_penjualan.total_penjualan');
+    $this->db->select_sum('detail_penjualan.subtotal');
     $this->db->join('penjualan', 'detail_penjualan.id_penjualan = penjualan.id_penjualan');
     $this->db->where('MONTH(penjualan.tgl_penjualan)=12');
     $this->db->where('YEAR(penjualan.tgl_penjualan)=', $tahun);

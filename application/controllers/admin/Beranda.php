@@ -18,8 +18,13 @@ class Beranda extends CI_Controller
     $data['icon'] = "home";
 
     $data['produk'] = $this->beranda_model->getAllProduk();
-    $data['topproduk'] = $this->beranda_model->getTopProduct();
-    $data['toptreatment'] = $this->beranda_model->getTopTreatment();
+
+    $data['topproduktahunini'] = $this->beranda_model->getTopProductYear();
+    $data['toptreatmenttahunini'] = $this->beranda_model->getTopTreatmentYear();
+    $data['topproduk'] = $this->beranda_model->getTopProductAll();
+    $data['toptreatment'] = $this->beranda_model->getTopTreatmentAll();
+
+
     $data['penjualan'] = $this->beranda_model->getPenjualan();
     $data['jumlahdokter'] = $this->beranda_model->jumlahDokter();
     $data['jumlahmember'] = $this->beranda_model->jumlahMember();

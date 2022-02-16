@@ -27,7 +27,7 @@ $tahun = date('Y');
           <font style="font-size: 8;  margin-bottom: 0;">
             Jl. Raya Syeh Quro No.43 Johar Lamaran, Karawang Wetan, Karawang Timur <br>
             Kabupaten Karawang, Jawa Barat 41314 <br>
-            Email : <a href="">nastyaderm75@gmail.com</a> | Telp : 0812 1856 9907 / 0813 1685 7489 <br>
+            Email : <a href="">nastyaderm75@gmail.com</a> | Telp : 0812 1856 9907 / 0838 7170 0686 <br>
             Facebook : Nbc Johar Lamaran / Ndk Karawang <br>
           </font>
           <font style="font-size: 8; margin-top: 0; padding-top: 0; margin-bottom: 0;">
@@ -64,7 +64,7 @@ $tahun = date('Y');
           <i>Amount Received</i>
         </td>
         <td valign="top">:</td>
-        <td valign="top"><?= strtoupper(terbilang($sum['total_penjualan'])) ?></td>
+        <td valign="top"><?= strtoupper(terbilang($sum_subtotal['subtotal'])) ?></td>
       </tr>
       <tr>
         <td>
@@ -103,8 +103,8 @@ $tahun = date('Y');
               <td><?= $pp['jns_produk'] ?></td>
               <td align="right"><?= rupiah($pp['harga_produk']) ?></td>
               <td align="center"><?= $pp['qty_produk'] ?> x</td>
-              <td></td>
-              <td align="right"><?= rupiah($pp['qty_produk'] * $pp['harga_produk']) ?></td>
+              <td align="right"><?= rupiah($pp['diskon']); ?></td>
+              <td align="right"><?= rupiah($pp['subtotal']); ?></td>
             </tr>
           <?php $no++;
           }
@@ -119,8 +119,8 @@ $tahun = date('Y');
               <td><?= $pt['nm_treatment'] ?></td>
               <td align="right"><?= rupiah($pt['harga_treatment']) ?></td>
               <td align="center"><?= $pt['qty_treatment'] ?> x</td>
-              <td></td>
-              <td align="right"><?= rupiah($pt['qty_treatment'] * $pt['harga_treatment']) ?></td>
+              <td align="right"><?= rupiah($pt['diskon']); ?></td>
+              <td align="right"><?= rupiah($pt['subtotal']); ?></td>
             </tr>
           <?php $no++;
           } ?>
@@ -132,19 +132,19 @@ $tahun = date('Y');
       <tr>
         <td colspan="4" rowspan="3" style="border-left: 0px; border-bottom: 0px;">
           <div style="border-top: 2px solid #000; border-bottom: 2px solid #000; width: 30%; margin-left: 20px;">
-            <h5 align="center"><?= rupiah($sum['total_penjualan']) ?></h5>
+            <h5 align="center"><?= rupiah($sum_subtotal['subtotal']) ?></h5>
           </div>
         </td>
-        <td>SubTotal</td>
-        <td align="right"><?= rupiah($sum['total_penjualan']) ?></td>
+        <td>Total</td>
+        <td align="right"><?= rupiah($sum_total['total']) ?></td>
       </tr>
       <tr>
-        <td>Discount Total</td>
-        <td align="right">0</td>
+        <td>Discount</td>
+        <td align="right"><?= rupiah($sum_diskon['diskon']) ?></td>
       </tr>
       <tr>
-        <td><strong>Grand Total</strong></td>
-        <td align="right"><strong><?= rupiah($sum['total_penjualan']) ?></strong></td>
+        <td><strong>Subtotal</strong></td>
+        <td align="right"><strong><?= rupiah($sum_subtotal['subtotal']) ?></strong></td>
       </tr>
     </tbody>
   </table>

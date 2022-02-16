@@ -49,8 +49,6 @@ class Penjualan extends CI_Controller
       $this->load->view('admin/templates/footer');
     } else {
       $this->penjualan_model->simpan();
-      $this->session->set_flashdata('flash', 'ditambahkan');
-      redirect('admin/penjualan');
     }
   }
 

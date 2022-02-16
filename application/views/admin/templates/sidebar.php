@@ -107,7 +107,7 @@
                                                   } ?>" href="<?= base_url('admin/laporanproduk') ?>"><i class="fa fa-fw fa-box text-white"></i>Laporan Produk</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white <?php if ($this->uri->segment(2) == 'pasien') {
+                    <a class="nav-link text-white <?php if ($this->uri->segment(2) == 'laporanpasien') {
                                                     echo 'active';
                                                   } ?>" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-3" aria-controls="submenu-1-2"><i class="fa fa-fw fa-user text-white"></i> Laporan Pelanggan</a>
                     <div id="submenu-1-3" class="collapse submenu" style="background-color: #ececec;">

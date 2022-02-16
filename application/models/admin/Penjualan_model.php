@@ -66,6 +66,13 @@ class Penjualan_model extends CI_Model
       'waktu_simpan' => date('Y-m-d H:i:s')
     ];
     $this->db->insert('notifikasi', $datanotifikasi);
+
+    // Arahkan langsung ke detail penjualan
+    $this->db->select('id_penjualan');
+    $this->db->from('penjualan');
+    $this->db->order_by('id_penjualan', 'DESC');
+    $query = $this->db->get()->row_array();
+    redirect('admin/detail_penjualan/read/' . $query['id_penjualan']);
   }
 
   // public function simpan2()

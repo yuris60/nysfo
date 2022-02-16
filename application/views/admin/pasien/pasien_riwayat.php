@@ -106,8 +106,11 @@
                     <th>No</th>
                     <th>Tanggal</th>
                     <th>Nama Treatment</th>
-                    <th>Qty</th>
                     <th>Harga</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                    <th>Diskon</th>
+                    <th>Subtotal</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -119,8 +122,11 @@
                       <td><?= $no ?></td>
                       <td><?= $jt['tgl_penjualan'] ?></td>
                       <td><?= $jt['nm_treatment'] ?></td>
-                      <td><?= $jt['qty_treatment'] ?></td>
-                      <td><?= rupiah($jt['total_penjualan']) ?></td>
+                      <td align="right"><?= rupiah($jt['harga_treatment']); ?></td>
+                      <td align="center"><?= $jt['qty_treatment'] ?></td>
+                      <td align="right"><?= rupiah($jt['total']); ?></td>
+                      <td align="right"><?= rupiah($jt['diskon']); ?></td>
+                      <td align="right"><?= rupiah($jt['subtotal']); ?></td>
                     </tr>
                   <?php $no++;
                   } ?>
@@ -149,8 +155,11 @@
                         <th>No</th>
                         <th>Tanggal</th>
                         <th>Nama Produk</th>
-                        <th>Qty</th>
                         <th>Harga</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Diskon</th>
+                        <th>Subtotal</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -162,8 +171,11 @@
                           <td><?= $no ?></td>
                           <td><?= $jp['tgl_penjualan'] ?></td>
                           <td><?= $jp['jns_produk'] ?></td>
-                          <td><?= $jp['qty_produk'] ?></td>
-                          <td><?= rupiah($jp['total_penjualan']) ?></td>
+                          <td align="right"><?= rupiah($jt['harga_produk']); ?></td>
+                          <td align="center"><?= $jt['qty_produk'] ?></td>
+                          <td align="right"><?= rupiah($jt['total']); ?></td>
+                          <td align="right"><?= rupiah($jt['diskon']); ?></td>
+                          <td align="right"><?= rupiah($jt['subtotal']); ?></td>
                         </tr>
                       <?php $no++;
                       } ?>

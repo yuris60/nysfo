@@ -60,7 +60,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="list-footer"> <a href="#">View all notifications</a></div>
+                  <div class="list-footer"> <a>View all notifications</a></div>
                 </li>
               </ul>
             </li>
@@ -108,8 +108,8 @@
                     Akses : <?= $user['akses'] ?>
                   </span>
                 </div>
-                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                <a class="dropdown-item"><i class="fas fa-user mr-2"></i>Account</a>
+                <a class="dropdown-item"><i class="fas fa-cog mr-2"></i>Setting</a>
                 <a class="dropdown-item" href="<?= base_url('admin/login/logout') ?>"><i class="fas fa-power-off mr-2"></i>Logout</a>
               </div>
             </li>

@@ -32,21 +32,23 @@ header("Content-Disposition: attachment; filename=Penjualan Produk.xls");
     </thead>
     <tbody>
       <?php $no = 1;
-      foreach ($penjualan as $p) : ?>
-        <tr>
-          <td class="text-center"><?= $no ?></td>
-          <td><?= $p['jns_produk']; ?></td>
-          <td class="text-center">
-            <?php
-            if ($p['qty'] == null) {
-              echo 0;
-            } else {
-              echo $p['qty'];
-            }
-            ?>
-          </td>
-        </tr>
+      foreach ($penjualan as $p) :
+        if ($p['qty'] > 0) : ?>
+          <tr>
+            <td class="text-center"><?= $no ?></td>
+            <td><?= $p['jns_produk']; ?></td>
+            <td class="text-center">
+              <?php
+              if ($p['qty'] == null) {
+                echo 0;
+              } else {
+                echo $p['qty'];
+              }
+              ?>
+            </td>
+          </tr>
       <?php $no++;
+        endif;
       endforeach; ?>
     </tbody>
   </table>

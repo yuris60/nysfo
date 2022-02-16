@@ -38,6 +38,7 @@
       </div>
     </div>
 
+    <?php $this->session->set_userdata('detail_penjualan', current_url()); ?>
     <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
 
     <div class="row">
@@ -88,9 +89,21 @@
               <div class="card-body">
 
                 <div class="form-group">
-                  <label>Total Pembayaran</label>
+                  <label>Total</label>
                   <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text">Rp. </span></span>
-                    <input type="text" class="form-control <?= form_error('total_pembayaran') ? 'is-invalid' : '' ?>" name="total_pembayaran" id="total_pembayaran" value="<?= rupiah($sum['total_penjualan']) ?>" readonly>
+                    <input type="text" class="form-control" value="<?= rupiah($sum_total['total']) ?>" readonly>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Diskon</label>
+                  <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text">Rp. </span></span>
+                    <input type="text" class="form-control" value="<?= rupiah($sum_diskon['diskon']) ?>" readonly>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Subtotal</label>
+                  <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text">Rp. </span></span>
+                    <input type="text" class="form-control" value="<?= rupiah($sum_subtotal['subtotal']) ?>" readonly>
                   </div>
                 </div>
 
@@ -121,10 +134,12 @@
               <table class="table table-striped table-bordered first">
                 <thead>
                   <tr>
-                    <th>No</th>
-                    <th>Nama Treatment</th>
-                    <th>Qty</th>
+                    <th width="10px">No</th>
+                    <th>Nama Produk</th>
+                    <th width="10px">Qty</th>
                     <th>Harga</th>
+                    <th>Diskon</th>
+                    <th>Subtotal</th>
                     <th width="auto">Aksi</th>
                   </tr>
                 </thead>
@@ -137,7 +152,9 @@
                       <td><?= $no ?></td>
                       <td><?= $jt['nm_treatment'] ?></td>
                       <td><?= $jt['qty_treatment'] ?></td>
-                      <td><?= rupiah($jt['total_penjualan']) ?></td>
+                      <td><?= rupiah($jt['total']) ?></td>
+                      <td><?= rupiah($jt['diskon']) ?></td>
+                      <td><?= rupiah($jt['subtotal']) ?></td>
                       <td>
                         <!-- <a href="<?= base_url() ?>detail_penjualan/update/<?= $jt['id_penjualan'] ?>/<?= $jt['id_penjualan'] ?>">
                           <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>
@@ -171,10 +188,12 @@
                   <table class="table table-striped table-bordered first">
                     <thead>
                       <tr>
-                        <th>No</th>
+                        <th width="10px">No</th>
                         <th>Nama Produk</th>
-                        <th>Qty</th>
+                        <th width="10px">Qty</th>
                         <th>Harga</th>
+                        <th>Diskon</th>
+                        <th>Subtotal</th>
                         <th width="auto">Aksi</th>
                       </tr>
                     </thead>
@@ -184,10 +203,12 @@
                       foreach ($join_produk as $jp) {
                       ?>
                         <tr>
-                          <td><?= $no ?></td>
+                          <td width="10px"><?= $no ?></td>
                           <td><?= $jp['jns_produk'] ?></td>
-                          <td><?= $jp['qty_produk'] ?></td>
-                          <td><?= rupiah($jp['total_penjualan']) ?></td>
+                          <td width="10px"><?= $jp['qty_produk'] ?></td>
+                          <td><?= rupiah($jp['total']) ?></td>
+                          <td><?= rupiah($jp['diskon']) ?></td>
+                          <td><?= rupiah($jp['subtotal']) ?></td>
                           <td>
                             <!-- <a href="<?= base_url() ?>detail_penjualan/update/<?= $jp['id_detailpenjualan'] ?>/<?= $jp['id_penjualan'] ?>">
                               <button type="button" class="btn btn-sm btn-warning" data-toggle="tooltip" data-placement="top" title="Perbaharui Data"><i class="fas fa-edit"></i></button>

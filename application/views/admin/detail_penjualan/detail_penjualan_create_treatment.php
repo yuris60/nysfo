@@ -83,6 +83,14 @@
                 </div>
               </div>
 
+              <div class="form-group">
+                <label>Diskon <code>(Dalam Persen)</code></label>
+                <input type="number" min=0 value=0 max="100" class="form-control <?= form_error('diskon') ? 'is-invalid' : '' ?>" name="diskon" id="diskon">
+                <div class="invalid-feedback">
+                  <?= form_error('diskon'); ?>
+                </div>
+              </div>
+
             </div>
             <div class="card-footer">
               <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Simpan</button>

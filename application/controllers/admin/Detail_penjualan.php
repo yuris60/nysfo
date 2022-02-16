@@ -27,7 +27,9 @@ class Detail_penjualan extends CI_Controller
     // $data['detail_penjualan'] = $this->detail_penjualan_model->getAll($where);
     $data['join_treatment'] = $this->detail_penjualan_model->getJoinTreatment($where);
     $data['join_produk'] = $this->detail_penjualan_model->getJoinProduct($where);
-    $data['sum'] = $this->detail_penjualan_model->sumTotalPembayaran($where);
+    $data['sum_total'] = $this->detail_penjualan_model->sumTotal($where);
+    $data['sum_diskon'] = $this->detail_penjualan_model->sumDiskon($where);
+    $data['sum_subtotal'] = $this->detail_penjualan_model->sumSubtotal($where);
 
     $this->load->view('admin/templates/header', $data);
     $this->load->view('admin/templates/navbar');
@@ -119,7 +121,8 @@ class Detail_penjualan extends CI_Controller
     $this->detail_penjualan_model->tambahStokProdukDelete($where2, $where4);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_penjualan/read/' . $data['penjualan'] . "/" . $where2);
-    redirect('admin/penjualan');
+    $referred_from = $this->session->userdata('detail_penjualan');
+    redirect($referred_from, 'refresh');
   }
 
   public function deleteTreatment($where)
@@ -129,7 +132,8 @@ class Detail_penjualan extends CI_Controller
     $this->detail_penjualan_model->deleteTreatment($where3);
     $this->session->set_flashdata('flash', 'dihapus');
     // redirect('detail_penjualan/read/' . $data['penjualan'] . "/" . $where2);
-    redirect('admin/penjualan');
+    $referred_from = $this->session->userdata('detail_penjualan');
+    redirect($referred_from, 'refresh');
   }
 
   public function update($where, $where2)
@@ -181,7 +185,9 @@ class Detail_penjualan extends CI_Controller
     $data['penjualanallbyid'] = $this->detail_penjualan_model->getAllStruk($where)->row_array();
     $data['penjualanproduk'] = $this->detail_penjualan_model->getJoinProduct($where);
     $data['penjualantreatment'] = $this->detail_penjualan_model->getJoinTreatment($where);
-    $data['sum'] = $this->detail_penjualan_model->sumTotalPembayaran($where);
+    $data['sum_total'] = $this->detail_penjualan_model->sumTotal($where);
+    $data['sum_diskon'] = $this->detail_penjualan_model->sumDiskon($where);
+    $data['sum_subtotal'] = $this->detail_penjualan_model->sumSubtotal($where);
 
     //load halaman
     $this->load->library('pdf');

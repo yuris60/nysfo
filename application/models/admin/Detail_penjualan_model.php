@@ -124,12 +124,27 @@ class Detail_penjualan_model extends CI_Model
     $this->db->update('produk', ['stok' => $stokbaru]);
   }
 
-  public function sumTotalPembayaran($where)
+  public function sumTotal($where)
   {
-    $this->db->select_sum('total_penjualan');
+    $this->db->select_sum('total');
     $this->db->where('id_penjualan', $where);
     return $this->db->get('detail_penjualan')->row_array();
   }
+
+  public function sumDiskon($where)
+  {
+    $this->db->select_sum('diskon');
+    $this->db->where('id_penjualan', $where);
+    return $this->db->get('detail_penjualan')->row_array();
+  }
+
+  public function sumSubtotal($where)
+  {
+    $this->db->select_sum('subtotal');
+    $this->db->where('id_penjualan', $where);
+    return $this->db->get('detail_penjualan')->row_array();
+  }
+
 
   public function simpan($where)
   {
@@ -141,7 +156,9 @@ class Detail_penjualan_model extends CI_Model
       $db = $this->db->get()->row_array();
       $harga_treatment = $db['harga_treatment'];
       $qty = $this->input->post('qty_treatment');
-      $total_penjualan = $harga_treatment * $qty;
+      $total = $harga_treatment * $qty;
+      $diskon = $this->input->post('diskon') * $total / 100;
+      $subtotal = $total - $diskon;
     } elseif ($this->input->post('id_produk') != 0) { //jika simpan produk maka hitung jumlah harga produk
       $this->db->select('harga_produk, stok');
       $this->db->from('produk');
@@ -149,12 +166,14 @@ class Detail_penjualan_model extends CI_Model
       $db = $this->db->get()->row_array();
       $harga_produk = $db['harga_produk'];
       $qty_produk = $this->input->post('qty_produk');
-      $total_penjualan = $harga_produk * $qty_produk;
-
+      $total = $harga_produk * $qty_produk;
+      $diskon = $this->input->post('diskon') * $total / 100;
+      $subtotal = $total - $diskon;
       $stok = $db['stok'];
       if ($stok < $this->input->post('qty_produk')) {
         $this->session->set_flashdata('flash-data-stok-kurang', 'penjualan');
-        redirect('admin/penjualan');
+        $referred_from = $this->session->userdata('detail_penjualan');
+        redirect($referred_from, 'refresh');
       }
     }
 
@@ -164,7 +183,9 @@ class Detail_penjualan_model extends CI_Model
       'id_produk' => htmlspecialchars($this->input->post('id_produk', true)),
       'qty_treatment' => htmlspecialchars($this->input->post('qty_treatment', true)),
       'qty_produk' => htmlspecialchars($this->input->post('qty_produk', true)),
-      'total_penjualan' => $total_penjualan
+      'total' => $total,
+      'diskon' => $diskon,
+      'subtotal' => $subtotal
     ];
 
     $this->db->insert('detail_penjualan', $data);
