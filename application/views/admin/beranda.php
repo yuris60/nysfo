@@ -127,7 +127,7 @@ foreach ($jumlahpendapatanhariini as $pendapatanhariini) {
       <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
 
         <div class="card">
-          <h5 class="card-header bg-light"><i class="fas fa-money-bill-alt"></i> Total Pendapatan Perbulan</h5>
+          <h5 class="card-header bg-light"><i class="fas fa-money-bill-alt"></i> Total Pendapatan Tahun <?= date('Y') ?></h5>
           <div class="card-body">
 
             <canvas id="myChart"></canvas>
