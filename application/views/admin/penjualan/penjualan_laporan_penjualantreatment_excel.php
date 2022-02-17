@@ -1,7 +1,15 @@
 <?php
 // Skrip berikut ini adalah skrip yang bertugas untuk meng-export data tadi ke excell
-header("Content-type: application/vnd-ms-excel");
-header("Content-Disposition: attachment; filename=Penjualan Produk.xls");
+if (!empty($periode_bulanan)) {
+  header("Content-type: application/vnd-ms-excel");
+  header("Content-Disposition: attachment; filename=Penjualan Treatment Bulan " . date('M Y', strtotime($periode_bulanan)) . ".xls");
+} elseif (!empty($periode_tahunan)) {
+  header("Content-type: application/vnd-ms-excel");
+  header("Content-Disposition: attachment; filename=Penjualan Treatment Tahun " . date('Y', strtotime($periode_tahunan)) . ".xls");
+} else {
+  header("Content-type: application/vnd-ms-excel");
+  header("Content-Disposition: attachment; filename=Penjualan Treatment Custom.xls");
+}
 ?>
 
 <!DOCTYPE html>

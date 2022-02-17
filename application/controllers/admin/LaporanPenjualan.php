@@ -9,6 +9,7 @@ class laporanpenjualan extends CI_Controller
     $this->load->model('admin/laporanpenjualan_model');
     $this->load->model('admin/login_model');
     $this->load->helper('tglindo');
+    $this->load->helper('formatrupiah');
   }
 
   public function index()
@@ -102,12 +103,16 @@ class laporanpenjualan extends CI_Controller
       }
     } else if (isset($_POST['excel'])) { //jika klik tombol excel
       if ($this->input->post('bulanan')) {
+        $data['periode_bulanan'] = $this->input->post('bulanan');
         $data['penjualan'] = $this->laporanpenjualan_model->penjualanTreatmentBulanan();
         $this->load->view('admin/penjualan/penjualan_laporan_penjualantreatment_excel', $data);
       } else if ($this->input->post('tahunan')) {
         $data['penjualan'] = $this->laporanpenjualan_model->penjualanTreatmentTahunan();
+        $data['periode_tahunan'] = $this->input->post('tahunan');
         $this->load->view('admin/penjualan/penjualan_laporan_penjualantreatment_excel', $data);
       } else if ($this->input->post('custom_start')) { //custom
+        $data['custom_start'] = $this->input->post('custom_start');
+        $data['custom_end'] = $this->input->post('custom_end');
         $data['penjualan'] = $this->laporanpenjualan_model->penjualanTreatmentCustom();
         $this->load->view('admin/penjualan/penjualan_laporan_penjualantreatment_excel', $data);
       }
@@ -189,14 +194,115 @@ class laporanpenjualan extends CI_Controller
       }
     } else if (isset($_POST['excel'])) { //jika klik tombol excel
       if ($this->input->post('bulanan')) {
+        $data['periode_bulanan'] = $this->input->post('bulanan');
         $data['penjualan'] = $this->laporanpenjualan_model->penjualanTreatmentBulanan();
         $this->load->view('admin/penjualan/penjualan_laporan_penjualantreatment_excel', $data);
       } else if ($this->input->post('tahunan')) {
+        $data['periode_tahunan'] = $this->input->post('tahunan');
         $data['penjualan'] = $this->laporanpenjualan_model->penjualanTreatmentTahunan();
         $this->load->view('admin/penjualan/penjualan_laporan_penjualantreatment_excel', $data);
       } else if ($this->input->post('custom_start')) { //custom
+        $data['custom_start'] = $this->input->post('custom_start');
+        $data['custom_end'] = $this->input->post('custom_end');
         $data['penjualan'] = $this->laporanpenjualan_model->penjualanTreatmentCustom();
         $this->load->view('admin/penjualan/penjualan_laporan_penjualantreatment_excel', $data);
+      }
+    }
+  }
+
+  public function keuangan()
+  {
+    if (isset($_POST["pdf"])) {
+      if ($this->input->post('bulanan')) {
+        $where = $this->input->post('bulanan');
+        $data['title'] = "Cetak Laporan Keuangan Bulan " . date('M Y', strtotime($where));
+        $data['penjualantreatment'] = $this->laporanpenjualan_model->keuanganBulananTreatment();
+        $data['penjualanproduk'] = $this->laporanpenjualan_model->keuanganBulananProduk();
+        $data['num_rows'] = count($data['penjualantreatment']) + count($data['penjualanproduk']);
+        $data['periode_bulanan'] = $this->input->post('bulanan');
+
+        if ($data['num_rows'] > 0) { //jika data tersedia, maka
+          //load halaman
+          $this->load->library('pdf');
+
+          //inisialisasi variabel untuk dompdf
+          $paper_size = 'A4';
+          $orientation = 'portrait';
+
+          //terapkan ke dompdf
+          $this->pdf->setPaper($paper_size, $orientation);
+          $this->pdf->filename = "Cetak Laporan Keuangan Bulan " . date('M Y', strtotime($where));
+          $this->pdf->load_view('admin/penjualan/penjualan_laporan_keuangan_pdf', $data);
+        } else {
+          $this->session->set_flashdata('flash', 'Ada');
+          redirect('admin/laporanpenjualan');
+        }
+      } else if ($this->input->post('tahunan')) {
+        $where = $this->input->post('tahunan');
+        $data['title'] = "Cetak Laporan Keuangan Tahun " . date('Y', strtotime($where));
+        $data['penjualantreatment'] = $this->laporanpenjualan_model->keuanganTahunanTreatment();
+        $data['penjualanproduk'] = $this->laporanpenjualan_model->keuanganTahunanProduk();
+        $data['num_rows'] = count($data['penjualantreatment']) + count($data['penjualanproduk']);
+        $data['periode_tahunan'] = $this->input->post('tahunan');
+
+        if ($data['num_rows'] > 0) { //jika data tersedia, maka
+          //load halaman
+          $this->load->library('pdf');
+
+          //inisialisasi variabel untuk dompdf
+          $paper_size = 'A4';
+          $orientation = 'portrait';
+
+          //terapkan ke dompdf
+          $this->pdf->setPaper($paper_size, $orientation);
+          $this->pdf->filename = "Cetak Laporan Keuangan Tahun " . date('Y', strtotime($where));
+          $this->pdf->load_view('admin/penjualan/penjualan_laporan_keuangan_pdf', $data);
+        } else {
+          $this->session->set_flashdata('flash', 'Ada');
+          redirect('admin/laporanpenjualan');
+        }
+      } else if ($this->input->post('custom_start')) { //custom
+        $custom_start = $this->input->post('custom_start');
+        $custom_end = $this->input->post('custom_end');
+        $data['title'] = "Cetak Laporan Keuangan Tanggal " . date('d M Y', strtotime($custom_start)) . " - " . date('d M Y', strtotime($custom_end));
+        $data['penjualantreatment'] = $this->laporanpenjualan_model->keuanganCustomTreatment();
+        $data['penjualanproduk'] = $this->laporanpenjualan_model->keuanganCustomProduk();
+        $data['num_rows'] = count($data['penjualantreatment']) + count($data['penjualanproduk']);
+        $data['custom_start'] = $this->input->post('custom_start');
+        $data['custom_end'] = $this->input->post('custom_end');
+
+        if ($data['num_rows'] > 0) { //jika data tersedia, maka
+          //load halaman
+          $this->load->library('pdf');
+
+          //inisialisasi variabel untuk dompdf
+          $paper_size = 'A4';
+          $orientation = 'portrait';
+          $this->pdf->setPaper($paper_size, $orientation);
+          $this->pdf->filename = "Cetak Laporan Keuangan Tanggal " . date('d M Y', strtotime($custom_start)) . " - " . date('d M Y', strtotime($custom_end));
+          $this->pdf->load_view('admin/penjualan/penjualan_laporan_keuangan_pdf', $data);
+        } else {
+          $this->session->set_flashdata('flash', 'Ada');
+          redirect('admin/laporanpenjualan');
+        }
+      }
+    } else if (isset($_POST['excel'])) { //jika klik tombol excel
+      if ($this->input->post('bulanan')) {
+        $data['periode_bulanan'] = $this->input->post('bulanan');
+        $data['penjualantreatment'] = $this->laporanpenjualan_model->keuanganBulananTreatment();
+        $data['penjualanproduk'] = $this->laporanpenjualan_model->keuanganBulananProduk();
+        $this->load->view('admin/penjualan/penjualan_laporan_keuangan_excel', $data);
+      } else if ($this->input->post('tahunan')) {
+        $data['periode_tahunan'] = $this->input->post('tahunan');
+        $data['penjualantreatment'] = $this->laporanpenjualan_model->keuanganTahunanTreatment();
+        $data['penjualanproduk'] = $this->laporanpenjualan_model->keuanganTahunanProduk();
+        $this->load->view('admin/penjualan/penjualan_laporan_keuangan_excel', $data);
+      } else if ($this->input->post('custom_start')) { //custom
+        $data['custom_start'] = $this->input->post('custom_start');
+        $data['custom_end'] = $this->input->post('custom_end');
+        $data['penjualantreatment'] = $this->laporanpenjualan_model->keuanganCustomTreatment();
+        $data['penjualanproduk'] = $this->laporanpenjualan_model->keuanganCustomProduk();
+        $this->load->view('admin/penjualan/penjualan_laporan_keuangan_excel', $data);
       }
     }
   }
