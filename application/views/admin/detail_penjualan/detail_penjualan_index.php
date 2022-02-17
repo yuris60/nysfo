@@ -1,3 +1,4 @@
+<div class="flash-data-stok-kurang" data-flashdata="<?= $this->session->flashdata('flash-data-stok-kurang'); ?>"></div>
 <!-- wrapper  -->
 <!-- ============================================================== -->
 <div class="dashboard-wrapper">

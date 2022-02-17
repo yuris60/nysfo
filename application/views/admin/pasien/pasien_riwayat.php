@@ -94,7 +94,7 @@
         <div class="card">
           <div class="card-header">
             <h4><i class="fas fa-stethoscope"></i> Treatment
-              <a href="<?= base_url('admin/detail_penjualan/createtreatment/') . $penjualan['id_penjualan'] ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
+              <!-- <a href="<?= base_url('admin/detail_penjualan/createtreatment/') . $penjualan['id_penjualan'] ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a> -->
             </h4>
           </div>
 
@@ -143,7 +143,7 @@
             <div class="card">
               <div class="card-header">
                 <h4><i class="fas fa-box"></i> Produk
-                  <a href="<?= base_url('admin/detail_penjualan/createproduk/') . $penjualan['id_penjualan'] ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a>
+                  <!-- <a href="<?= base_url('admin/detail_penjualan/createproduk/') . $penjualan['id_penjualan'] ?>" class="float-right" data-toggle="tooltip" data-placement="top" title="Tambah Data"><button class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></button></a> -->
                 </h4>
               </div>
 
@@ -171,11 +171,11 @@
                           <td><?= $no ?></td>
                           <td><?= $jp['tgl_penjualan'] ?></td>
                           <td><?= $jp['jns_produk'] ?></td>
-                          <td align="right"><?= rupiah($jt['harga_produk']); ?></td>
-                          <td align="center"><?= $jt['qty_produk'] ?></td>
-                          <td align="right"><?= rupiah($jt['total']); ?></td>
-                          <td align="right"><?= rupiah($jt['diskon']); ?></td>
-                          <td align="right"><?= rupiah($jt['subtotal']); ?></td>
+                          <td align="right"><?= rupiah($jp['harga_produk']); ?></td>
+                          <td align="center"><?= $jp['qty_produk'] ?></td>
+                          <td align="right"><?= rupiah($jp['total']); ?></td>
+                          <td align="right"><?= rupiah($jp['diskon']); ?></td>
+                          <td align="right"><?= rupiah($jp['subtotal']); ?></td>
                         </tr>
                       <?php $no++;
                       } ?>

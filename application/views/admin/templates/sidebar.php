@@ -136,7 +136,7 @@
                   <li class="nav-item ">
                     <a class="nav-link text-white <?php if ($this->uri->segment(2) == 'tentang') {
                                                     echo 'active';
-                                                  } ?>" href="<?= base_url('admin/tentang/') ?>"><i class="fa fa-fw fa-info text-white"></i>Pembaruan Aplikasi</a>
+                                                  } ?>" href="<?= base_url('admin/tentang/') ?>"><i class="fa fa-fw fa-info text-white"></i>Tentang Aplikasi</a>
                   </li>
                   <li class="nav-divider">
 
