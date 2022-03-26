@@ -314,7 +314,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-3 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-heart-circle"></i></div>
               <h4><a href="#">Natural</a></h4>
@@ -425,31 +425,25 @@
           <div class="col-lg-12">
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/1.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment1.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/2.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment2.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/3.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment3.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/4.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment4.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/5.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment5.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/6.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment6.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/7.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/8.webp') ?>" height="350px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/9.webp') ?>" height="350px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment7.webp') ?>" height="500px" class="border border-dark" alt="">
               </div>
             </div>
           </div>
@@ -618,17 +612,16 @@
           <li data-filter="*" class="filter-active">Semuanya</li>
           <li data-filter=".filter-klinik">Klinik</li>
           <li data-filter=".filter-treatment">Treatment</li>
-          <li data-filter=".filter-beforeafter">Before After</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-14.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 1</p>
-              <a href="assets/img/portfolio/portfolio-1.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-14.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
@@ -649,16 +642,6 @@
               <h4>Klinik</h4>
               <p>Dokumentasi 2</p>
               <a href="assets/img/portfolio/portfolio-3.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-beforeafter">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Before After</h4>
-              <p>Dokumentasi 1</p>
-              <a href="assets/img/portfolio/portfolio-4.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
@@ -694,31 +677,31 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-18.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Klinik</h4>
+              <p>Dokumentasi 7</p>
+              <a href="assets/img/portfolio/portfolio-18.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-15.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 4</p>
-              <a href="assets/img/portfolio/portfolio-3.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/img/portfolio/portfolio-15.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-beforeafter">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt=""></div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-16.webp" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Before After</h4>
-              <p>Dokumentasi 2</p>
-              <a href="assets/img/portfolio/portfolio-7.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-beforeafter">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Before After</h4>
-              <p>Dokumentasi 3</p>
-              <a href="assets/img/portfolio/portfolio-8.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <h4>Klinik</h4>
+              <p>Dokumentasi 5</p>
+              <a href="assets/img/portfolio/portfolio-16.web" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
@@ -729,6 +712,16 @@
               <h4>Treatment</h4>
               <p>Dokumentasi 4</p>
               <a href="assets/img/portfolio/portfolio-9.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-17.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Klinik</h4>
+              <p>Dokumentasi 6</p>
+              <a href="assets/img/portfolio/portfolio-17.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
               <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
@@ -827,6 +820,46 @@
               </h5>
               <p>Alhamdulillah jerawatnya udah mengering, bekas jerawatnya juga udah memudar.</p>
             </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni1.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni2.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni3.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni4.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni5.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni6.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni7.webp') ?>" height="350px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni8.webp') ?>" height="350px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-6 col-12">
+            <img src="<?= base_url('assets/img/testimoni/watestimoni1.webp') ?>" width="100%" alt="">
+          </div>
+          <div class="col-lg-6 col-12">
+            <img src="<?= base_url('assets/img/testimoni/watestimoni2.webp') ?>" width="100%" alt="">
           </div>
         </div>
 
@@ -987,6 +1020,16 @@
                 <p class="name">Rusbaiyah</p>
                 <i class="fas fa-home"></i> Semarang <br>
                 <i class="fas fa-phone"></i> 081274411639
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 kotakdalam" data-aos="fade-down">
+            <div class="kotakluar" style="padding: 20px;">
+              <span class="badge bg-success text-white">Reseller</span>
+              <div class="text-center">
+                <p class="name">Mariyana</p>
+                <i class="fas fa-home"></i> Majalaya, Karawang <br>
+                <i class="fas fa-phone"></i> 081296451983
               </div>
             </div>
           </div>
