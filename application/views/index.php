@@ -461,6 +461,66 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-dark">
+              <div class="ribbon2">For Men</div>
+              <img src="<?= base_url('assets/img/beranda/Sunscreen Spray.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center text-white">Sunscreen Spray</h4>
+                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
+                <h4 class="text-center text-white"><sup>Rp.</sup> 110.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Spray" data-detail="Dapat meningkatkan kemampuan penyerapan kulit, Gff efektif untuk melembabkan, mencerahkan, mengontrol produksi sebum, mengurangi jerawat, dan meningkatkan elastisitas kulit, Niacinamide melembabkan, anti-inflamasi yang dapat mencegah kulit mengalami kemerahan dan iritasi akibat terpapar sinar oleh sinar UV."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-dark">
+              <div class="ribbon2">For Men</div>
+              <img src="<?= base_url('assets/img/beranda/Brightening Facial Wash.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center text-white">Brightening Facial Wash</h4>
+                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
+                <h4 class="text-center text-white"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Brightening Facial Wash" data-detail="Membersihkan kulit wajah dari kotoran, debu dan sisa make up yang menempel dikulit wajah."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card bg-dark">
+              <div class="ribbon2">For Men</div>
+              <img src="<?= base_url('assets/img/beranda/Energizing Serum.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center text-white">Energizing Serum</h4>
+                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
+                <h4 class="text-center text-white"><sup>Rp.</sup> 95.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Energizing Serum" data-detail="Centella Asiatica dengan anti-aging, melawan jerawat, Niacinamide melembabkan, menyamarkan noda hitam, Galactomyces melembabkan dan melindungi kulit dari radikal bebas serta sinar UV dan mencegah penuaan dini.."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <div class="ribbon">New</div>
+              <img src="<?= base_url('assets/img/beranda/Acne Spot.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Acne Spot</h4>
+                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 85.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Acne Spot" data-detail="Mengandung bahan natural dan zat aktif lainnya yang dapat membantu merawat kulit berjerawat serta melawan bakteri penyebab jerawat."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card">
+              <div class="ribbon">New</div>
+              <img src="<?= base_url('assets/img/beranda/Smooth Secret Facial Wash Acne.webp') ?>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title text-center">Smooth Secret Facial Wash Acne</h4>
+                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
+                <h4 class="text-center text-success"><sup>Rp.</sup> 75.000</h4>
+                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Smooth Secret Facial Wash Acne" data-detail="Sabun Jerawat yang tidak membuat kulit kering, Merupakan pembersih yang dapat digunakan untuk kulit yang berjerawat. Mengandung encapsulation  salicylic acid dan bahan natural yang menjadikan kulit tampak lebih bersih, halus, lembut terawat dan terasa lembab."><button class="btn btn-success btn-block">Lihat Detail</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
@@ -827,28 +887,31 @@
           <div class="col-lg-12">
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni1.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni1.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni2.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni9.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni3.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni2.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni4.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni3.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni5.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni4.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni6.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni5.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni7.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni6.webp') ?>" height="360px" alt="">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni8.webp') ?>" height="350px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni7.webp') ?>" height="360px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni8.webp') ?>" height="360px" alt="">
               </div>
             </div>
           </div>
@@ -917,6 +980,32 @@
             </div>
           </div>
         </div>
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <h3 class="text-center text-white text-uppercase">Dapatkan juga keuntungannya jika bergabung menjadi mitra kami.</h3>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="<?= base_url('assets/img/mitra/mitra1.webp') ?>" height="510px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/mitra/mitra2.webp') ?>" height="510px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/mitra/mitra3.webp') ?>" height="510px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/mitra/mitra4.webp') ?>" height="510px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/mitra/mitra5.webp') ?>" height="510px" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/mitra/mitra6.webp') ?>" height="510px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- Contact Gabung Reseller -->
