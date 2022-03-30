@@ -1250,8 +1250,9 @@ section {
 .pricing .title {
 	font-weight: 500;
 	margin-bottom: 15px;
-	font-size: 20px;
+	font-size: 38px;
 	color: #28a745;
+	text-align: center;
 }
 
 .pricing h3 {
@@ -1262,7 +1263,7 @@ section {
 }
 
 .pricing h4 {
-	font-size: 48px;
+	font-size: 50px;
 	color: #28a745;
 	font-weight: 400;
 	font-family: "Jost", sans-serif;
@@ -1290,6 +1291,7 @@ section {
 .pricing ul li {
 	padding: 10px 0 10px 30px;
 	position: relative;
+	font-size: 18px;
 }
 
 .pricing ul i {
@@ -1387,9 +1389,9 @@ section {
 # Product
 --------------------------------------------------------------*/
 .product h2 {
-	font-weight: 500;
+	font-weight: 800;
 	margin-bottom: 15px;
-	font-size: 20px;
+	font-size: 30px;
 	color: #28a745;
 }
 

@@ -6,8 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Nastyaderm</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="author" content="Nastyaderm">
+  <meta name="keywords" content="Skincare Aman, Skincare Lokal, Skincare Halal">
+  <meta name="description" content="Nastyaderm merupakan salah satu brand skincare lokal asli Indonesia yang terbuat dari bahan alami dan aman untuk anda yang memiliki kulit sensitif. Produk kecantikan ini dibuat langsung oleh dr. Lina Wijaya. Saat ini produk Nastyaderm memiliki beberapa varian paket yaitu paket acne, paket glowing/antiaging dan paket flek. Dari masing-masing paket tersebut terdiri dari facial wash, skin toner, day cream dan night cream.">
 
   <!-- Favicons -->
   <link rel="icon" href="<?= base_url('assets/') ?>img/logo_nastya.png">
@@ -99,7 +100,7 @@
           <h2><i>" Inner Beauty For Skin "</i></h2>
           <div class="d-lg-flex">
             <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
-            <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://drive.google.com/file/d/19YrSBfBAZ1V73V5UgUCA5ns_pJcIkYWG/preview">Pengenalan Produk</a>
+            <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://drive.google.com/file/d/15ZcWu08GctKCgKBy93HuxPkXPMfcUraV/preview">Pengenalan Produk</a>
             <a href="https://www.youtube.com/watch?v=s9TjnzuZ2gE" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Lihat Video Branding Kami <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
@@ -344,115 +345,8 @@
     </section>
     <!-- End Services Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pilihan Paket</h2>
-          <p>Sudah kami siapkan saran paket produk yang bisa anda pilih sesuai dengan keinginan anda.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h2 class="title">Paket Acne (Paket Extra Acne Series)</h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
-              <ul>
-                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
-                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner TTO</li>
-                <li><i class="bx bx-check"></i> Sunscreen Acne</li>
-                <li><i class="bx bx-check"></i> Acne Clearing Moisturizer Cream</li>
-                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream</li> -->
-                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
-              </ul>
-              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
-              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box featured">
-              <h2 class="title">Paket Glowing (Paket Extra Anti Aging</h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
-              <ul>
-                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
-                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
-                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
-                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
-                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Glowing</li> -->
-                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
-              </ul>
-              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
-              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h2 class="title">Paket Flek Hitam (Paket Extra Flek Hitam)</h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
-              <ul>
-                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
-                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
-                <li><i class="bx bx-check"></i> Lightening Sunscreen BB Cream (Day Cream)</li>
-                <li><i class="bx bx-check"></i> Whitening Secret Night Cream (Night Cream)</li>
-                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Flek</li> -->
-                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
-              </ul>
-              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
-              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Pricing Section -->
-
-    <section id="treatment" class="">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Pilihan Treatment</h2>
-          <p>Pada klinik kami, kami menyediakan pilihan treatment yang sesuai dengan kebutuhan kulit anda.</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment1.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment2.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment3.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment4.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment5.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment6.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-              <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment7.webp') ?>" height="500px" class="border border-dark" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Product -->
-    <section id="product" class="product section-bg">
+    <section id="product" class="product">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Pilihan Produk</h2>
@@ -659,6 +553,101 @@
     </section>
     <!-- End of Product -->
 
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pilihan Paket</h2>
+          <p>Sudah kami siapkan saran paket produk yang bisa anda pilih sesuai dengan keinginan anda dan kami berikan harga potongan.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h2 class="title">Paket Acne<br><small>(Paket Extra Acne Series)</small></h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner TTO</li>
+                <li><i class="bx bx-check"></i> Sunscreen Acne</li>
+                <li><i class="bx bx-check"></i> Acne Clearing Moisturizer Cream</li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream</li> -->
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h2 class="title">Paket Glowing<br><small>(Paket Extra Anti Aging)</small></h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
+                <li><i class="bx bx-check"></i> Lightening Cream (Day Cream)</li>
+                <li><i class="bx bx-check"></i> Whitening Secret Night Creacream (Night Cream)</li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Glowing</li> -->
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h2 class="title">Paket Flek Hitam<br><small>(Paket Extra Flek Hitam)</small></h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
+                <li><i class="bx bx-check"></i> Lightening Sunscreen BB Cream (Day Cream)</li>
+                <li><i class="bx bx-check"></i> Whitening Secret Night Cream (Night Cream)</li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Flek</li> -->
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box bg-dark text-white">
+              <h2 class="title text-white">Paket For Men <br><small>(Khusus bagi para pria)</small></h2>
+              <img src="<?= base_url('assets/img/beranda/Paket For Men.webp'); ?>" width="100%" alt="">
+              <ul>
+                <li><i class="bx bx-check text-white"></i>
+                  <div class="text-white">Sunscreen Spray</div>
+                </li>
+                <li><i class="bx bx-check text-white"></i>
+                  <div class="text-white">Brightening Facial Wash</div>
+                </li>
+                <li><i class="bx bx-check text-white"></i>
+                  <div class="text-white">Energizing Serum</div>
+                </li>
+                <!-- <li><i class="bx bx-gift"></i> Bonus : Vit Cream Flek</li> -->
+                <!-- <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li> -->
+              </ul>
+              <!-- <a href="#" class="buy-btn">Kunjungi Kami</a> -->
+              <h4 class="text-center text-white" style="font-size: 30px; margin-bottom: 0px;"><s><sup>Rp</sup>275.000</s></h4>
+              <h4 class="text-center text-white"><sup>Rp</sup>265.000</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Pricing Section -->
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
@@ -789,7 +778,46 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- Treatment -->
+    <section id="treatment" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Pilihan Treatment</h2>
+          <p>Pada klinik kami, kami menyediakan pilihan treatment yang sesuai dengan kebutuhan kulit anda.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment1.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment2.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment3.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment4.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment5.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment6.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment7.webp') ?>" height="500px" class="border border-dark" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Treatment -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
