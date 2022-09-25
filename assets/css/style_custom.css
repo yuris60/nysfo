@@ -1,0 +1,57 @@
+.bg-green {
+  background-color: #28a745;
+}
+
+
+.bg-prestige-blue {
+  background-color: #2f3542;
+  color: #fff;
+}
+
+.btn-shopee {
+  background-color: #f1582c;
+  color: #fff;
+}
+
+.btn-shopee:hover {
+  --bs-btn-hover-bg: #a53a1d;
+  color: #fff;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color: #fff;
+}
+
+.btn-instagram:hover {
+  --bs-btn-hover-bg: #c13584;
+  color: #fff;
+}
+
+.btn-facebook {
+  background-color: #4267B2;
+  color: #fff;
+}
+
+.btn-facebook:hover {
+  --bs-btn-hover-bg: #233761;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #2f3542;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(70%);
+}
+
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+.section-beli {
+  background-color: #EA2027;
+  color: #fff;
+}

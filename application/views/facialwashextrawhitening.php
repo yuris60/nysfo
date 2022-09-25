@@ -18,7 +18,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="<?= base_url('assets/') ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="<?= base_url('assets/') ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>vendor/remixicon/remixicon.css" rel="stylesheet">
@@ -31,89 +32,182 @@
   <link rel="stylesheet" href="<?= base_url('assets/') ?>concept/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
 
   <!-- Template Main CSS File -->
+  <link href="<?= base_url('assets/') ?>css/style_custom.css" rel="stylesheet">
   <link href="<?= base_url('assets/') ?>css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Arsha - v2.3.1
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+  <main id="main">
 
-      <h1 class="logo mr-auto"><a href="index.html">Nastyaderm</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <section class="text-center py-4">
+      <img src="<?= base_url('assets/img/logo_name_small.png'); ?>" width="300px">
+    </section>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="<?= base_url('beranda') ?>">Beranda</a></li>
-          <li><a href="#why-us">Seputar</a></li>
-          <li><a href="#services">Keunggulan</a></li>
-          <li><a href="#pricing">Paket</a></li>
-          <li><a href="#product">Produk</a></li>
-          <li><a href="#portfolio">Klinik</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Tentang</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li>
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <!-- <li><a href="#contact">Contact</a></li> -->
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <!-- <a href="<?= base_url('beranda/formulir') ?>" class="get-started-btn scrollto">Kunjungi Kami</a> -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Nastyaderm</h1>
-          <h2><i>" Inner Beauty For Skin "</i></h2>
-          <div class="d-lg-flex">
-            <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
-            <a class="venobox btn-get-started scrollto" data-vbtype="iframe" href="https://drive.google.com/file/d/1MrA99B90a4JlI27vSvj8BgSUXEWmMOBt/preview">Pengenalan Produk</a>
-            <a href="https://www.youtube.com/watch?v=s9TjnzuZ2gE" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Lihat Video Branding Kami <i class="icofont-play-alt-2"></i></a>
+    <section class="bg-prestige-blue text-center">
+      <div class="container">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corporis culpa! itaque maxime hic quidem.</h2>
+        <div class="mt-3">
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-2">
+              <iframe width="100%" height="303" src="https://www.youtube.com/embed/picvJ7bj0yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-6 col-12">
+              <iframe width="100%" height="303" src="https://www.youtube.com/embed/UNCzThtq470" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
-          <img src="<?= base_url('assets/img/beranda/logo_nastya_new.webp') ?>" class="img-fluid animated" alt="">
+        <div class="mt-3">
+          <h4>Saya ingin produk ini!</h4>
+          <div class="mt-0 mb-2">
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+          <div class="btn btn-lg btn-success mb-2"><i class="bx bxl-whatsapp bx-lg"></i> Whatsapp</div>
+          <div class="btn btn-lg btn-facebook mb-2"><i class="bx bxl-facebook bx-lg"></i> Facebook</div>
+          <div class="btn btn-lg btn-instagram mb-2"><i class="bx bxl-instagram bx-lg"></i> Instagram</div>
+          <div class="btn btn-lg btn-shopee mb-2"><img src="<?= base_url('assets/img/icon_shopee.png'); ?>" width="17px"> Shopee</div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section><!-- End Hero -->
+    <section class="text-center section-bg">
+      <div class="container">
+        <h1 style="font-weight: 700;">Hayo ngaku pernah ngerasain kayak gini</h1>
 
-  <main id="main">
+        <div class="row mt-5">
+          <div class="col-lg-3 col-12 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/laman/1.jpg') ?>" class="card-img-top" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/laman/1.jpg') ?>" class="card-img-top" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/laman/1.jpg') ?>" class="card-img-top" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12 mb-3">
+            <div class="card">
+              <img src="<?= base_url('assets/img/laman/1.jpg') ?>" class="card-img-top" width="100%">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <h2>Jika Anda merasakan salah satu dari penyebab di atas,<br>berarti anda membutuhkan produk ini!</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-green">
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment1.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment2.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment3.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment4.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment5.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment6.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/treatment/treatment7.webp') ?>" height="500px" class="border border-dark" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+        <h1 class="text-center" style="font-weight: 500;">Apa sih kandungan dari produk ini beserta manfaatnya?</h1>
+
+        <div class="accordion mt-4" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h2>Accordion Item #1</h2>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h2>Accordion Item #2</h2>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h2>Accordion Item #3</h2>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-beli text-center">
+      <div class="container">
+        <h1>Saya ingin produk ini!</h1>
+        <div class="mt-0 mb-2">
+          <i class="fas fa-arrow-down"></i>
+          <i class="fas fa-arrow-down"></i>
+          <i class="fas fa-arrow-down"></i>
+          <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="btn btn-lg btn-success mb-2"><i class="bx bxl-whatsapp bx-lg"></i> Whatsapp</div>
+        <div class="btn btn-lg btn-facebook mb-2"><i class="bx bxl-facebook bx-lg"></i> Facebook</div>
+        <div class="btn btn-lg btn-instagram mb-2"><i class="bx bxl-instagram bx-lg"></i> Instagram</div>
+        <div class="btn btn-lg btn-shopee mb-2"><img src="<?= base_url('assets/img/icon_shopee.png'); ?>" width="17px"> Shopee</div>
+      </div>
+    </section>
 
     <!-- ======= Cliens Section ======= -->
     <!-- <section id="cliens" class="cliens section-bg">
@@ -393,53 +487,6 @@
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card">
               <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Peeling Glowing.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Peeling Glowing</h4>
-                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 95.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Peeling Glowing" data-detail="Mencerahkan wajah, melembabkan kulit wajah, melindungi dari paparan sinar matahari."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Whitening Day Cream.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Whitening Day Cream</h4>
-                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 85.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Whitening Day Cream" data-detail="Mencerahkan wajah, melembabkan kulit wajah, melindungi dari paparan sinar matahari."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Facial Wash Extra Brightening.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Facial Wash Extra Brightening</h4>
-                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 85.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Facial Wash Extra Brightening" data-detail="Mempersihkan wajah dari debu, Mengangkat kotoran dan sisa makeup, Mengurangi sebum berlebih."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
-              <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Body Lotion Extra Whitening.webp') ?>" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title text-center">Body Lotion Extra Whitening</h4>
-                <!-- <p class="card-text">membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari/p> -->
-                <h4 class="text-center text-success"><sup>Rp.</sup> 100.000</h4>
-                <a href="#" data-toggle="modal" data-target="#modal-item" id="pilih" data-nm_produk="Body Lotion Extra Whitening" data-detail="Mencerahkan badan, melembabkan kulit, memutihkan kulit, bebas dari kusam, menjaga kesehatan kulit."><button class="btn btn-success btn-block">Lihat Detail</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card">
               <img src="<?= base_url('assets/img/beranda/Acne Spot.webp') ?>" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title text-center">Acne Spot</h4>
@@ -1591,18 +1638,6 @@
       </div>
     </div>
 
-    <div class="hubungikami">
-      <a href="#" target="_blank">
-        <!-- <div class="tombol fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
-          <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
-        </div> -->
-        <a target="_blank" href="https://wa.me/6283871700686?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
-          <button class="btn btn-block btn-success fixed-bottom">
-            <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
-          </button>
-        </a>
-      </a>
-    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
@@ -1646,7 +1681,8 @@
 
   <!-- Vendor JS Files -->
   <script src="<?= base_url('assets/') ?>vendor/jquery/jquery.min.js"></script>
-  <script src="<?= base_url('assets/') ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="<?= base_url('assets/') ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="<?= base_url('assets/') ?>vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="<?= base_url('assets/') ?>vendor/php-email-form/validate.js"></script>
   <script src="<?= base_url('assets/') ?>vendor/waypoints/jquery.waypoints.min.js"></script>
@@ -1663,7 +1699,18 @@
       margin: 10,
       loop: true,
       autoWidth: true,
-      items: 4
+      // items: 4,
+      responsive: {
+        0: {
+          items: 1
+        },
+        480: {
+          items: 3
+        },
+        768: {
+          items: 5
+        }
+      }
     })
 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
