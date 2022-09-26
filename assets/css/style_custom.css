@@ -55,3 +55,7 @@
   background-color: #EA2027;
   color: #fff;
 }
+
+.bg-profile {
+  background: url('../img/beranda/bg.png') fixed center center;
+}
