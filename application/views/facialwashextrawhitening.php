@@ -9,6 +9,15 @@
   <meta name="author" content="Nastyaderm">
   <meta name="keywords" content="Skincare Aman, Skincare Lokal, Skincare Halal">
   <meta name="description" content="Nastyaderm merupakan salah satu brand skincare lokal asli Indonesia yang terbuat dari bahan alami dan aman untuk anda yang memiliki kulit sensitif. Produk kecantikan ini dibuat langsung oleh dr. Lina Wijaya. Saat ini produk Nastyaderm memiliki beberapa varian paket yaitu paket acne, paket glowing/antiaging dan paket flek. Dari masing-masing paket tersebut terdiri dari facial wash, skin toner, day cream dan night cream.">
+  <meta content='<?= base_url('assets/') ?>img/logo_nastya.png' name='msapplication-TileImage' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='icon' sizes='192x192' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='icon' sizes='32x32' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='icon' sizes='96x96' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='icon' sizes='16x16' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='apple-touch-icon' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='apple-touch-icon' sizes='152x152' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='apple-touch-icon' sizes='180x180' />
+  <link href='<?= base_url('assets/') ?>img/logo_nastya.png' rel='apple-touch-icon' sizes='167x167' />
 
   <!-- Favicons -->
   <link rel="icon" href="<?= base_url('assets/') ?>img/logo_nastya.png">
@@ -132,7 +141,7 @@
         <h3 class="text-white mb-1" style="font-weight: 100;">Ini dia salah satu produk untuk mengatasi masalah tersebut!</h3>
         <h1 class="text-white" style="font-size: 50px; font-weight: 700;">Facial Wash Extra Whitening</h1>
 
-        <div class="owl-carousel owl-theme mt-4">
+        <div class="owl-carousel owl-theme mt-4" id="owl-produk">
           <div class="item">
             <img src="<?= base_url('assets/img/laman/facialwashextrawhitening_1.jpeg') ?>" class="border border-dark" alt="">
           </div>
@@ -288,7 +297,7 @@
         <p class="text-center fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi, inventore doloremque harum amet officiis blanditiis vero.</p>
 
         <div class="row mt-4">
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 mb-3">
             <div class="card text-center">
               <div class="card-body">
                 <i class="fa fa-check fa-4x text-success"></i>
@@ -296,7 +305,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 mb-3">
             <div class="card text-center">
               <div class="card-body">
                 <i class="fa fa-check fa-4x text-success"></i>
@@ -304,7 +313,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 mb-3">
             <div class="card text-center">
               <div class="card-body">
                 <i class="fa fa-check fa-4x text-success"></i>
@@ -312,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 mb-3">
             <div class="card text-center">
               <div class="card-body">
                 <i class="fa fa-check fa-4x text-success"></i>
@@ -355,9 +364,42 @@
       </div>
     </section>
 
-    <section class="text-center">
+    <section class="text-center bg-green">
       <div class="container">
         <h1 style="font-weight: 700;">Kata mereka yang sudah pernah memakai produk ini</h1>
+
+        <div class="owl-carousel owl-theme mt-5" id="owl-testimoni">
+          <div class="item">
+            <img src="<?= base_url('assets/img/laman/testimoni/1.jpg') ?>" class="rounded-circle shadow-lg" alt="">
+            <h2 class="mt-3 mb-2" style="font-weight: 700;">Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia repudiandae itaque quasi labore perferendis dolore.</p>
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/laman/testimoni/2.jpg') ?>" class="rounded-circle shadow-lg" alt="">
+            <h2 class="mt-3 mb-2" style="font-weight: 700;">Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia repudiandae itaque quasi labore perferendis dolore.</p>
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/laman/testimoni/3.jpg') ?>" class="rounded-circle shadow-lg" alt="">
+            <h2 class="mt-3 mb-2" style="font-weight: 700;">Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia repudiandae itaque quasi labore perferendis dolore.</p>
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/laman/testimoni/4.jpg') ?>" class="rounded-circle shadow-lg" alt="">
+            <h2 class="mt-3 mb-2" style="font-weight: 700;">Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia repudiandae itaque quasi labore perferendis dolore.</p>
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/laman/testimoni/5.jpg') ?>" class="rounded-circle shadow-lg" alt="">
+            <h2 class="mt-3 mb-2" style="font-weight: 700;">Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia repudiandae itaque quasi labore perferendis dolore.</p>
+          </div>
+          <div class="item">
+            <img src="<?= base_url('assets/img/laman/testimoni/6.jpg') ?>" class="rounded-circle shadow-lg" alt="">
+            <h2 class="mt-3 mb-2" style="font-weight: 700;">Lorem Ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia repudiandae itaque quasi labore perferendis dolore.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -491,7 +533,7 @@
   <script src="<?= base_url('assets/') ?>js/main.js"></script>
 
   <script>
-    $('.owl-carousel').owlCarousel({
+    $('#owl-produk').owlCarousel({
       margin: 10,
       loop: true,
       // autoWidth: true,
@@ -505,6 +547,24 @@
         },
         768: {
           items: 3
+        }
+      }
+    })
+
+    $('#owl-testimoni').owlCarousel({
+      margin: 30,
+      loop: true,
+      // autoWidth: true,
+      items: 5,
+      responsive: {
+        0: {
+          items: 1
+        },
+        480: {
+          items: 2
+        },
+        768: {
+          items: 5
         }
       }
     })
