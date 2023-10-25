@@ -1,29 +1,34 @@
-###################
-What is CodeIgniter
-###################
+#####################################
+Nsyfo - Nastyaderm System Information
+#####################################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+.. image:: assets/img/logo_nastya_new.png
+   :height: 260
+   :width: 200
+   :alt: Nastyaderm Logo
 
-*******************
-Release Information
-*******************
+Nysfo merupakan singkatan dari Nastyaderm System Information. 
+Nysfo adalah project aplikasi berbasis website yang dibuat 
+untuk salah satu Klinik Kecantikan yang berada di Kabupaten Karawang, 
+Jawa Barat yakni Klinik Kecantikan Nastyaderm.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+*********************
+Pengembangan Aplikasi
+*********************
 
-**************************
-Changelog and New Features
-**************************
+Aplikasi terdapat 2 bagian yang terpisah antara lain :
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- Front End (client-side)
+- Back End (server-side)
+
+*********
+Front-End
+*********
+
+Bagian ini diperuntukkan untuk para pengguna yang ingin melihat daftar produk & 
+treatment yang disediakan oleh Klinik, dengan kata lain bagian ini merupakan
+marketing perusahaan untuk mencapai calon konsumennya.
+
 
 *******************
 Server Requirements
@@ -38,6 +43,10 @@ issues, as well as missing features.
 ************
 Installation
 ************
+.. image:: screenshots/file.png
+   :height: 100
+   :width: 200
+   :alt: alternate text
 
 Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
 of the CodeIgniter User Guide.
