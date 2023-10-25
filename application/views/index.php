@@ -45,7 +45,7 @@
 
       <h1 class="logo me-auto"><a href="<?= base_url() ?>">Nastyaderm</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="<?= base_url('assets/') ?>img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.html" class="logo me-auto"><img src="<?= base_url('assets/') ?>img/logo.png" alt="" class="img-fluid" width="100%" height="100%"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -73,7 +73,7 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1 class="text-dark">Nastyaderm</h1>
-          <h2 class="text-dark"><i>" Happy Awet Muda, Kulit Sehat Selamanya "</i></h2>
+          <h2 class="text-dark"><i>Anti - Aging Xpert<br>Happy Awet Muda, Kulit Sehat Selamanya</i></h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
             <a class="glightbox btn-get-started" data-width="1100px" data-height="475px" href="https://drive.google.com/file/d/1MrA99B90a4JlI27vSvj8BgSUXEWmMOBt/preview">Pengenalan Produk</a>
@@ -81,7 +81,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img text-lg-end" data-aos="zoom-in" data-aos-delay="200">
-          <img src="<?= base_url('assets/') ?>img/beranda/logo_nastya_new.webp" class="img-fluid animated" alt="">
+          <img src="<?= base_url('assets/') ?>img/beranda/logo_nastya_new.webp" class="img-fluid animated" width="300px" height="300px" alt="Nastyaderm">
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Apakah itu Nastyaderm? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a href="#" data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Apakah itu Nastyaderm? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                     <p>
                       Nastyaderm merupakan salah satu brand skincare lokal asli Indonesia yang terbuat dari bahan alami dan aman untuk anda yang memiliki kulit sensitif. Produk kecantikan ini dibuat langsung oleh dr. Lina Wijaya. Saat ini produk Nastyaderm memiliki beberapa varian paket yaitu paket acne, paket glowing/antiaging dan paket flek. Dari masing-masing paket tersebut terdiri dari facial wash, skin toner, day cream dan night cream
@@ -114,7 +114,7 @@
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Apakah produk Nastyaderm menggunakan bahan kimia berbahaya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Apakah produk Nastyaderm menggunakan bahan kimia berbahaya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
                       Produk Nastyaderm tidak mengandung bahan kimia berbahaya yang dapat menyebabkan irirtasi kulit dan menyebabkan kelupasan. Bahan-bahan yang terdapat pada produk Nastyaderm dibuat dari tumbuh-tumbuhan dan mineral alam sehingga dapat tahan lama dan menyerap ke kulit pada saat menggunakan makeup. Oleh karenanya banyak orang yang menggunakan produk ini. Produk kami juga aman digunakan oleh ibu hamil dan menyusui serta tidak menyebabkan ketergantungan.
@@ -123,7 +123,7 @@
                 </li>
 
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Apakah produk Nastyderm itu halal dan terdaftar BPOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Apakah produk Nastyderm itu halal dan terdaftar BPOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
                       Bahan baku hingga proses produksi dari semua produk Nastyaderm dijamin Halal dan aman karena diberi resep oleh dokter dan diracik oleh apoteker yang berkompeten.
@@ -156,7 +156,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-user-check"></i></div>
-              <h4><a href="">Aman</a></h4>
+              <h4><a href="#">Aman</a></h4>
               <p>Aman untuk kulit yang hyper sensitif ibu hamil & menyusui serta tidak ketergantungan</p>
             </div>
           </div>
@@ -164,7 +164,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-heart-circle"></i></div>
-              <h4><a href="">Natural</a></h4>
+              <h4><a href="#">Natural</a></h4>
               <p>Produk dibuat dari bahan alami seperti tumbuh-tumbuhan.</p>
             </div>
           </div>
@@ -172,7 +172,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-notepad"></i></div>
-              <h4><a href="">Terpercaya</a></h4>
+              <h4><a href="#">Terpercaya</a></h4>
               <p>Tersertifikasi halal & aman oleh BPOM dan sudah banyak yang menggunakan.</p>
             </div>
           </div>
@@ -180,7 +180,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-money"></i></div>
-              <h4><a href="">Ekonomis</a></h4>
+              <h4><a href="#">Ekonomis</a></h4>
               <p>Harga terjangkau dan bisa bersaing dengan produk lain terkemuka.</p>
             </div>
           </div>
@@ -198,62 +198,10 @@
           <p>Mau beli produk satuan juga bisa loh. Silahkan anda bisa pilih beberapa jenis produk kami.</p>
         </div>
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 bg-dark">
-              <div class="ribbon2">For Men</div>
-              <img src="<?= base_url('assets/img/beranda/Sunscreen Spray.webp') ?>" class="card-img-top" alt="Sunscreen Spray" title="Sunscreen Spray">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center text-white">Sunscreen Spray</h4>
-                <h4 class="text-center text-white mb-0"><sup>Rp.</sup> 110.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Spray" data-detail="Dapat meningkatkan kemampuan penyerapan kulit, Gff efektif untuk melembabkan, mencerahkan, mengontrol produksi sebum, mengurangi jerawat, dan meningkatkan elastisitas kulit, Niacinamide melembabkan, anti-inflamasi yang dapat mencegah kulit mengalami kemerahan dan iritasi akibat terpapar sinar oleh sinar UV.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 bg-dark">
-              <div class="ribbon2">For Men</div>
-              <img src="<?= base_url('assets/img/beranda/Brightening Facial Wash.webp') ?>" class="card-img-top" alt="Brightening Facial Wash" title="Brightening Facial Wash">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center text-white">Brightening Facial Wash</h4>
-                <h4 class="text-center text-white mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Brightening Facial Wash" data-detail="Membersihkan kulit wajah dari kotoran, debu dan sisa make up yang menempel dikulit wajah.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100 bg-dark">
-              <div class="ribbon2">For Men</div>
-              <img src="<?= base_url('assets/img/beranda/Energizing Serum.webp') ?>" class="card-img-top" alt="Energizing Serum" title="Energizing Serum">
-              <div class="card-body">
-                <h4 class="card-title text-center text-white">Energizing Serum</h4>
-                <h4 class="text-center text-white mb-0"><sup>Rp.</sup> 95.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Energizing Serum" data-detail="Centella Asiatica dengan anti-aging, melawan jerawat, Niacinamide melembabkan, menyamarkan noda hitam, Galactomyces melembabkan dan melindungi kulit dari radikal bebas serta sinar UV dan mencegah penuaan dini..">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
               <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Peeling Glowing.webp') ?>" class="card-img-top" alt="Peeling Glowing" title="Peeling Glowing">
+              <img src="<?= base_url('assets/img/beranda/Peeling Glowing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Peeling Glowing" title="Peeling Glowing">
               <div class="card-body">
                 <h4 class="card-title text-center">Peeling Glowing</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 95.000</h4>
@@ -270,7 +218,7 @@
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
               <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Whitening Day Cream.webp') ?>" class="card-img-top" alt="Whitening Day Cream" title="Whitening Day Cream">
+              <img src="<?= base_url('assets/img/beranda/Whitening Day Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Whitening Day Cream" title="Whitening Day Cream">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Whitening Day Cream</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 85.000</h4>
@@ -287,7 +235,7 @@
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
               <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Facial Wash Extra Brightening.webp') ?>" class="card-img-top" alt="Facial Wash Extra Brightening" title="Facial Wash Extra Brightening">
+              <img src="<?= base_url('assets/img/beranda/Facial Wash Extra Brightening.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Facial Wash Extra Brightening" title="Facial Wash Extra Brightening">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Facial Wash Extra Brightening</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 85.000</h4>
@@ -304,7 +252,7 @@
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
               <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Body Lotion Extra Whitening.webp') ?>" class="card-img-top" alt="Body Lotion Extra Whitening" title="Body Lotion Extra Whitening">
+              <img src="<?= base_url('assets/img/beranda/Body Lotion Extra Whitening.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Body Lotion Extra Whitening" title="Body Lotion Extra Whitening">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Body Lotion Extra Whitening</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 100.000</h4>
@@ -320,7 +268,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Acne Spot.webp') ?>" class="card-img-top" alt="Acne Spot" title="Acne Spot">
+              <img src="<?= base_url('assets/img/beranda/Acne Spot.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Acne Spot" title="Acne Spot">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Acne Spot</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 85.000</h4>
@@ -337,7 +285,7 @@
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
               <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Smooth Secret Facial Wash Acne.webp') ?>" class="card-img-top" alt="Smooth Secret Facial Wash Acne" title="Smooth Secret Facial Wash Acne">
+              <img src="<?= base_url('assets/img/beranda/Smooth Secret Facial Wash Acne.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Smooth Secret Facial Wash Acne" title="Smooth Secret Facial Wash Acne">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Smooth Secret Facial Wash Acne</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -353,7 +301,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" alt="White Cream" title="White Cream">
+              <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" height="100%" width="100%" alt="White Cream" title="White Cream">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">White Cream</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -369,7 +317,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" alt="Facial Wash" title="Facial Wash">
+              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Facial Wash" title="Facial Wash">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Facial Wash</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 70.000</h4>
@@ -385,7 +333,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" alt="Whitening Nutrition Night Cream" title="Whitening Nutrition Night Cream">
+              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Whitening Nutrition Night Cream" title="Whitening Nutrition Night Cream">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Whitening Nutrition Night Cream</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 90.000</h4>
@@ -401,7 +349,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" alt="Serum Glowing" title="Serum Glowing">
+              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Glowing" title="Serum Glowing">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Serum Glowing</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 85.000</h4>
@@ -417,7 +365,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" alt="Serum Acne" title="Serum Acne">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Acne" title="Serum Acne">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Serum Acne</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -433,7 +381,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" alt="Serum Vit C" title="Serum Vit C">
+              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Vit C" title="Serum Vit C">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Serum Vit C</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -449,7 +397,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" alt="Skin Toner" title="Skin Toner">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Skin Toner" title="Skin Toner">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Skin Toner</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 60.000</h4>
@@ -465,7 +413,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Sunscreen Acne.webp') ?>" class="card-img-top" alt="Sunscreen Acne" title="Sunscreen Acne">
+              <img src="<?= base_url('assets/img/beranda/Sunscreen Acne.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Sunscreen Acne" title="Sunscreen Acne">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Sunscreen Acne</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -481,7 +429,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Milk-Cleanser.webp') ?>" class="card-img-top" alt="Milk Cleanser" title="Milk Cleanser">
+              <img src="<?= base_url('assets/img/beranda/Milk-Cleanser.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Milk Cleanser" title="Milk Cleanser">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Milk Cleanser</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 60.000</h4>
@@ -497,7 +445,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" alt="BB Cream" title="BB Cream">
+              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="BB Cream" title="BB Cream">
               <div class="card-body">
                 <h4 class="card-title text-center">BB Cream</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -513,7 +461,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Acne Clearing.webp') ?>" class="card-img-top" alt="Membantu mempercepat proses penyembuhan Acne" title="Acne Clearing">
+              <img src="<?= base_url('assets/img/beranda/Acne Clearing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Membantu mempercepat proses penyembuhan Acne" title="Acne Clearing">
               <div class="card-body">
                 <h4 class="card-title text-center">Acne Clearing</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -529,7 +477,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" alt="Serum Scar" title="Serum Scar">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Scar" title="Serum Scar">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Serum Scar</h4>
                 <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
@@ -543,7 +491,57 @@
               </div>
             </div>
           </div>
-
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100 bg-dark">
+              <div class="ribbon2">For Men</div>
+              <img src="<?= base_url('assets/img/beranda/Sunscreen Spray.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Sunscreen Spray" title="Sunscreen Spray">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center text-white">Sunscreen Spray</h4>
+                <h4 class="text-center text-white mb-0"><sup>Rp.</sup> 110.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Spray" data-detail="Dapat meningkatkan kemampuan penyerapan kulit, Gff efektif untuk melembabkan, mencerahkan, mengontrol produksi sebum, mengurangi jerawat, dan meningkatkan elastisitas kulit, Niacinamide melembabkan, anti-inflamasi yang dapat mencegah kulit mengalami kemerahan dan iritasi akibat terpapar sinar oleh sinar UV.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100 bg-dark">
+              <div class="ribbon2">For Men</div>
+              <img src="<?= base_url('assets/img/beranda/Brightening Facial Wash.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Brightening Facial Wash" title="Brightening Facial Wash">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center text-white">Brightening Facial Wash</h4>
+                <h4 class="text-center text-white mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Brightening Facial Wash" data-detail="Membersihkan kulit wajah dari kotoran, debu dan sisa make up yang menempel dikulit wajah.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100 bg-dark">
+              <div class="ribbon2">For Men</div>
+              <img src="<?= base_url('assets/img/beranda/Energizing Serum.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Energizing Serum" title="Energizing Serum">
+              <div class="card-body">
+                <h4 class="card-title text-center text-white">Energizing Serum</h4>
+                <h4 class="text-center text-white mb-0"><sup>Rp.</sup> 95.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Energizing Serum" data-detail="Centella Asiatica dengan anti-aging, melawan jerawat, Niacinamide melembabkan, menyamarkan noda hitam, Galactomyces melembabkan dan melindungi kulit dari radikal bebas serta sinar UV dan mencegah penuaan dini..">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -562,24 +560,10 @@
 
         <div class="row">
 
-          <div class="col-lg-3 col-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h2 class="title">Paket Acne<br><small>(Paket Extra Acne Series)</small></h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" width="100%" alt="">
-              <ul>
-                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
-                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner TTO</li>
-                <li><i class="bx bx-check"></i> Sunscreen Acne</li>
-                <li><i class="bx bx-check"></i> Acne Clearing Moisturizer Cream</li>
-              </ul>
-              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
-            </div>
-          </div>
-
           <div class="col-lg-3 col-12" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
               <h2 class="title">Paket Glowing<br><small>(Paket Extra Anti Aging)</small></h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" width="100%" alt="">
+              <img src="<?= base_url('assets/img/beranda/Paket Anti Aging.webp'); ?>" class="img" width="100%" alt="Paket Extra Anti Aging">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
                 <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
@@ -593,7 +577,7 @@
           <div class="col-lg-3 col-12" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
               <h2 class="title">Paket Flek Hitam<br><small>(Paket Extra Flek Hitam)</small></h2>
-              <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" width="100%" alt="">
+              <img src="<?= base_url('assets/img/beranda/Paket Flek.webp'); ?>" class="img" width="100%" alt="Paket Extra Flek Hitam">
               <ul>
                 <li><i class="bx bx-check"></i> Smooth Secret Facial Wash</li>
                 <li><i class="bx bx-check"></i> Smooth Secret Skin Toner </li>
@@ -605,9 +589,23 @@
           </div>
 
           <div class="col-lg-3 col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h2 class="title">Paket Acne<br><small>(Paket Extra Acne Series)</small></h2>
+              <img src="<?= base_url('assets/img/beranda/Paket Acne.webp'); ?>" class="img" width="100%" alt="Paket Extra Acne Series">
+              <ul>
+                <li><i class="bx bx-check"></i> Smooth Secret Facial Wash TTO</li>
+                <li><i class="bx bx-check"></i> Smooth Secret Skin Toner TTO</li>
+                <li><i class="bx bx-check"></i> Sunscreen Acne</li>
+                <li><i class="bx bx-check"></i> Acne Clearing Moisturizer Cream</li>
+              </ul>
+              <h4 class="text-center"><sup>Rp</sup>285.000</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-12" data-aos="fade-up" data-aos-delay="100">
             <div class="box bg-dark text-white">
               <h2 class="title text-white">Paket For Men <br><small>(Khusus bagi para pria)</small></h2>
-              <img src="<?= base_url('assets/img/beranda/Paket For Men.webp'); ?>" width="100%" alt="">
+              <img src="<?= base_url('assets/img/beranda/Paket For Men.webp'); ?>" class="img" width="100%" alt="Paket For Men">
               <ul>
                 <li><i class="bx bx-check text-white"></i>
                   <div class="text-white">Sunscreen Spray</div>
@@ -648,112 +646,101 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-14.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio1.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 1</p>
-              <a href="assets/img/portfolio/portfolio-14.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Treatment</h4>
-              <p>Dokumentasi 1</p>
-              <a href="assets/img/portfolio/portfolio-2.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              <a href="assets/img/portfolio/portfolio1.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 1"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio2.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 2</p>
-              <a href="assets/img/portfolio/portfolio-3.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Treatment</h4>
-              <p>Dokumentasi 2</p>
-              <a href="assets/img/portfolio/portfolio-12.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-13.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Treatment</h4>
-              <p>Dokumentasi 3</p>
-              <a href="assets/img/portfolio/portfolio-13.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              <a href="assets/img/portfolio/portfolio2.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 2"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio3.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 3</p>
-              <a href="assets/img/portfolio/portfolio-6.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              <a href="assets/img/portfolio/portfolio3.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 3"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-18.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Klinik</h4>
-              <p>Dokumentasi 7</p>
-              <a href="assets/img/portfolio/portfolio-18.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-15.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio4.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 4</p>
-              <a href="assets/img/portfolio/portfolio-15.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              <a href="assets/img/portfolio/portfolio4.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 4"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-16.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio5.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 5</p>
-              <a href="assets/img/portfolio/portfolio-16.web" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.webp" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Treatment</h4>
-              <p>Dokumentasi 4</p>
-              <a href="assets/img/portfolio/portfolio-9.webp" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              <a href="assets/img/portfolio/portfolio5.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 5"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-17.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio6.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
             <div class="portfolio-info">
               <h4>Klinik</h4>
               <p>Dokumentasi 6</p>
-              <a href="assets/img/portfolio/portfolio-17.webp" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+              <a href="assets/img/portfolio/portfolio6.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 6"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-klinik">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio7.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Klinik</h4>
+              <p>Dokumentasi 7</p>
+              <a href="assets/img/portfolio/portfolio7.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Klinik 7"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio8.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Treatment</h4>
+              <p>Dokumentasi 1</p>
+              <a href="assets/img/portfolio/portfolio8.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Treatment 1"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio10.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Treatment</h4>
+              <p>Dokumentasi 3</p>
+              <a href="assets/img/portfolio/portfolio10.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Treatment 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio9.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Treatment</h4>
+              <p>Dokumentasi 2</p>
+              <a href="assets/img/portfolio/portfolio9.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Treatment 2"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-treatment">
+            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio11.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Treatment</h4>
+              <p>Dokumentasi 4</p>
+              <a href="assets/img/portfolio/portfolio11.webp" data-gall="portfolioGallery" class="portfolio-lightbox preview-link" title="Treatment 4"><i class="bx bx-plus"></i></a>
             </div>
           </div>
 
@@ -773,27 +760,53 @@
           <div class="col-lg-12">
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment1.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment1.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment2.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment2.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment3.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment3.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment4.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment4.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment5.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment5.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment6.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment6.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/treatment/treatment7.webp') ?>" height="500px" class="border border-dark" alt="">
+                <img src="<?= base_url('assets/img/treatment/treatment7.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment8.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment9.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment10.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment11.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment12.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment13.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/treatment/treatment14.webp') ?>" height="500px" class="border border-dark" alt="Klinik Kecantikan Nastyaderm Karawang">
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <iframe width="1366px" height="600" src="https://www.youtube.com/embed/g4eB7pb_YDg" title="Video New Treatment"></iframe>
           </div>
         </div>
       </div>
@@ -831,42 +844,42 @@
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="customer text-center">
-              <img src="assets/img/testimoni/testimoni-5.webp" class="rounded-circle" width="80%" alt="">
-              <h5>
-                Winda Melati <br>
-                <small>Magelang</small>
-              </h5>
-              <p>Pas wisuda makeupnya menempel di wajah dengan bagus dan halus, tidak seperti produk lain yang tidak menempel diwajah. produk Nastyaderm memang bagus.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="customer text-center">
-              <img src="assets/img/testimoni/testimoni-1.webp" class="rounded-circle" width="80%" alt="">
-              <h5>
-                Helda <br>
-                <small>Telagasari, Karawang</small>
-              </h5>
-              <p>Kemarin sempet ada jerawatnya, tapi Alhamdulillah sekarang udah kering. Hasil treatmentnya bagus maksimal setelah 3 hari, hasilnya glowing sekali.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="customer text-center">
-              <img src="assets/img/testimoni/testimoni-2.webp" class="rounded-circle" width="80%" alt="">
+              <img src="assets/img/testimoni/testimoni-1.webp" class="rounded-circle" width="80%" height="80%" alt="">
               <h5>
                 Rini <br>
                 <small>Palumbon Tesa, Karawang</small>
               </h5>
-              <p>Alhamdulillah sudah mulai ada pengelupasan, Insya Allah nanti dirutinkan supaya cepet hilang fleknya.</p>
+              <p>Ketika saya menemukan rahasia anti-aging ini, saya merasa sangat senang. Skincare ini benar-benar mengubah saya merasa tampil muda kembali dengan kulit yang terlihat lebih segar dan bercahaya.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="customer text-center">
-              <img src="assets/img/testimoni/testimoni-3.webp" class="rounded-circle" width="80%" alt="">
+              <img src="assets/img/testimoni/testimoni-2.webp" class="rounded-circle" width="80%" height="80%" alt="">
               <h5>
-                Tiara <br>
-                <small>Cilamaya, Karawang</small>
+                Ria Heriawati <br>
+                <small>Graha Puspa, Karawang</small>
               </h5>
-              <p>Alhamdulillah jerawatnya udah mengering, bekas jerawatnya juga udah memudar.</p>
+              <p>Perjalanan saya dalam mengatasi penuaan dini telah menjadi kisah sukses berkat produk anti-aging yang luar biasa ini. Saya merasa seperti menjalani perjalanan kembali ke masa muda dengan kulit yang semakin memukau. Ini adalah testimoniku tentang bagaimana skincare anti-aging bisa mengubah segalanya.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="customer text-center">
+              <img src="assets/img/testimoni/testimoni-3.webp" class="rounded-circle" width="80%" height="80%" alt="">
+              <h5>
+                Iis <br>
+                <small>Buana Asri, Karawang</small>
+              </h5>
+              <p>Setelah bertahun-tahun menghadapi perjuangan dengan flek hitam, saya akhirnya menemukan solusi yang memukau! Produk ini benar-benar mengubah kulit wajah saya. Flek hitam saya semakin memudar setiap hari. Terima kasih Nastya Beauty Care.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="customer text-center">
+              <img src="assets/img/testimoni/testimoni-4.webp" class="rounded-circle" width="80%" height="80%" alt="">
+              <h5>
+                Teni Ari <br>
+                <small>Telukjambe, Karawang</small>
+              </h5>
+              <p>Saya selalu merasa risau dengan flek hitam yang muncul di wajah saya. Tapi sejak saya mulai menggunakan produk ini, perbedaan yang saya rasakan benar-benar mengejutkan! Kulit saya lebih cerah dan bebas flek hitam. Saya sangat bersyukur.</p>
             </div>
           </div>
         </div>
@@ -875,31 +888,49 @@
           <div class="col-lg-12">
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni1.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni12.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni9.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni13.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni2.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni14.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni3.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni1.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni4.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni9.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni5.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni2.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni6.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni3.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni7.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni4.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
               <div class="item">
-                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni8.webp') ?>" height="360px" alt="">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni5.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni6.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni7.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni8.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni9.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni10.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
+              </div>
+              <div class="item">
+                <img src="<?= base_url('assets/img/testimoni/kotaktestimoni11.webp') ?>" height="360px" alt="Klinik Kecantikan Nastyaderm">
               </div>
             </div>
           </div>
@@ -907,10 +938,10 @@
 
         <div class="row mt-5">
           <div class="col-lg-6 col-12">
-            <img src="<?= base_url('assets/img/testimoni/watestimoni1.webp') ?>" width="100%" alt="">
+            <img src="<?= base_url('assets/img/testimoni/watestimoni1.webp') ?>" width="100%" height="100%" alt="">
           </div>
           <div class="col-lg-6 col-12">
-            <img src="<?= base_url('assets/img/testimoni/watestimoni2.webp') ?>" width="100%" alt="">
+            <img src="<?= base_url('assets/img/testimoni/watestimoni2.webp') ?>" width="100%" height="100%" alt="">
           </div>
         </div>
 
@@ -938,7 +969,7 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Reseller</h2>
-                <img src="<?= base_url('assets/img/beranda/reseller.webp') ?>" width="100%" alt="">
+                <img src="<?= base_url('assets/img/beranda/reseller.webp') ?>" width="100%" height="100%" alt="">
               </div>
               <div class="card-footer">
                 <h4 class="text-center">Diskon <span class="badge bg-primary text-white">20%</span></h4>
@@ -949,7 +980,7 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Agen</h2>
-                <img src="<?= base_url('assets/img/beranda/agen.webp') ?>" width="100%" alt="">
+                <img src="<?= base_url('assets/img/beranda/agen.webp') ?>" width="100%" height="100%" alt="">
               </div>
               <div class="card-footer">
                 <h4 class="text-center">Diskon <span class="badge bg-primary text-white">25%</span></h4>
@@ -960,7 +991,7 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Distributor</h2>
-                <img src="<?= base_url('assets/img/beranda/distributor.webp') ?>" width="100%" alt="">
+                <img src="<?= base_url('assets/img/beranda/distributor.webp') ?>" width="100%" height="100%" alt="">
               </div>
               <div class="card-footer">
                 <h4 class="text-center">Diskon <span class="badge bg-primary text-white">35%</span></h4>
@@ -1011,13 +1042,13 @@
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-1.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
               <div class="member-info">
                 <h4>dr. Hj. Lina Nuryani</h4>
                 <span>Dokter + Owner</span>
                 <div class="social">
-                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Linanuryani72" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Lina Nuryani" target="_blank" aria-label="Facebook 1"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Linanuryani72" target="_blank" aria-label="IG 1"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -1025,13 +1056,13 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-2.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
               <div class="member-info">
                 <h4>H. Prastya Widjaja, SE</h4>
                 <span>Manager Nastyaderm</span>
                 <div class="social">
-                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/syifafatimah25" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Prastya widjaja" target="_blank" aria-label="Facebook 2"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/syifafatimah25" target="_blank" aria-label="IG 2"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -1039,13 +1070,13 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-3.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
               <div class="member-info">
                 <h4>Tiara Anggraeni</h4>
-                <span>Beautician Nastyaderm</span>
+                <span>Beauty Consultan Nastyaderm</span>
                 <div class="social">
-                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="http://www.facebook.com/Tiara anggraeni" target="_blank" aria-label="Facebook 3"><i class="ri-facebook-fill"></i></a>
+                  <a href="http://www.instagram.com/Tiaraanggraeni115" target="_blank" aria-label="IG 3"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -1053,13 +1084,13 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-4.webp" class="img-fluid" width="100%" height="100%" alt=""></div>
               <div class="member-info">
-                <h4>Lidiyawati</h4>
-                <span>Beauty Consultan Nastyaderm</span>
+                <h4>Syifa Fatimah</h4>
+                <span>Beautician Nastyaderm</span>
                 <div class="social">
-                  <a href="http://www.facebook.com/Lidiyagomessa" target="_blank"><i class="ri-facebook-fill"></i></a>
-                  <a href="http://www.instagram.com/Lidiyagomessa" target="_blank"><i class="ri-instagram-fill"></i></a>
+                  <a href="#" aria-label="Facebook 4"><i class="ri-facebook-fill"></i></a>
+                  <a href="#" aria-label="IG 4"><i class="ri-instagram-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -1373,7 +1404,7 @@
                 </div>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15862.682764021898!2d107.3217019!3d-6.3069241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa40356db7661f32c!2sNastya%20Slim%20%26%20Beauty%20Care!5e0!3m2!1sid!2sid!4v1618495670767!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 350px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15862.682764021898!2d107.3217019!3d-6.3069241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa40356db7661f32c!2sNastya%20Slim%20%26%20Beauty%20Care!5e0!3m2!1sid!2sid!4v1618495670767!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 350px;" allowfullscreen="" aria-hidden="false" tabindex="0" title="gmaps"></iframe>
             </div>
 
           </div>
@@ -1445,10 +1476,10 @@
             <h4>Media Sosial Kami</h4>
             <p>Kami sediakan akun media sosial kami, agar kami lebih dekat dengan anda</p>
             <div class="social-links mt-3">
-              <a href="https://www.facebook.com/profile.php?id=100064213232223" class="facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/nastyaderm/" class="instagram" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><i class="bx bxl-instagram" target="_blank"></i></a>
-              <a href="https://shopee.co.id/nastyaderm?categoryId=14840&itemId=2949379248" class="google-plus" data-bs-toggle="tooltip" data-bs-placement="top" title="Shopee" target="_blank"><i class="bx bxl-shopify"></i></a>
-              <a href="https://linktr.ee/nastyaderm" class="link-tree" data-bs-toggle="tooltip" data-bs-placement="top" title="Linktree" target="_blank"><i class="bx bx-link"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100064213232223" class="facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/nastyaderm/" target="_blank" class="instagram" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://shopee.co.id/nastyaderm?categoryId=14840&itemId=2949379248" class="google-plus" data-bs-toggle="tooltip" data-bs-placement="top" title="Shopee" target="_blank" aria-label="Shopee"><i class="bx bxl-shopify"></i></a>
+              <a href="https://linktr.ee/nastyaderm" class="link-tree" data-bs-toggle="tooltip" data-bs-placement="top" title="Linktree" target="_blank" aria-label="Linktree"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -1463,15 +1494,10 @@
     </div>
 
     <div class="hubungikami">
-      <a href="#" target="_blank">
-        <!-- <div class="tombol fixed-bottom bg-success text-white text-center align-middle" style="height: 50px;">
+      <a target="_blank" href="https://wa.me/6283871700686?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih." title="Hubungi Kami" aria-label="Hubungi Kami">
+        <button class="btn btn-block btn-success fixed-bottom" style="border-radius: 0 !important;">
           <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
-        </div> -->
-        <a target="_blank" href="https://wa.me/6283871700686?text=Hallo%20kak!%20Saya%20tertarik%20dengan%20produk%20Nastyaderm%20yang%20saya%20lihat%20dalam%20website.%20Tolong%20beri%20informasi%20lebih%20detailnya%20ya%20kak,%20terimakasih.">
-          <button class="btn btn-block btn-success fixed-bottom" style="border-radius: 0 !important;">
-            <h4 class="mt-2"><i class="bx bxl-whatsapp bx-lg"></i> Hubungi Kami Via Whatsapp</h4>
-          </button>
-        </a>
+        </button>
       </a>
     </div>
   </footer><!-- End Footer -->
@@ -1532,6 +1558,23 @@
       loop: true,
       autoWidth: true,
       items: 4
+    })
+
+    $('.owl-carousel-treatment').owlCarousel({
+      margin: 10,
+      loop: true,
+      autoWidth: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
     })
 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
