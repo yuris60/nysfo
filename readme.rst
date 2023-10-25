@@ -3,7 +3,7 @@ Nsyfo - Nastyaderm System Information
 #####################################
 
 .. image:: assets/img/logo_nastya_new.png
-   :height: 260
+   :height: 270
    :width: 200
    :alt: Nastyaderm Logo
 
@@ -21,59 +21,81 @@ Aplikasi terdapat 2 bagian yang terpisah antara lain :
 - Front End (client-side)
 - Back End (server-side)
 
-*********
-Front-End
-*********
+
+=========
+Front End
+=========
 
 Bagian ini diperuntukkan untuk para pengguna yang ingin melihat daftar produk & 
-treatment yang disediakan oleh Klinik, dengan kata lain bagian ini merupakan
-marketing perusahaan untuk mencapai calon konsumennya.
+treatment yang tersedia pada Klinik, dengan kata lain bagian ini merupakan
+marketing perusahaan untuk mencapai calon konsumennya. Front End dapat diakses
+melalui tautan `disini <https://nastyadermofficial.com>`_.
+
+Berikut adalah beberapa screenshot aplikasinya:
+
+.. image:: assets/img/ss/nysfo_frontend_1.jpg
+   :alt: Front End 1
+
+.. image:: assets/img/ss/nysfo_frontend_2.jpg
+   :alt: Front End 2
+
+.. image:: assets/img/ss/nysfo_frontend_3.jpg
+   :alt: Front End 3
 
 
-*******************
-Server Requirements
-*******************
+========
+Back End
+========
 
-PHP version 5.6 or newer is recommended.
+Bagian ini diperuntukkan untuk admin/cs dan owner.
+Back End hanya diinstalasi secara lokal di Klinik tersebut.
+Dari 2 akses tersebut, berikut rincian hak aksesnya:
 
-It should work on 5.4.8 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+--------------------------
+Hak Akses Customer Service
+--------------------------
+====  =====
+No     Hak Akses CS
+====  =====
+1      Mengelola Data Produk
+2      Mengelola Data Paket Produk
+3      Mengelola Data Treatment
+4      Mengelola Data Pelanggan
+5      Mengelola Data Penjualan
+6      Mengelola Data Dokter
+7      Mengelola Data Jadwal Dokter
+8      Mengelola Data Laporan Pelanggan
+9      Mengelola Data Laporan Produk
+10      Mengelola Data Laporan Penjualan
+11      Mencetak Struk Belanja
+====  =====
 
-************
-Installation
-************
-.. image:: screenshots/file.png
-   :height: 100
-   :width: 200
-   :alt: alternate text
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+---------------
+Hak Akses Owner
+---------------
+====  =====
+No     Hak Akses Owner
+====  =====
+1      Mengelola Data Pembelian
+2      Menambahkan Akses CS
+3      Melihat Data Penjualan
+====  =====
 
-*******
-License
-*******
+Berikut adalah beberapa screenshot aplikasinya:
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+.. image:: assets/img/ss/nysfo_backend_1.jpg
+   :alt: Front End 1
 
-*********
-Resources
-*********
+.. image:: assets/img/ss/nysfo_backend_2.jpg
+   :alt: Front End 2
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <https://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+.. image:: assets/img/ss/nysfo_backend_3.jpg
+   :alt: Front End 3
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+******************
+Ucapan Terimakasih
+******************
 
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Saya menyadari project ini tidak akan selesai tanpa bantuan dari Bpk. Prastya Widjaja, SE dan Ibu dr. Lina Wijaya selaku owner.
+Maka dari itu saya ucapkan terimakasih atas kepercayaannya.
