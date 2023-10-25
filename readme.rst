@@ -1,5 +1,5 @@
 #####################################
-Nsyfo - Nastyaderm System Information
+Nastyaderm System Information (Nysfo)
 #####################################
 
 .. image:: assets/img/logo_nastya_new.png
