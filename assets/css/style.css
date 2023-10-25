@@ -1050,7 +1050,7 @@ section {
   z-index: 3;
   right: 15px;
   transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
+  background: rgba(40, 167, 69, 0.8);
   padding: 10px 15px;
 }
 
@@ -1402,6 +1402,11 @@ section {
     max-width: 60%;
     margin: 0 auto 30px auto;
   }
+
+  .pricing .box .img {
+    max-width: 400px;
+    max-height: 400px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1409,12 +1414,22 @@ section {
     max-width: 80%;
     margin: 0 auto 30px auto;
   }
+
+  .pricing .box .img {
+    max-width: 400px;
+    max-height: 400px;
+  }
 }
 
 @media (max-width: 420px) {
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
+  }
+
+  .pricing .box .img {
+    max-width: 400px;
+    max-height: 400px;
   }
 }
 
