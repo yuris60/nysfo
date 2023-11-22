@@ -77,7 +77,7 @@
           <div class="d-flex justify-content-center justify-content-lg-start">
             <!-- <a href="<?= base_url('beranda/formulir') ?>" class="btn-get-started scrollto">Kunjungi Kami</a> -->
             <a class="glightbox btn-get-started" data-width="1100px" data-height="475px" href="https://drive.google.com/file/d/1MrA99B90a4JlI27vSvj8BgSUXEWmMOBt/preview">Pengenalan Produk</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video text-dark"><i class="text-dark bi bi-play-circle"></i><span>Lihat Video Branding Kami</span></a>
+            <a href="https://www.youtube.com/embed/4AFlpkpxbaE?si=65Kdpl0xxka4m_nc" class="glightbox btn-watch-video text-dark"><i class="text-dark bi bi-play-circle"></i><span>Lihat Video Branding Kami</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img text-lg-end" data-aos="zoom-in" data-aos-delay="200">
@@ -200,14 +200,13 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Peeling Glowing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Peeling Glowing" title="Peeling Glowing">
-              <div class="card-body">
-                <h4 class="card-title text-center">Peeling Glowing</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 95.000</h4>
+              <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" height="100%" width="100%" alt="White Cream" title="White Cream">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">White Cream</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
               </div>
               <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Peeling Glowing" data-detail="Mencerahkan wajah, melembabkan kulit wajah, melindungi dari paparan sinar matahari.">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="White Cream" data-detail="Membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari">
                   <div class="d-grid gap-2">
                     <button class="btn btn-success" type="button">Lihat Detail</button>
                   </div>
@@ -234,6 +233,86 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Sunscreen Acne.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Sunscreen Acne" title="Sunscreen Acne">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Sunscreen Acne</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Acne" data-detail="Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="BB Cream" title="BB Cream">
+              <div class="card-body">
+                <h4 class="card-title text-center">BB Cream</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="BB Cream" data-detail="Mencerahkan wajah dapat menutupi bekas jerawat dan flek.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Whitening Nutrition Night Cream" title="Whitening Nutrition Night Cream">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Whitening Nutrition Night Cream</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 90.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Whitening Nutrition Night Cream" data-detail="Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Acne Clearing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Membantu mempercepat proses penyembuhan Acne" title="Acne Clearing">
+              <div class="card-body">
+                <h4 class="card-title text-center">Acne Clearing</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Acne Clearing" data-detail="Membantu mempercepat proses penyembuhan Acne">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Facial Wash" title="Facial Wash">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Facial Wash</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 70.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Facial Wash" data-detail="Membersihkan kotoran dan sisa make up di wajah, serta dapat melembapkan dan mencerahkan kulit wajah.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
               <div class="ribbon">New</div>
               <img src="<?= base_url('assets/img/beranda/Facial Wash Extra Brightening.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Facial Wash Extra Brightening" title="Facial Wash Extra Brightening">
               <div class="card-body mb-0">
@@ -251,14 +330,110 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
-              <div class="ribbon">New</div>
-              <img src="<?= base_url('assets/img/beranda/Body Lotion Extra Whitening.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Body Lotion Extra Whitening" title="Body Lotion Extra Whitening">
+              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Skin Toner" title="Skin Toner">
               <div class="card-body mb-0">
-                <h4 class="card-title text-center">Body Lotion Extra Whitening</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 100.000</h4>
+                <h4 class="card-title text-center">Skin Toner</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 60.000</h4>
               </div>
               <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Body Lotion Extra Whitening" data-detail="Mencerahkan badan, melembabkan kulit, memutihkan kulit, bebas dari kusam, menjaga kesehatan kulit.">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Skin Toner" data-detail="Menyegarkan kulit wajah, melembapkan kulit wajah serta  mengontrol minyak berlebih di wajah">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Milk-Cleanser.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Milk Cleanser" title="Milk Cleanser">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Milk Cleanser</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 60.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Milk Cleanser" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Glowing" title="Serum Glowing">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Serum Glowing</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 85.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Glowing" data-detail="Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Vit C" title="Serum Vit C">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Serum Vit C</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Vit C" data-detail="Membantu mencerahkan kulit wajah, merangsang produksi kolagen,  serta mengencangkan kulit wajah">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Acne" title="Serum Acne">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Serum Acne</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Acne Clearing Moisturizer Cream" data-detail="Mengeringkan jerawat, mencerahkan kulit wajah, serta melembapkan kulit wajah.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Scar" title="Serum Scar">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Serum Scar</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Scar" data-detail="Kandungan Centela Asiatica membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="ribbon">New</div>
+              <img src="<?= base_url('assets/img/beranda/Peeling Glowing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Peeling Glowing" title="Peeling Glowing">
+              <div class="card-body">
+                <h4 class="card-title text-center">Peeling Glowing</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 95.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Peeling Glowing" data-detail="Mencerahkan wajah, melembabkan kulit wajah, melindungi dari paparan sinar matahari.">
                   <div class="d-grid gap-2">
                     <button class="btn btn-success" type="button">Lihat Detail</button>
                   </div>
@@ -285,6 +460,23 @@
           <div class="col-lg-3 col-md-6 mb-3">
             <div class="card h-100">
               <div class="ribbon">New</div>
+              <img src="<?= base_url('assets/img/beranda/Body Lotion Extra Whitening.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Body Lotion Extra Whitening" title="Body Lotion Extra Whitening">
+              <div class="card-body mb-0">
+                <h4 class="card-title text-center">Body Lotion Extra Whitening</h4>
+                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 100.000</h4>
+              </div>
+              <div class="card-footer mb-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Body Lotion Extra Whitening" data-detail="Mencerahkan badan, melembabkan kulit, memutihkan kulit, bebas dari kusam, menjaga kesehatan kulit.">
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Lihat Detail</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="ribbon">New</div>
               <img src="<?= base_url('assets/img/beranda/Smooth Secret Facial Wash Acne.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Smooth Secret Facial Wash Acne" title="Smooth Secret Facial Wash Acne">
               <div class="card-body mb-0">
                 <h4 class="card-title text-center">Smooth Secret Facial Wash Acne</h4>
@@ -292,198 +484,6 @@
               </div>
               <div class="card-footer mb-1">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Smooth Secret Facial Wash Acne" data-detail="Sabun Jerawat yang tidak membuat kulit kering, Merupakan pembersih yang dapat digunakan untuk kulit yang berjerawat. Mengandung encapsulation  salicylic acid dan bahan natural yang menjadikan kulit tampak lebih bersih, halus, lembut terawat dan terasa lembab.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/White-Cream2.webp') ?>" class="card-img-top" height="100%" width="100%" alt="White Cream" title="White Cream">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">White Cream</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="White Cream" data-detail="Membantu mencerahkan dan melindungi kulit wajah dari efek buruk Sinar Matahari">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Facial Wash.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Facial Wash" title="Facial Wash">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Facial Wash</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 70.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Facial Wash" data-detail="Membersihkan kotoran dan sisa make up di wajah, serta dapat melembapkan dan mencerahkan kulit wajah.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Whitening Secret Night Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Whitening Nutrition Night Cream" title="Whitening Nutrition Night Cream">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Whitening Nutrition Night Cream</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 90.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Whitening Nutrition Night Cream" data-detail="Membantu mencerahkan kulit wajah yang nampak kusam pada pemakaian malam hari.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Glowing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Glowing" title="Serum Glowing">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Serum Glowing</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 85.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Glowing" data-detail="Berfungsi untuk mencerahkan kulit wajah setelah pemakaian, mengecilkan pori-pori dan menghilangkan kerutan di wajah.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Acne" title="Serum Acne">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Serum Acne</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Acne Clearing Moisturizer Cream" data-detail="Mengeringkan jerawat, mencerahkan kulit wajah, serta melembapkan kulit wajah.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Vit C.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Vit C" title="Serum Vit C">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Serum Vit C</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Vit C" data-detail="Membantu mencerahkan kulit wajah, merangsang produksi kolagen,  serta mengencangkan kulit wajah">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Skin Toner.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Skin Toner" title="Skin Toner">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Skin Toner</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 60.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Skin Toner" data-detail="Menyegarkan kulit wajah, melembapkan kulit wajah serta  mengontrol minyak berlebih di wajah">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Sunscreen Acne.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Sunscreen Acne" title="Sunscreen Acne">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Sunscreen Acne</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Sunscreen Acne" data-detail="Untuk menjaga kulit Anda dari paparan sinar matahari serta membantu meredakan jerawat yang sedang aktif.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Milk-Cleanser.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Milk Cleanser" title="Milk Cleanser">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Milk Cleanser</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 60.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Milk Cleanser" data-detail="Membersihkan wajah dari kotoran debu dan sisa makeup.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/BB Cream.webp') ?>" class="card-img-top" height="100%" width="100%" alt="BB Cream" title="BB Cream">
-              <div class="card-body">
-                <h4 class="card-title text-center">BB Cream</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="BB Cream" data-detail="Mencerahkan wajah dapat menutupi bekas jerawat dan flek.">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Acne Clearing.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Membantu mempercepat proses penyembuhan Acne" title="Acne Clearing">
-              <div class="card-body">
-                <h4 class="card-title text-center">Acne Clearing</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Acne Clearing" data-detail="Membantu mempercepat proses penyembuhan Acne">
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Lihat Detail</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-3">
-            <div class="card h-100">
-              <img src="<?= base_url('assets/img/beranda/Serum Acne Scar.webp') ?>" class="card-img-top" height="100%" width="100%" alt="Serum Scar" title="Serum Scar">
-              <div class="card-body mb-0">
-                <h4 class="card-title text-center">Serum Scar</h4>
-                <h4 class="text-center text-success mb-0"><sup>Rp.</sup> 75.000</h4>
-              </div>
-              <div class="card-footer mb-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-item" id="pilih" data-nm_produk="Serum Scar" data-detail="Kandungan Centela Asiatica membatu mempercepat proses penyembuhan acne serta menyamarkan bopeng di wajah">
                   <div class="d-grid gap-2">
                     <button class="btn btn-success" type="button">Lihat Detail</button>
                   </div>
@@ -804,9 +804,15 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-lg-12">
-            <iframe width="1366px" height="600" src="https://www.youtube.com/embed/g4eB7pb_YDg" title="Video New Treatment"></iframe>
+        <div class="row text-center mt-4">
+          <div class="col-lg-4">
+            <iframe height="600" src="https://www.youtube.com/embed/g4eB7pb_YDg" title="Video New Treatment"></iframe>
+          </div>
+          <div class="col-lg-4">
+            <iframe height="600" src="https://youtube.com/embed/whoaoL9rNNA?si=_wP3SvOgG0SlDE8T" title="Video New Treatment"></iframe>
+          </div>
+          <div class="col-lg-4">
+            <iframe height="600" src="https://youtube.com/embed/_Xs7B94GFTw?si=dwBtucHCbsDUU-qQ" title="Video New Treatment"></iframe>
           </div>
         </div>
       </div>
