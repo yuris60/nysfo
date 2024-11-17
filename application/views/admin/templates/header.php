@@ -27,10 +27,11 @@
   <link rel="stylesheet" href="<?= base_url('assets/') ?>concept/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
 
   <!-- Datatables -->
-  <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>concept/assets/vendor/datatables/css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="<?= base_url('assets/') ?>vendor/datatable/datatables.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>concept/assets/vendor/datatables/css/dataTables.bootstrap4.css">
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>concept/assets/vendor/datatables/css/buttons.bootstrap4.css">
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>concept/assets/vendor/datatables/css/select.bootstrap4.css">
-  <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>concept/assets/vendor/datatables/css/fixedHeader.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>concept/assets/vendor/datatables/css/fixedHeader.bootstrap4.css"> -->
 
   <!-- Datepicker -->
   <link href="<?= base_url('assets/') ?>vendor/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
@@ -56,9 +57,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"> -->
   <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script> -->
 
   <style>

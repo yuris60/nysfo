@@ -1,70 +1,101 @@
-###################
-What is CodeIgniter
-###################
+#####################################
+Nastyaderm System Information (Nysfo)
+#####################################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+.. image:: assets/img/logo_nastya_new.png
+   :height: 270
+   :width: 200
+   :alt: Nastyaderm Logo
 
-*******************
-Release Information
-*******************
+Nysfo merupakan singkatan dari Nastyaderm System Information. 
+Nysfo adalah project aplikasi berbasis website yang dibuat 
+untuk salah satu Klinik Kecantikan yang berada di Kabupaten Karawang, 
+Jawa Barat yakni Klinik Kecantikan Nastyaderm.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+*********************
+Pengembangan Aplikasi
+*********************
 
-**************************
-Changelog and New Features
-**************************
+Aplikasi terdapat 2 bagian yang terpisah antara lain :
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- Front End (client-side)
+- Back End (server-side)
 
-*******************
-Server Requirements
-*******************
 
-PHP version 5.6 or newer is recommended.
+=========
+Front End
+=========
 
-It should work on 5.4.8 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Bagian ini diperuntukkan untuk para pengguna yang ingin melihat daftar produk & 
+treatment yang tersedia pada Klinik, dengan kata lain bagian ini merupakan
+marketing perusahaan untuk mencapai calon konsumennya. Front End dapat diakses
+melalui tautan `disini <https://nastyadermofficial.com>`_.
 
-************
-Installation
-************
+Berikut adalah beberapa screenshot aplikasinya:
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+.. image:: assets/img/ss/nysfo_frontend_1.jpg
+   :alt: Front End 1
 
-*******
-License
-*******
+.. image:: assets/img/ss/nysfo_frontend_2.jpg
+   :alt: Front End 2
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+.. image:: assets/img/ss/nysfo_frontend_3.jpg
+   :alt: Front End 3
 
-*********
-Resources
-*********
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <https://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+========
+Back End
+========
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Bagian ini diperuntukkan untuk admin/cs dan owner.
+Back End hanya diinstalasi secara lokal di Klinik tersebut.
+Dari 2 akses tersebut, berikut rincian hak aksesnya:
 
-***************
-Acknowledgement
-***************
+--------------------------
+Hak Akses Customer Service
+--------------------------
+====  =====
+No     Hak Akses CS
+====  =====
+1      Mengelola Data Produk
+2      Mengelola Data Paket Produk
+3      Mengelola Data Treatment
+4      Mengelola Data Pelanggan
+5      Mengelola Data Penjualan
+6      Mengelola Data Dokter
+7      Mengelola Data Jadwal Dokter
+8      Mengelola Data Laporan Pelanggan
+9      Mengelola Data Laporan Produk
+10      Mengelola Data Laporan Penjualan
+11      Mencetak Struk Belanja
+====  =====
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+---------------
+Hak Akses Owner
+---------------
+====  =====
+No     Hak Akses Owner
+====  =====
+1      Mengelola Data Pembelian
+2      Menambahkan Akses CS
+3      Melihat Data Penjualan
+====  =====
+
+Berikut adalah beberapa screenshot aplikasinya:
+
+.. image:: assets/img/ss/nysfo_backend_1.jpg
+   :alt: Front End 1
+
+.. image:: assets/img/ss/nysfo_backend_2.jpg
+   :alt: Front End 2
+
+.. image:: assets/img/ss/nysfo_backend_3.jpg
+   :alt: Front End 3
+
+******************
+Ucapan Terimakasih
+******************
+
+Saya menyadari project ini tidak akan selesai tanpa bantuan dari Bpk. Prastya Widjaja, SE dan Ibu dr. Lina Wijaya selaku owner.
+Maka dari itu saya ucapkan terimakasih atas kepercayaannya.
